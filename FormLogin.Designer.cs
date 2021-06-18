@@ -1,7 +1,7 @@
 ﻿
 namespace PhoneManagerment_ADO.net
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         /// Required designer variable.

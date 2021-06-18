@@ -29,12 +29,92 @@ namespace PhoneManagerment_ADO.net
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.menu_Home = new System.Windows.Forms.MenuStrip();
+            this.addTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.transactionDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.addNewPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phoneDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.wareHouseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.infomationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menu_Home.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // menu_Home
+            // 
+            this.menu_Home.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.menu_Home.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.addTransactionToolStripMenuItem,
+            this.transactionDetailToolStripMenuItem,
+            this.addNewPhoneToolStripMenuItem,
+            this.phoneDetailsToolStripMenuItem,
+            this.wareHouseToolStripMenuItem,
+            this.infomationToolStripMenuItem});
+            this.menu_Home.Location = new System.Drawing.Point(0, 0);
+            this.menu_Home.Name = "menu_Home";
+            this.menu_Home.Size = new System.Drawing.Size(994, 33);
+            this.menu_Home.TabIndex = 0;
+            this.menu_Home.Text = "menuStrip1";
+            // 
+            // addTransactionToolStripMenuItem
+            // 
+            this.addTransactionToolStripMenuItem.Name = "addTransactionToolStripMenuItem";
+            this.addTransactionToolStripMenuItem.Size = new System.Drawing.Size(166, 29);
+            this.addTransactionToolStripMenuItem.Text = "Add transaction";
+            // 
+            // transactionDetailToolStripMenuItem
+            // 
+            this.transactionDetailToolStripMenuItem.Name = "transactionDetailToolStripMenuItem";
+            this.transactionDetailToolStripMenuItem.Size = new System.Drawing.Size(189, 29);
+            this.transactionDetailToolStripMenuItem.Text = "Transaction details";
+            // 
+            // addNewPhoneToolStripMenuItem
+            // 
+            this.addNewPhoneToolStripMenuItem.Name = "addNewPhoneToolStripMenuItem";
+            this.addNewPhoneToolStripMenuItem.Size = new System.Drawing.Size(165, 29);
+            this.addNewPhoneToolStripMenuItem.Text = "Add new phone";
+            // 
+            // phoneDetailsToolStripMenuItem
+            // 
+            this.phoneDetailsToolStripMenuItem.Name = "phoneDetailsToolStripMenuItem";
+            this.phoneDetailsToolStripMenuItem.Size = new System.Drawing.Size(143, 29);
+            this.phoneDetailsToolStripMenuItem.Text = "Phone details";
+            // 
+            // wareHouseToolStripMenuItem
+            // 
+            this.wareHouseToolStripMenuItem.Name = "wareHouseToolStripMenuItem";
+            this.wareHouseToolStripMenuItem.Size = new System.Drawing.Size(127, 29);
+            this.wareHouseToolStripMenuItem.Text = "WareHouse";
+            // 
+            // infomationToolStripMenuItem
+            // 
+            this.infomationToolStripMenuItem.Name = "infomationToolStripMenuItem";
+            this.infomationToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
+            this.infomationToolStripMenuItem.Text = "Infomation";
+            // 
+            // Home
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(994, 514);
+            this.Controls.Add(this.menu_Home);
+            this.MainMenuStrip = this.menu_Home;
+            this.Name = "Home";
             this.Text = "Home";
+            this.menu_Home.ResumeLayout(false);
+            this.menu_Home.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.MenuStrip menu_Home;
+        private System.Windows.Forms.ToolStripMenuItem addTransactionToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem transactionDetailToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem addNewPhoneToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phoneDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem wareHouseToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infomationToolStripMenuItem;
     }
 }
