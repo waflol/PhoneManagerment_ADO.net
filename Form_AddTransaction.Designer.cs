@@ -70,6 +70,10 @@ namespace PhoneManagerment_ADO.net
             this.txt_sim = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_camera = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_Display = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_Price = new System.Windows.Forms.TextBox();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -128,7 +132,7 @@ namespace PhoneManagerment_ADO.net
             // Quantity_Label
             // 
             this.Quantity_Label.AutoSize = true;
-            this.Quantity_Label.Location = new System.Drawing.Point(21, 348);
+            this.Quantity_Label.Location = new System.Drawing.Point(60, 198);
             this.Quantity_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Quantity_Label.Name = "Quantity_Label";
             this.Quantity_Label.Size = new System.Drawing.Size(61, 17);
@@ -243,9 +247,13 @@ namespace PhoneManagerment_ADO.net
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txt_camera);
             this.panel4.Controls.Add(this.txt_sim);
+            this.panel4.Controls.Add(this.txt_Price);
+            this.panel4.Controls.Add(this.txt_Display);
             this.panel4.Controls.Add(this.txt_istorage);
             this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.txt_Ram);
+            this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.label1);
@@ -258,15 +266,15 @@ namespace PhoneManagerment_ADO.net
             this.panel4.Location = new System.Drawing.Point(495, 15);
             this.panel4.Margin = new System.Windows.Forms.Padding(4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(555, 380);
+            this.panel4.Size = new System.Drawing.Size(555, 230);
             this.panel4.TabIndex = 7;
             // 
             // Add_Phone_Button
             // 
-            this.Add_Phone_Button.Location = new System.Drawing.Point(449, 342);
+            this.Add_Phone_Button.Location = new System.Drawing.Point(362, 187);
             this.Add_Phone_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Add_Phone_Button.Name = "Add_Phone_Button";
-            this.Add_Phone_Button.Size = new System.Drawing.Size(100, 28);
+            this.Add_Phone_Button.Size = new System.Drawing.Size(113, 31);
             this.Add_Phone_Button.TabIndex = 9;
             this.Add_Phone_Button.Text = "Add";
             this.Add_Phone_Button.UseVisualStyleBackColor = true;
@@ -285,7 +293,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // numeric_Quantity
             // 
-            this.numeric_Quantity.Location = new System.Drawing.Point(98, 346);
+            this.numeric_Quantity.Location = new System.Drawing.Point(137, 196);
             this.numeric_Quantity.Margin = new System.Windows.Forms.Padding(4);
             this.numeric_Quantity.Name = "numeric_Quantity";
             this.numeric_Quantity.Size = new System.Drawing.Size(113, 22);
@@ -334,11 +342,11 @@ namespace PhoneManagerment_ADO.net
             // Total_Price_Label
             // 
             this.Total_Price_Label.AutoSize = true;
-            this.Total_Price_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Price_Label.Location = new System.Drawing.Point(601, 417);
+            this.Total_Price_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total_Price_Label.Location = new System.Drawing.Point(504, 368);
             this.Total_Price_Label.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.Total_Price_Label.Name = "Total_Price_Label";
-            this.Total_Price_Label.Size = new System.Drawing.Size(51, 20);
+            this.Total_Price_Label.Size = new System.Drawing.Size(73, 29);
             this.Total_Price_Label.TabIndex = 9;
             this.Total_Price_Label.Text = "Total";
             // 
@@ -346,38 +354,38 @@ namespace PhoneManagerment_ADO.net
             // 
             this.Total_Price_Textbox.Enabled = false;
             this.Total_Price_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Price_Textbox.Location = new System.Drawing.Point(607, 441);
+            this.Total_Price_Textbox.Location = new System.Drawing.Point(509, 411);
             this.Total_Price_Textbox.Margin = new System.Windows.Forms.Padding(4);
             this.Total_Price_Textbox.Name = "Total_Price_Textbox";
-            this.Total_Price_Textbox.Size = new System.Drawing.Size(285, 32);
+            this.Total_Price_Textbox.Size = new System.Drawing.Size(383, 32);
             this.Total_Price_Textbox.TabIndex = 10;
             // 
             // Export_Button
             // 
-            this.Export_Button.Location = new System.Drawing.Point(793, 481);
+            this.Export_Button.Location = new System.Drawing.Point(769, 473);
             this.Export_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Export_Button.Name = "Export_Button";
-            this.Export_Button.Size = new System.Drawing.Size(100, 28);
+            this.Export_Button.Size = new System.Drawing.Size(120, 52);
             this.Export_Button.TabIndex = 11;
             this.Export_Button.Text = "Export";
             this.Export_Button.UseVisualStyleBackColor = true;
             // 
             // Remove_Button
             // 
-            this.Remove_Button.Location = new System.Drawing.Point(495, 402);
+            this.Remove_Button.Location = new System.Drawing.Point(495, 273);
             this.Remove_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Remove_Button.Name = "Remove_Button";
-            this.Remove_Button.Size = new System.Drawing.Size(100, 28);
+            this.Remove_Button.Size = new System.Drawing.Size(100, 57);
             this.Remove_Button.TabIndex = 12;
             this.Remove_Button.Text = "Remove";
             this.Remove_Button.UseVisualStyleBackColor = true;
             // 
             // Reset_Button
             // 
-            this.Reset_Button.Location = new System.Drawing.Point(495, 446);
+            this.Reset_Button.Location = new System.Drawing.Point(732, 273);
             this.Reset_Button.Margin = new System.Windows.Forms.Padding(4);
             this.Reset_Button.Name = "Reset_Button";
-            this.Reset_Button.Size = new System.Drawing.Size(100, 28);
+            this.Reset_Button.Size = new System.Drawing.Size(100, 57);
             this.Reset_Button.TabIndex = 13;
             this.Reset_Button.Text = "Reset";
             this.Reset_Button.UseVisualStyleBackColor = true;
@@ -385,7 +393,7 @@ namespace PhoneManagerment_ADO.net
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PhoneManagerment_ADO.net.Properties.Resources.hand;
-            this.pictureBox2.Location = new System.Drawing.Point(905, 402);
+            this.pictureBox2.Location = new System.Drawing.Point(905, 368);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(145, 137);
@@ -395,10 +403,10 @@ namespace PhoneManagerment_ADO.net
             // 
             // btn_Edit
             // 
-            this.btn_Edit.Location = new System.Drawing.Point(495, 492);
+            this.btn_Edit.Location = new System.Drawing.Point(945, 273);
             this.btn_Edit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(100, 28);
+            this.btn_Edit.Size = new System.Drawing.Size(100, 57);
             this.btn_Edit.TabIndex = 15;
             this.btn_Edit.Text = "Edit";
             this.btn_Edit.UseVisualStyleBackColor = true;
@@ -503,6 +511,38 @@ namespace PhoneManagerment_ADO.net
             this.txt_camera.Size = new System.Drawing.Size(113, 22);
             this.txt_camera.TabIndex = 12;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(52, 163);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 17);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "display";
+            // 
+            // txt_Display
+            // 
+            this.txt_Display.Location = new System.Drawing.Point(137, 160);
+            this.txt_Display.Name = "txt_Display";
+            this.txt_Display.Size = new System.Drawing.Size(113, 22);
+            this.txt_Display.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(277, 161);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(40, 17);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Price";
+            // 
+            // txt_Price
+            // 
+            this.txt_Price.Location = new System.Drawing.Point(362, 158);
+            this.txt_Price.Name = "txt_Price";
+            this.txt_Price.Size = new System.Drawing.Size(113, 22);
+            this.txt_Price.TabIndex = 12;
+            // 
             // Form_AddTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -578,5 +618,9 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbb_PhoneName;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_Price;
+        private System.Windows.Forms.TextBox txt_Display;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
     }
 }
