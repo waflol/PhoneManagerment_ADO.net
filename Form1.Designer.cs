@@ -29,103 +29,97 @@ namespace PhoneManagerment_ADO.net
         /// </summary>
         private void InitializeComponent()
         {
-            this.label4 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lb_Main = new System.Windows.Forms.Label();
+            this.btn_Reset = new System.Windows.Forms.Button();
+            this.btn_Login = new System.Windows.Forms.Button();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.txt_Username = new System.Windows.Forms.TextBox();
+            this.lb_Password = new System.Windows.Forms.Label();
+            this.lb_Username = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label4
+            // lb_Main
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(221, 18);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(490, 29);
-            this.label4.TabIndex = 15;
-            this.label4.Text = "MOBILE SHOP MANAGEMENT SYSTEM";
+            this.lb_Main.AutoSize = true;
+            this.lb_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Main.Location = new System.Drawing.Point(166, 15);
+            this.lb_Main.Name = "lb_Main";
+            this.lb_Main.Size = new System.Drawing.Size(392, 24);
+            this.lb_Main.TabIndex = 15;
+            this.lb_Main.Text = "MOBILE SHOP MANAGEMENT SYSTEM";
             // 
-            // button2
+            // btn_Reset
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(520, 485);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(104, 39);
-            this.button2.TabIndex = 13;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.Location = new System.Drawing.Point(390, 394);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(78, 32);
+            this.btn_Reset.TabIndex = 13;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // btn_Login
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(227, 485);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(104, 39);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Login";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Login.Location = new System.Drawing.Point(170, 394);
+            this.btn_Login.Name = "btn_Login";
+            this.btn_Login.Size = new System.Drawing.Size(78, 32);
+            this.btn_Login.TabIndex = 12;
+            this.btn_Login.Text = "Login";
+            this.btn_Login.UseVisualStyleBackColor = true;
             // 
-            // textBox2
+            // txt_Password
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(395, 400);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
-            this.textBox2.Size = new System.Drawing.Size(228, 30);
-            this.textBox2.TabIndex = 11;
+            this.txt_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Password.Location = new System.Drawing.Point(296, 325);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '*';
+            this.txt_Password.Size = new System.Drawing.Size(172, 26);
+            this.txt_Password.TabIndex = 11;
             // 
-            // textBox1
+            // txt_Username
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(395, 338);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 30);
-            this.textBox1.TabIndex = 10;
+            this.txt_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Username.Location = new System.Drawing.Point(296, 275);
+            this.txt_Username.Name = "txt_Username";
+            this.txt_Username.Size = new System.Drawing.Size(172, 26);
+            this.txt_Username.TabIndex = 10;
             // 
-            // label2
+            // lb_Password
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(221, 404);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(128, 29);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Password";
+            this.lb_Password.AutoSize = true;
+            this.lb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_Password.Location = new System.Drawing.Point(166, 328);
+            this.lb_Password.Name = "lb_Password";
+            this.lb_Password.Size = new System.Drawing.Size(100, 24);
+            this.lb_Password.TabIndex = 9;
+            this.lb_Password.Text = "Password";
             // 
-            // label1
+            // lb_Username
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(221, 343);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 29);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Username";
+            this.lb_Username.AutoSize = true;
+            this.lb_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_Username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lb_Username.Location = new System.Drawing.Point(166, 279);
+            this.lb_Username.Name = "lb_Username";
+            this.lb_Username.Size = new System.Drawing.Size(105, 24);
+            this.lb_Username.TabIndex = 8;
+            this.lb_Username.Text = "Username";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(917, 551);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(688, 448);
+            this.Controls.Add(this.lb_Main);
+            this.Controls.Add(this.btn_Reset);
+            this.Controls.Add(this.btn_Login);
+            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_Username);
+            this.Controls.Add(this.lb_Password);
+            this.Controls.Add(this.lb_Username);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -135,13 +129,13 @@ namespace PhoneManagerment_ADO.net
 
         #endregion
 
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lb_Main;
+        private System.Windows.Forms.Button btn_Reset;
+        private System.Windows.Forms.Button btn_Login;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.TextBox txt_Username;
+        private System.Windows.Forms.Label lb_Password;
+        private System.Windows.Forms.Label lb_Username;
     }
 }
 
