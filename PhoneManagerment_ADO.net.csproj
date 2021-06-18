@@ -79,6 +79,9 @@
     <EmbeddedResource Include="Form_AddTransaction.resx">
       <DependentUpon>Form_AddTransaction.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_TransactionDetails.resx">
+      <DependentUpon>Form_TransactionDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
