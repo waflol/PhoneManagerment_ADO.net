@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace PhoneManagerment_ADO.net
 {
-    public partial class Home : Form
+    public partial class Form_AddTransaction : Form
     {
-        public Home()
+        public Form_AddTransaction()
         {
             InitializeComponent();
-        }
-
-        private void addTransactionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form_AddTransaction form_addTrans = new Form_AddTransaction();
-            form_addTrans.ShowDialog();
         }
     }
 }

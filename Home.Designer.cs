@@ -51,7 +51,7 @@ namespace PhoneManagerment_ADO.net
             this.infomationToolStripMenuItem});
             this.menu_Home.Location = new System.Drawing.Point(0, 0);
             this.menu_Home.Name = "menu_Home";
-            this.menu_Home.Size = new System.Drawing.Size(994, 33);
+            this.menu_Home.Size = new System.Drawing.Size(981, 33);
             this.menu_Home.TabIndex = 0;
             this.menu_Home.Text = "menuStrip1";
             // 
@@ -60,6 +60,7 @@ namespace PhoneManagerment_ADO.net
             this.addTransactionToolStripMenuItem.Name = "addTransactionToolStripMenuItem";
             this.addTransactionToolStripMenuItem.Size = new System.Drawing.Size(166, 29);
             this.addTransactionToolStripMenuItem.Text = "Add transaction";
+            this.addTransactionToolStripMenuItem.Click += new System.EventHandler(this.addTransactionToolStripMenuItem_Click);
             // 
             // transactionDetailToolStripMenuItem
             // 
@@ -95,7 +96,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(994, 514);
+            this.ClientSize = new System.Drawing.Size(981, 514);
             this.Controls.Add(this.menu_Home);
             this.MainMenuStrip = this.menu_Home;
             this.Name = "Home";

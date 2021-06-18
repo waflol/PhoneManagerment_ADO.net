@@ -52,6 +52,12 @@
     <Compile Include="FormLogin.Designer.cs">
       <DependentUpon>FormLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_AddTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_AddTransaction.Designer.cs">
+      <DependentUpon>Form_AddTransaction.cs</DependentUpon>
+    </Compile>
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>
