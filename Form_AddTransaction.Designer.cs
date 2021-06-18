@@ -35,6 +35,7 @@ namespace PhoneManagerment_ADO.net
             this.PhoneName_Label = new System.Windows.Forms.Label();
             this.Quantity_Label = new System.Windows.Forms.Label();
             this.Customer_Panel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Phone_Number_Textbox = new System.Windows.Forms.TextBox();
             this.Address_Textbox = new System.Windows.Forms.TextBox();
             this.Name_Textbox = new System.Windows.Forms.TextBox();
@@ -42,28 +43,28 @@ namespace PhoneManagerment_ADO.net
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Customer_Inf_Label = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_PhoneName = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.Phone_Inf_Label = new System.Windows.Forms.Label();
             this.Add_Phone_Button = new System.Windows.Forms.Button();
+            this.Phone_Inf_Label = new System.Windows.Forms.Label();
+            this.numeric_Quantity = new System.Windows.Forms.NumericUpDown();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Phone_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total_Price_Label = new System.Windows.Forms.Label();
             this.Total_Price_Textbox = new System.Windows.Forms.TextBox();
             this.Export_Button = new System.Windows.Forms.Button();
             this.Remove_Button = new System.Windows.Forms.Button();
-            this.Phone_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Reset_Button = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_Edit = new System.Windows.Forms.Button();
             this.Customer_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_Quantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Name_Label
@@ -137,6 +138,16 @@ namespace PhoneManagerment_ADO.net
             this.Customer_Panel.Size = new System.Drawing.Size(353, 144);
             this.Customer_Panel.TabIndex = 5;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PhoneManagerment_ADO.net.Properties.Resources.download;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
             // Phone_Number_Textbox
             // 
             this.Phone_Number_Textbox.BackColor = System.Drawing.SystemColors.Control;
@@ -199,34 +210,37 @@ namespace PhoneManagerment_ADO.net
             this.Customer_Inf_Label.TabIndex = 3;
             this.Customer_Inf_Label.Text = "Customer Infomation";
             // 
-            // textBox1
+            // txt_PhoneName
             // 
-            this.textBox1.Location = new System.Drawing.Point(82, 33);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(256, 20);
-            this.textBox1.TabIndex = 6;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txt_PhoneName.Location = new System.Drawing.Point(82, 33);
+            this.txt_PhoneName.Name = "txt_PhoneName";
+            this.txt_PhoneName.Size = new System.Drawing.Size(256, 20);
+            this.txt_PhoneName.TabIndex = 6;
+            this.txt_PhoneName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.Add_Phone_Button);
             this.panel4.Controls.Add(this.Phone_Inf_Label);
-            this.panel4.Controls.Add(this.numericUpDown1);
+            this.panel4.Controls.Add(this.numeric_Quantity);
             this.panel4.Controls.Add(this.PhoneName_Label);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.txt_PhoneName);
             this.panel4.Controls.Add(this.Quantity_Label);
             this.panel4.Location = new System.Drawing.Point(371, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(417, 309);
             this.panel4.TabIndex = 7;
             // 
-            // numericUpDown1
+            // Add_Phone_Button
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(82, 59);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(85, 20);
-            this.numericUpDown1.TabIndex = 7;
+            this.Add_Phone_Button.Location = new System.Drawing.Point(337, 281);
+            this.Add_Phone_Button.Name = "Add_Phone_Button";
+            this.Add_Phone_Button.Size = new System.Drawing.Size(75, 23);
+            this.Add_Phone_Button.TabIndex = 9;
+            this.Add_Phone_Button.Text = "Add";
+            this.Add_Phone_Button.UseVisualStyleBackColor = true;
+            this.Add_Phone_Button.Click += new System.EventHandler(this.Add_Phone_Button_Click);
             // 
             // Phone_Inf_Label
             // 
@@ -238,14 +252,12 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Inf_Label.TabIndex = 8;
             this.Phone_Inf_Label.Text = "Phone Infomation";
             // 
-            // Add_Phone_Button
+            // numeric_Quantity
             // 
-            this.Add_Phone_Button.Location = new System.Drawing.Point(337, 281);
-            this.Add_Phone_Button.Name = "Add_Phone_Button";
-            this.Add_Phone_Button.Size = new System.Drawing.Size(75, 23);
-            this.Add_Phone_Button.TabIndex = 9;
-            this.Add_Phone_Button.Text = "Add";
-            this.Add_Phone_Button.UseVisualStyleBackColor = true;
+            this.numeric_Quantity.Location = new System.Drawing.Point(82, 59);
+            this.numeric_Quantity.Name = "numeric_Quantity";
+            this.numeric_Quantity.Size = new System.Drawing.Size(85, 20);
+            this.numeric_Quantity.TabIndex = 7;
             // 
             // dataGridView1
             // 
@@ -260,6 +272,27 @@ namespace PhoneManagerment_ADO.net
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(353, 276);
             this.dataGridView1.TabIndex = 8;
+            // 
+            // Phone_Column
+            // 
+            this.Phone_Column.HeaderText = "Phone";
+            this.Phone_Column.Name = "Phone_Column";
+            this.Phone_Column.ReadOnly = true;
+            this.Phone_Column.Width = 175;
+            // 
+            // Price_Column
+            // 
+            this.Price_Column.HeaderText = "Price (vnđ)";
+            this.Price_Column.Name = "Price_Column";
+            this.Price_Column.ReadOnly = true;
+            this.Price_Column.Width = 125;
+            // 
+            // Quantity_Column
+            // 
+            this.Quantity_Column.HeaderText = "Quantity";
+            this.Quantity_Column.Name = "Quantity_Column";
+            this.Quantity_Column.ReadOnly = true;
+            this.Quantity_Column.Width = 50;
             // 
             // Total_Price_Label
             // 
@@ -298,27 +331,6 @@ namespace PhoneManagerment_ADO.net
             this.Remove_Button.Text = "Remove";
             this.Remove_Button.UseVisualStyleBackColor = true;
             // 
-            // Phone_Column
-            // 
-            this.Phone_Column.HeaderText = "Phone";
-            this.Phone_Column.Name = "Phone_Column";
-            this.Phone_Column.ReadOnly = true;
-            this.Phone_Column.Width = 175;
-            // 
-            // Price_Column
-            // 
-            this.Price_Column.HeaderText = "Price (vnđ)";
-            this.Price_Column.Name = "Price_Column";
-            this.Price_Column.ReadOnly = true;
-            this.Price_Column.Width = 125;
-            // 
-            // Quantity_Column
-            // 
-            this.Quantity_Column.HeaderText = "Quantity";
-            this.Quantity_Column.Name = "Quantity_Column";
-            this.Quantity_Column.ReadOnly = true;
-            this.Quantity_Column.Width = 50;
-            // 
             // Reset_Button
             // 
             this.Reset_Button.Location = new System.Drawing.Point(371, 362);
@@ -338,21 +350,21 @@ namespace PhoneManagerment_ADO.net
             this.pictureBox2.TabIndex = 14;
             this.pictureBox2.TabStop = false;
             // 
-            // pictureBox1
+            // btn_Edit
             // 
-            this.pictureBox1.Image = global::PhoneManagerment_ADO.net.Properties.Resources.download;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
+            this.btn_Edit.Location = new System.Drawing.Point(371, 400);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(75, 23);
+            this.btn_Edit.TabIndex = 15;
+            this.btn_Edit.Text = "Edit";
+            this.btn_Edit.UseVisualStyleBackColor = true;
             // 
             // Form_AddTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Reset_Button);
             this.Controls.Add(this.Remove_Button);
@@ -366,12 +378,12 @@ namespace PhoneManagerment_ADO.net
             this.Text = "Form_AddTransaction";
             this.Customer_Panel.ResumeLayout(false);
             this.Customer_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numeric_Quantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -393,9 +405,9 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.TextBox Address_Textbox;
         private System.Windows.Forms.TextBox Name_Textbox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_PhoneName;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown numeric_Quantity;
         private System.Windows.Forms.Label Phone_Inf_Label;
         private System.Windows.Forms.Button Add_Phone_Button;
         private System.Windows.Forms.DataGridView dataGridView1;
@@ -408,5 +420,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity_Column;
         private System.Windows.Forms.Button Reset_Button;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button btn_Edit;
     }
 }

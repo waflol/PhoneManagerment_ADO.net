@@ -61,7 +61,7 @@ namespace PhoneManagerment_ADO.net
             // btn_Login
             // 
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(170, 394);
+            this.btn_Login.Location = new System.Drawing.Point(193, 394);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(78, 32);
             this.btn_Login.TabIndex = 12;

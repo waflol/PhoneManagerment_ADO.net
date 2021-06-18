@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace PhoneManagerment_ADO.net
 {
-    public partial class Form_AddTransaction : Form
+    public partial class Form_TransactionDetails : Form
     {
-        public Form_AddTransaction()
+        public Form_TransactionDetails()
         {
             InitializeComponent();
-            
-        }
-        private void textBox1_TextChanged(object sender, EventArgs e) {
-
-        }
-
-        private void Add_Phone_Button_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
