@@ -22,5 +22,9 @@ namespace PhoneManagerment_ADO.net
             Form_AddTransaction form_addTrans = new Form_AddTransaction();
             form_addTrans.ShowDialog();
         }
+
+        private void Home_FormClosing(object sender, FormClosingEventArgs e) {
+            Application.Exit();
+        }
     }
 }

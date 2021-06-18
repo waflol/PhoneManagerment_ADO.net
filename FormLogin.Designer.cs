@@ -108,7 +108,7 @@ namespace PhoneManagerment_ADO.net
             this.lb_Username.TabIndex = 8;
             this.lb_Username.Text = "Username";
             // 
-            // Form1
+            // FormLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -120,8 +120,8 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.txt_Username);
             this.Controls.Add(this.lb_Password);
             this.Controls.Add(this.lb_Username);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "FormLogin";
             this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
