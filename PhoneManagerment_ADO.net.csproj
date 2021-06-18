@@ -59,6 +59,12 @@
     <Compile Include="Form_AddTransaction.Designer.cs">
       <DependentUpon>Form_AddTransaction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Shop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Shop.Designer.cs">
+      <DependentUpon>Form_Shop.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_TransactionDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_AddTransaction.resx">
       <DependentUpon>Form_AddTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Shop.resx">
+      <DependentUpon>Form_Shop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_TransactionDetails.resx">
       <DependentUpon>Form_TransactionDetails.cs</DependentUpon>

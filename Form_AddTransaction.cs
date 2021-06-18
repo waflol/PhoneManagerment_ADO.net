@@ -25,5 +25,10 @@ namespace PhoneManagerment_ADO.net
         {
 
         }
+
+        private void PhoneName_Label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
