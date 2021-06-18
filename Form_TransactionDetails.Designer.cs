@@ -226,9 +226,9 @@ namespace PhoneManagerment_ADO.net
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.panel5.Location = new System.Drawing.Point(68, 164);
+            this.panel5.Location = new System.Drawing.Point(114, 164);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(270, 1);
+            this.panel5.Size = new System.Drawing.Size(224, 1);
             this.panel5.TabIndex = 17;
             // 
             // panel6
@@ -266,17 +266,17 @@ namespace PhoneManagerment_ADO.net
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(34, 211);
+            this.label3.Location = new System.Drawing.Point(26, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
+            this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 14;
-            this.label3.Text = "Call :";
+            this.label3.Text = "Total :";
             // 
             // Form_TransactionDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(383, 450);
             this.Controls.Add(this.Customer_Panel);
             this.Name = "Form_TransactionDetails";
             this.Text = "Form_TransactionDetails";
