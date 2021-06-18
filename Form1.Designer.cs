@@ -67,6 +67,7 @@ namespace PhoneManagerment_ADO.net
             this.btn_Login.TabIndex = 12;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = true;
+            this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
             // 
             // txt_Password
             // 
@@ -121,7 +122,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.lb_Username);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Login";
             this.ResumeLayout(false);
             this.PerformLayout();
 
