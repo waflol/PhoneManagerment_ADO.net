@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using PhoneManagerment_ADO.net.BSLayer;
 namespace PhoneManagerment_ADO.net
 {
     public partial class FormLogin : Form
@@ -25,10 +25,9 @@ namespace PhoneManagerment_ADO.net
         {
 
             string user = txt_Username.Text;
-            string pass = txt_Password.Text;
-            BLAccount acc = new BLAccount();
+            string pass = txt
 
-            if (acc.checkAccount(user,pass))
+            if (dr.Read())
             {
                 currentAccount = user;
                 this.Visible = false;

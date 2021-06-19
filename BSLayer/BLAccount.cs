@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,12 +24,9 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public bool checkAccount(string user, string pass)
         {
-            string sqlcmd = "select * from Accounts where username = '" + user + "' and password = '" + pass+"'";
-            DataSet data = db.ExcuteQueryDataSet(sqlcmd, CommandType.Text);
-            if (data.Tables[0].Rows.Count == 1)
-                return true;
-            else return false;
-
+            string sqlcmm = "select * from Accounts where username = " + user + "and password = " + pass;
+            
+            return false;
         }
 
         // them phone
