@@ -70,6 +70,7 @@ namespace PhoneManagerment_ADO.net
             this.transactionDetailToolStripMenuItem.Name = "transactionDetailToolStripMenuItem";
             this.transactionDetailToolStripMenuItem.Size = new System.Drawing.Size(189, 29);
             this.transactionDetailToolStripMenuItem.Text = "Transaction details";
+            this.transactionDetailToolStripMenuItem.Click += new System.EventHandler(this.transactionDetailToolStripMenuItem_Click);
             // 
             // addNewPhoneToolStripMenuItem
             // 

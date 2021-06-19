@@ -26,10 +26,19 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             string sqlString = "select max(ID_phone) as max_id from Phone";
             DataSet ds = db.ExcuteQueryDataSet(sqlString, CommandType.Text);
-            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+            try
+            {
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return 0;
+                else
+                    return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+            }
+            catch(Exception error)
+            {
                 return 0;
-            else
-                return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+            }
+           
+            
         }
            
         // them phone

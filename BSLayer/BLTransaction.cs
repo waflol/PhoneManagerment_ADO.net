@@ -40,13 +40,13 @@ namespace PhoneManagerment_ADO.net.BSLayer
         //xoa phone
         public bool deleteTransaction(ref string err, string IDtrans)
         {
-            string sqlString = "Delete From Phone where ID_phone = " + IDtrans.ToString();
+            string sqlString = "Delete From Transactions where ID_transaction = " + IDtrans.ToString();
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         // cap nhat phone
         public bool updateTransaction(int idtrans, int totalprice, DateTime date, int idcus, string username, ref string err)
         {
-            string sqlString = "Update Phone Set Total_price = " + totalprice.ToString()+", Date = "+date.ToString()+",ID_customer = "+idcus.ToString()+",username = '"+username+"' where ID_transaction = "+idtrans.ToString();
+            string sqlString = "Update Transactions Set Total_price = " + totalprice.ToString()+", Date = "+date.ToString()+",ID_customer = "+idcus.ToString()+",username = '"+username+"' where ID_transaction = "+idtrans.ToString();
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }
