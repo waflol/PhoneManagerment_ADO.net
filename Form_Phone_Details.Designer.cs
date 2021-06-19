@@ -168,6 +168,7 @@ namespace PhoneManagerment_ADO.net
             this.txt_PhoneID.Name = "txt_PhoneID";
             this.txt_PhoneID.Size = new System.Drawing.Size(203, 26);
             this.txt_PhoneID.TabIndex = 48;
+            this.txt_PhoneID.TextChanged += new System.EventHandler(this.txt_PhoneID_TextChanged);
             // 
             // label2
             // 

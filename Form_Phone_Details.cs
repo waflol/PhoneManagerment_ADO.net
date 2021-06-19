@@ -40,5 +40,9 @@ namespace PhoneManagerment_ADO.net {
             } catch { }
         }
 
+        private void txt_PhoneID_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
