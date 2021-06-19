@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhoneManagerment_ADO.net.BSLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace PhoneManagerment_ADO.net
     public partial class FormLogin : Form
     {
         private string currentAccount = "";
-       
+        
         public FormLogin()
         {
             InitializeComponent();
@@ -24,11 +25,11 @@ namespace PhoneManagerment_ADO.net
         {
 
             string user = txt_Username.Text;
-            string pass = txt_Password.Text;
-            BLAccount acc = new BLAccount();
-            
-            if (acc.checkAccount(user,pass)==true)
+            string pass = txt
+
+            if (dr.Read())
             {
+                currentAccount = user;
                 this.Visible = false;
                 Home obj2 = new Home();
                 obj2.ShowDialog();

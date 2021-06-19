@@ -12,6 +12,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
     class BLPhones
     {
         DBMain db = null;
+        string err;
         public BLPhones()
         {
             db = new DBMain();
@@ -20,23 +21,26 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             return db.ExcuteQueryDataSet("select * from Phones", CommandType.Text);
         }
-        
-
-        
+           
         // them phone
         public bool addPhones(int ID_phone,string modelName,string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera)
         {
-            return false;
+
+            string sqlString = "Insert Into Phone Values('" + modelName + "','" + ram + "','" + frontCamera + "','" + simtype + "','" + networktype + "','" + price + "','" + finger + "','" + istorage + "','" + estorage + "','" + rearcamera + "'," + ID_phone.ToString()+")";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+
         }
         //xoa phone
         public bool deletePhones(ref string err,string IDphone)
         {
-            return false;
+            string sqlString = "Delete From Phone where ID_phone = '" + IDphone+"'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         // cap nhat phone
         public bool updatePhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera, ref string err)
         {
-            return false;
+            string sqlString = "Update Phone Set Model_Name = '" + modelName + "', ram = '" + ram + ",Front_Camera = '" + frontCamera + "',Sim_Type = '" + simtype + "',Network_Type = '" + networktype + "', Price = '" + price + "',Finger = '" + finger + "',istorage = '" + istorage + "',estorage = '" + estorage + "',Rear_Camera = '" + rearcamera + "' where ID_phone = " + ID_phone.ToString();
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }
 }

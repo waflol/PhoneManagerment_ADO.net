@@ -11,6 +11,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
 {
     class BLAccount
     {
+        string err;
         DBMain db = null;
         public BLAccount()
         {
@@ -23,11 +24,13 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public bool checkAccount(string user, string pass)
         {
-            string sqlcmd = "select * from Accounts where username = '" + user + "' and password = '" + pass + "'";
-            DataSet data = db.ExcuteQueryDataSet(sqlcmd, CommandType.Text);
+            string sqlcmm = "select * from Accounts where username = " + user + "and password = " + pass;
+            DataSet data = db.ExcuteQueryDataSet(sqlcmm, CommandType.Text);
             if (data.Tables[0].Rows.Count == 1)
+            {
                 return true;
-            else return false;
+            }
+            return false;
         }
 
         // them phone

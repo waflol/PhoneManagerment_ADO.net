@@ -11,43 +11,34 @@ namespace PhoneManagerment_ADO.net.BSLayer
     class BLTransaction
     {
         DBMain db = null;
+        string err;
         public BLTransaction()
         {
             db = new DBMain();
         }
         public DataSet GetPhones()
         {
-            return db.ExcuteQueryDataSet("select * from Phones", CommandType.Text);
+            return db.ExcuteQueryDataSet("select * from Transactions", CommandType.Text);
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="IDphone"></param>
-        /// <param name="nameModel"></param>
-        /// <param name="ram"></param>
-        /// <param name="istorage"></param>
-        /// <param name="display"></param>
-        /// <param name="typeCamera"></param>
-        /// <param name="simType"></param>
-        /// <param name="networkType"></param>
-        /// <param name="price"></param>
-        /// <returns></returns>
 
         // them phone
         public bool addTransaction(int idtrans, int totalprice, DateTime date, int idcus, string username)
         {
-            return false;
+            string sqlString = "Insert Into Transactions Values("+idtrans.ToString()+","+totalprice.ToString()+","+date.ToString()+","+idcus.ToString()+",'"+username+"')";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         //xoa phone
         public bool deleteTransaction(ref string err, string IDtrans)
         {
-            return false;
+            string sqlString = "Delete From Phone where ID_phone = " + IDtrans.ToString();
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         // cap nhat phone
         public bool updateTransaction(int idtrans, int totalprice, DateTime date, int idcus, string username, ref string err)
         {
-            return false;
+            string sqlString = "Update Phone Set Total_price = " + totalprice.ToString()+", Date = "+date.ToString()+",ID_customer = "+idcus.ToString()+",username = '"+username+"' where ID_transaction = "+idtrans.ToString();
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }
 }
