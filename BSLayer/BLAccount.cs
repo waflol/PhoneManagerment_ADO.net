@@ -23,29 +23,11 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public bool checkAccount(string user, string pass)
         {
-            try
-            {
-                SqlConnection con = new SqlConnection(Connect.Connection_String);
-                con.Open();
-                string str = "SELECT * FROM Accounts WHERE password='" + pass + "' AND username= '" + user + "'";
-                SqlCommand cmd = new SqlCommand(str, con);
-                SqlDataReader dr;
-                dr = cmd.ExecuteReader();
-                if (dr.Read())
-                {
-                    return true; 
-                }
-                else
-                {
-                    throw new Exception();
-                }
-            }
-            catch
-            {
-                return false;
-            }
-
-            
+            string sqlcmd = "select * from Accounts where username = '" + user + "' and password = '" + pass + "'";
+            DataSet data = db.ExcuteQueryDataSet(sqlcmd, CommandType.Text);
+            if (data.Tables[0].Rows.Count == 1)
+                return true;
+            else return false;
         }
 
         // them phone
