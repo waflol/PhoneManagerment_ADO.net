@@ -31,7 +31,16 @@ namespace PhoneManagerment_ADO.net
 
         private void GridView_PhoneRecord_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            
+            try
+            {
+                int a = GridView_PhoneRecord.CurrentCell.RowIndex;
+                if (GridView_PhoneRecord.Rows[a].Cells[0].Value != null)
+                {
+                    
+                }
+            }
+            catch { }
         }
     }
 }
