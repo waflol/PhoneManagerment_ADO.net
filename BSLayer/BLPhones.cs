@@ -21,6 +21,16 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             return db.ExcuteQueryDataSet("select * from Phones", CommandType.Text);
         }
+
+        public int returnMaxID()
+        {
+            string sqlString = "select max(ID_phone) as max_id from Phone";
+            DataSet ds = db.ExcuteQueryDataSet(sqlString, CommandType.Text);
+            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                return 0;
+            else
+                return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+        }
            
         // them phone
         public bool addPhones(int ID_phone,string modelName,string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera)
