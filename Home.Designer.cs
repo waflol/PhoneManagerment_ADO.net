@@ -76,12 +76,14 @@ namespace PhoneManagerment_ADO.net
             this.addNewPhoneToolStripMenuItem.Name = "addNewPhoneToolStripMenuItem";
             this.addNewPhoneToolStripMenuItem.Size = new System.Drawing.Size(165, 29);
             this.addNewPhoneToolStripMenuItem.Text = "Add new phone";
+            this.addNewPhoneToolStripMenuItem.Click += new System.EventHandler(this.addNewPhoneToolStripMenuItem_Click);
             // 
             // phoneDetailsToolStripMenuItem
             // 
             this.phoneDetailsToolStripMenuItem.Name = "phoneDetailsToolStripMenuItem";
             this.phoneDetailsToolStripMenuItem.Size = new System.Drawing.Size(143, 29);
             this.phoneDetailsToolStripMenuItem.Text = "Phone details";
+            this.phoneDetailsToolStripMenuItem.Click += new System.EventHandler(this.phoneDetailsToolStripMenuItem_Click);
             // 
             // wareHouseToolStripMenuItem
             // 
@@ -102,19 +104,19 @@ namespace PhoneManagerment_ADO.net
             // vHGToolStripMenuItem
             // 
             this.vHGToolStripMenuItem.Name = "vHGToolStripMenuItem";
-            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
             this.vHGToolStripMenuItem.Text = "VHG";
             // 
             // hTHToolStripMenuItem
             // 
             this.hTHToolStripMenuItem.Name = "hTHToolStripMenuItem";
-            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
             this.hTHToolStripMenuItem.Text = "HTH";
             // 
             // lNHAToolStripMenuItem
             // 
             this.lNHAToolStripMenuItem.Name = "lNHAToolStripMenuItem";
-            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
             this.lNHAToolStripMenuItem.Text = "LNHA";
             // 
             // Home

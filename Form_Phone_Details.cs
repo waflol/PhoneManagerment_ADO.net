@@ -16,5 +16,31 @@ namespace PhoneManagerment_ADO.net
         {
             InitializeComponent();
         }
+
+        private void Form_Phone_Details_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'phoneDBDataSet.Phone' table. You can move, or remove it, as needed.
+            this.phoneTableAdapter.Fill(this.phoneDBDataSet.Phone);
+
+        }
+
+        private void btn_Delete_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GridView_PhoneRecord_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            try
+            {
+                int a = GridView_PhoneRecord.CurrentCell.RowIndex;
+                if (GridView_PhoneRecord.Rows[a].Cells[0].Value != null)
+                {
+                    
+                }
+            }
+            catch { }
+        }
     }
 }

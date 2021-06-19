@@ -9,7 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using PhoneManagerment_ADO.net.BSLayer;
+
 namespace PhoneManagerment_ADO.net
 {
     public partial class FormLogin : Form

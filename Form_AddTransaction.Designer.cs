@@ -37,6 +37,7 @@ namespace PhoneManagerment_ADO.net
             this.Customer_Panel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Phone_Number_Textbox = new System.Windows.Forms.TextBox();
             this.Address_Textbox = new System.Windows.Forms.TextBox();
             this.Name_Textbox = new System.Windows.Forms.TextBox();
@@ -72,14 +73,11 @@ namespace PhoneManagerment_ADO.net
             this.Reset_Button = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Customer_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_Quantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_Cart)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Name_Label
@@ -175,6 +173,16 @@ namespace PhoneManagerment_ADO.net
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker1.TabIndex = 12;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PhoneManagerment_ADO.net.Properties.Resources.download;
+            this.pictureBox1.Location = new System.Drawing.Point(13, 7);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(46, 42);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
             // 
             // Phone_Number_Textbox
             // 
@@ -451,11 +459,12 @@ namespace PhoneManagerment_ADO.net
             // 
             this.Total_Price_Label.AutoSize = true;
             this.Total_Price_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Price_Label.Location = new System.Drawing.Point(378, 299);
+            this.Total_Price_Label.Location = new System.Drawing.Point(487, 299);
             this.Total_Price_Label.Name = "Total_Price_Label";
             this.Total_Price_Label.Size = new System.Drawing.Size(56, 24);
             this.Total_Price_Label.TabIndex = 9;
             this.Total_Price_Label.Text = "Total";
+            this.Total_Price_Label.Click += new System.EventHandler(this.Total_Price_Label_Click);
             // 
             // Total_Price_Textbox
             // 
@@ -468,11 +477,15 @@ namespace PhoneManagerment_ADO.net
             // 
             // Export_Button
             // 
-            this.Export_Button.Location = new System.Drawing.Point(577, 384);
+            this.Export_Button.BackgroundImage = global::PhoneManagerment_ADO.net.Properties.Resources.hand;
+            this.Export_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Export_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Export_Button.Location = new System.Drawing.Point(676, 299);
             this.Export_Button.Name = "Export_Button";
-            this.Export_Button.Size = new System.Drawing.Size(90, 42);
+            this.Export_Button.Size = new System.Drawing.Size(118, 111);
             this.Export_Button.TabIndex = 11;
-            this.Export_Button.Text = "Export";
+            this.Export_Button.Text = "Export - Deal";
+            this.Export_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Export_Button.UseVisualStyleBackColor = true;
             // 
             // Remove_Button
@@ -513,26 +526,6 @@ namespace PhoneManagerment_ADO.net
             this.label4.TabIndex = 16;
             this.label4.Text = "Cart";
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::PhoneManagerment_ADO.net.Properties.Resources.hand;
-            this.pictureBox2.Location = new System.Drawing.Point(679, 315);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(109, 111);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PhoneManagerment_ADO.net.Properties.Resources.download;
-            this.pictureBox1.Location = new System.Drawing.Point(13, 7);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(46, 42);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
             // Form_AddTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -540,7 +533,6 @@ namespace PhoneManagerment_ADO.net
             this.ClientSize = new System.Drawing.Size(794, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_Edit);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Reset_Button);
             this.Controls.Add(this.Remove_Button);
             this.Controls.Add(this.Export_Button);
@@ -553,12 +545,11 @@ namespace PhoneManagerment_ADO.net
             this.Text = "Form_AddTransaction";
             this.Customer_Panel.ResumeLayout(false);
             this.Customer_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_Quantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_Cart)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -590,7 +581,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Button Export_Button;
         private System.Windows.Forms.Button Remove_Button;
         private System.Windows.Forms.Button Reset_Button;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;

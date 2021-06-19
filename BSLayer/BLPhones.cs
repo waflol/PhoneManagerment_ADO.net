@@ -37,6 +37,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
 
             string sqlString = "Insert Into Phone Values('" + modelName + "','" + ram + "','" + frontCamera + "','" + simtype + "','" + networktype + "','" + price + "','" + finger + "','" + istorage + "','" + estorage + "','" + rearcamera + "'," + ID_phone.ToString()+")";
+            
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
 
         }
