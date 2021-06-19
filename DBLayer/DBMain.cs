@@ -38,7 +38,7 @@ namespace PhoneManagerment_ADO.net.DBLayer
         }
 
 
-        public bool MyExecuteNonQuery(string strSQL, CommandType ct)
+        public bool MyExecuteNonQuery(string strSQL, CommandType ct, ref string error)
         {
             bool f = false;
             if (conn.State == ConnectionState.Open)
@@ -57,7 +57,7 @@ namespace PhoneManagerment_ADO.net.DBLayer
             }
             catch(SqlException err)
             {
-                
+                error = err.Message;
             }
             finally
             {

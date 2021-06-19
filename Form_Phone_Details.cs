@@ -17,6 +17,7 @@ namespace PhoneManagerment_ADO.net {
 
         BLPhones phone = new BLPhones();
         private string Phone_Id;
+        private string x = " ";
 
         private void Form_Phone_Details_Load(object sender, EventArgs e) {
             // TODO: This line of code loads data into the 'phoneDBDataSet.Phone' table. You can move, or remove it, as needed.
@@ -25,7 +26,7 @@ namespace PhoneManagerment_ADO.net {
         }
 
         private void btn_Delete_Click(object sender, EventArgs e) {
-            phone.deletePhones(Phone_Id);
+            phone.deletePhones(ref x, Phone_Id);
         }
 
         private void GridView_PhoneRecord_CellClick(object sender, DataGridViewCellEventArgs e) {
