@@ -25,9 +25,10 @@ namespace PhoneManagerment_ADO.net
         {
 
             string user = txt_Username.Text;
-            string pass = txt
+            string pass = txt_Password.Text;
+            BLAccount acc = new BLAccount();
 
-            if (dr.Read())
+            if (acc.checkAccount(user,pass))
             {
                 currentAccount = user;
                 this.Visible = false;
