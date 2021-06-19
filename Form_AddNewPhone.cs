@@ -21,7 +21,7 @@ namespace PhoneManagerment_ADO.net
         private void btn_Save_Click(object sender, EventArgs e)
         {
             
-            phone.addPhones(Convert.ToInt32(txt_IDphone.Text), txt_ModelName.Text, cbb_Ram.Text, cbb_FrontCamera.Text, cbb_SimType.Text, cbb_NetworkType.Text, txt_Price.Text, cbb_FingerprintSensor.Text, cbb_InternalStorage.Text, cbb_InternalStorage.Text, cbb_RearCamera.Text);
+            phone.addPhones(phone.returnMaxID()+1,txt_ModelName.Text, cbb_Ram.Text, cbb_FrontCamera.Text, cbb_SimType.Text, cbb_NetworkType.Text, txt_Price.Text, cbb_FingerprintSensor.Text, cbb_InternalStorage.Text, cbb_InternalStorage.Text, cbb_RearCamera.Text);
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)

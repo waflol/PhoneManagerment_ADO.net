@@ -31,24 +31,57 @@ namespace PhoneManagerment_ADO.net
         {
             this.components = new System.ComponentModel.Container();
             this.GridView_PhoneRecord = new System.Windows.Forms.DataGridView();
+            this.phonesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txt_PhoneID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Delete = new System.Windows.Forms.Button();
-            this.phonesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneDBDataSet = new PhoneManagerment_ADO.net.PhoneDBDataSet();
+            this.phoneBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.phoneTableAdapter = new PhoneManagerment_ADO.net.PhoneDBDataSetTableAdapters.PhoneTableAdapter();
+            this.modelNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ramDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.frontCameraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.simTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.networkTypeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fingerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.istorageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estorageDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.rearCameraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.iDphoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_PhoneRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // GridView_PhoneRecord
             // 
             this.GridView_PhoneRecord.AutoGenerateColumns = false;
             this.GridView_PhoneRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.GridView_PhoneRecord.DataSource = this.phonesBindingSource;
-            this.GridView_PhoneRecord.Location = new System.Drawing.Point(20, 210);
+            this.GridView_PhoneRecord.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.modelNameDataGridViewTextBoxColumn,
+            this.ramDataGridViewTextBoxColumn,
+            this.frontCameraDataGridViewTextBoxColumn,
+            this.simTypeDataGridViewTextBoxColumn,
+            this.networkTypeDataGridViewTextBoxColumn,
+            this.priceDataGridViewTextBoxColumn,
+            this.fingerDataGridViewTextBoxColumn,
+            this.istorageDataGridViewTextBoxColumn,
+            this.estorageDataGridViewTextBoxColumn,
+            this.rearCameraDataGridViewTextBoxColumn,
+            this.iDphoneDataGridViewTextBoxColumn});
+            this.GridView_PhoneRecord.DataSource = this.phoneBindingSource;
+            this.GridView_PhoneRecord.Location = new System.Drawing.Point(1, 202);
             this.GridView_PhoneRecord.Name = "GridView_PhoneRecord";
-            this.GridView_PhoneRecord.Size = new System.Drawing.Size(1001, 236);
+            this.GridView_PhoneRecord.Size = new System.Drawing.Size(1140, 236);
             this.GridView_PhoneRecord.TabIndex = 50;
+            this.GridView_PhoneRecord.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_PhoneRecord_CellClick);
+            // 
+            // phonesBindingSource
+            // 
+            this.phonesBindingSource.DataMember = "Phones";
             // 
             // txt_PhoneID
             // 
@@ -91,16 +124,93 @@ namespace PhoneManagerment_ADO.net
             this.btn_Delete.TabIndex = 49;
             this.btn_Delete.Text = "Delete";
             this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
-            // phonesBindingSource
+            // phoneDBDataSet
             // 
-            this.phonesBindingSource.DataMember = "Phones";
+            this.phoneDBDataSet.DataSetName = "PhoneDBDataSet";
+            this.phoneDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // phoneBindingSource
+            // 
+            this.phoneBindingSource.DataMember = "Phone";
+            this.phoneBindingSource.DataSource = this.phoneDBDataSet;
+            // 
+            // phoneTableAdapter
+            // 
+            this.phoneTableAdapter.ClearBeforeFill = true;
+            // 
+            // modelNameDataGridViewTextBoxColumn
+            // 
+            this.modelNameDataGridViewTextBoxColumn.DataPropertyName = "Model_Name";
+            this.modelNameDataGridViewTextBoxColumn.HeaderText = "Model_Name";
+            this.modelNameDataGridViewTextBoxColumn.Name = "modelNameDataGridViewTextBoxColumn";
+            // 
+            // ramDataGridViewTextBoxColumn
+            // 
+            this.ramDataGridViewTextBoxColumn.DataPropertyName = "ram";
+            this.ramDataGridViewTextBoxColumn.HeaderText = "ram";
+            this.ramDataGridViewTextBoxColumn.Name = "ramDataGridViewTextBoxColumn";
+            // 
+            // frontCameraDataGridViewTextBoxColumn
+            // 
+            this.frontCameraDataGridViewTextBoxColumn.DataPropertyName = "Front_Camera";
+            this.frontCameraDataGridViewTextBoxColumn.HeaderText = "Front_Camera";
+            this.frontCameraDataGridViewTextBoxColumn.Name = "frontCameraDataGridViewTextBoxColumn";
+            // 
+            // simTypeDataGridViewTextBoxColumn
+            // 
+            this.simTypeDataGridViewTextBoxColumn.DataPropertyName = "Sim_Type";
+            this.simTypeDataGridViewTextBoxColumn.HeaderText = "Sim_Type";
+            this.simTypeDataGridViewTextBoxColumn.Name = "simTypeDataGridViewTextBoxColumn";
+            // 
+            // networkTypeDataGridViewTextBoxColumn
+            // 
+            this.networkTypeDataGridViewTextBoxColumn.DataPropertyName = "Network_Type";
+            this.networkTypeDataGridViewTextBoxColumn.HeaderText = "Network_Type";
+            this.networkTypeDataGridViewTextBoxColumn.Name = "networkTypeDataGridViewTextBoxColumn";
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            // 
+            // fingerDataGridViewTextBoxColumn
+            // 
+            this.fingerDataGridViewTextBoxColumn.DataPropertyName = "Finger";
+            this.fingerDataGridViewTextBoxColumn.HeaderText = "Finger";
+            this.fingerDataGridViewTextBoxColumn.Name = "fingerDataGridViewTextBoxColumn";
+            // 
+            // istorageDataGridViewTextBoxColumn
+            // 
+            this.istorageDataGridViewTextBoxColumn.DataPropertyName = "istorage";
+            this.istorageDataGridViewTextBoxColumn.HeaderText = "istorage";
+            this.istorageDataGridViewTextBoxColumn.Name = "istorageDataGridViewTextBoxColumn";
+            // 
+            // estorageDataGridViewTextBoxColumn
+            // 
+            this.estorageDataGridViewTextBoxColumn.DataPropertyName = "estorage";
+            this.estorageDataGridViewTextBoxColumn.HeaderText = "estorage";
+            this.estorageDataGridViewTextBoxColumn.Name = "estorageDataGridViewTextBoxColumn";
+            // 
+            // rearCameraDataGridViewTextBoxColumn
+            // 
+            this.rearCameraDataGridViewTextBoxColumn.DataPropertyName = "Rear_Camera";
+            this.rearCameraDataGridViewTextBoxColumn.HeaderText = "Rear_Camera";
+            this.rearCameraDataGridViewTextBoxColumn.Name = "rearCameraDataGridViewTextBoxColumn";
+            // 
+            // iDphoneDataGridViewTextBoxColumn
+            // 
+            this.iDphoneDataGridViewTextBoxColumn.DataPropertyName = "ID_phone";
+            this.iDphoneDataGridViewTextBoxColumn.HeaderText = "ID_phone";
+            this.iDphoneDataGridViewTextBoxColumn.Name = "iDphoneDataGridViewTextBoxColumn";
             // 
             // Form_Phone_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1033, 450);
+            this.ClientSize = new System.Drawing.Size(1146, 450);
             this.Controls.Add(this.GridView_PhoneRecord);
             this.Controls.Add(this.txt_PhoneID);
             this.Controls.Add(this.label2);
@@ -108,8 +218,11 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.btn_Delete);
             this.Name = "Form_Phone_Details";
             this.Text = "Form_Phone_Details";
+            this.Load += new System.EventHandler(this.Form_Phone_Details_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridView_PhoneRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -123,5 +236,19 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_Delete;
+        private PhoneDBDataSet phoneDBDataSet;
+        private System.Windows.Forms.BindingSource phoneBindingSource;
+        private PhoneDBDataSetTableAdapters.PhoneTableAdapter phoneTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn modelNameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ramDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn frontCameraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn simTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn networkTypeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fingerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn istorageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estorageDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn rearCameraDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDphoneDataGridViewTextBoxColumn;
     }
 }
