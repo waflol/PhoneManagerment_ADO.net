@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace PhoneManagerment_ADO.net.BSLayer
 {
     class BLPhones
     {
+        DBMain db = null;
     }
 }
