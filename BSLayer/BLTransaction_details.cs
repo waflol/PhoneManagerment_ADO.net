@@ -16,7 +16,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             db = new DBMain();
         }
-<<<<<<< HEAD
+
         public DataSet getTransaction_details()
         {
             string sqlString = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone";
@@ -34,12 +34,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
             string sqlString = "Delete From Phone where ID_phone = " + idtransaction;
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
-=======
-        //public DataSet getTransaction_details()
-        //{
-        //    string sqlString = "select * from "
-        //}
->>>>>>> 77b00e75de307f1d8869008505df1e548029895d
+
 
     }
 }
