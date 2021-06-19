@@ -51,6 +51,7 @@ namespace PhoneManagerment_ADO.net.DBLayer
             try
             {
                 comm.ExecuteNonQuery();
+                System.Windows.Forms.MessageBox.Show("Successed");
                 f = true;
 
             }
@@ -62,6 +63,7 @@ namespace PhoneManagerment_ADO.net.DBLayer
             {
                 conn.Close();
             }
+            
             return f;
 
         }

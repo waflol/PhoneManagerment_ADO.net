@@ -26,5 +26,17 @@ namespace PhoneManagerment_ADO.net
         private void Home_FormClosing(object sender, FormClosingEventArgs e) {
             Application.Exit();
         }
+
+        private void addNewPhoneToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_AddNewPhone form_addnewphone = new Form_AddNewPhone();
+            form_addnewphone.ShowDialog();
+        }
+
+        private void phoneDetailsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Phone_Details formphonedetail = new Form_Phone_Details();
+            formphonedetail.ShowDialog();
+        }
     }
 }

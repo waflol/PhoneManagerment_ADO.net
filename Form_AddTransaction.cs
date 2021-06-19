@@ -30,5 +30,10 @@ namespace PhoneManagerment_ADO.net
         {
 
         }
+
+        private void Total_Price_Label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

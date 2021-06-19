@@ -40,7 +40,6 @@ namespace PhoneManagerment_ADO.net
             this.cbb_RearCamera = new System.Windows.Forms.ComboBox();
             this.cbb_Display = new System.Windows.Forms.ComboBox();
             this.cbb_InternalStorage = new System.Windows.Forms.ComboBox();
-            this.cbb_Ram = new System.Windows.Forms.ComboBox();
             this.txt_ModelName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -52,7 +51,7 @@ namespace PhoneManagerment_ADO.net
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.txt_IDphone = new System.Windows.Forms.TextBox();
+            this.cbb_Ram = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // txt_Price
@@ -84,6 +83,7 @@ namespace PhoneManagerment_ADO.net
             this.btn_Reset.TabIndex = 48;
             this.btn_Reset.Text = "Reset";
             this.btn_Reset.UseVisualStyleBackColor = false;
+            this.btn_Reset.Click += new System.EventHandler(this.btn_Reset_Click);
             // 
             // btn_Save
             // 
@@ -204,21 +204,6 @@ namespace PhoneManagerment_ADO.net
             this.cbb_InternalStorage.TabIndex = 39;
             this.cbb_InternalStorage.Text = "--Select--";
             // 
-            // cbb_Ram
-            // 
-            this.cbb_Ram.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbb_Ram.FormattingEnabled = true;
-            this.cbb_Ram.Items.AddRange(new object[] {
-            "1 GB",
-            "2 GB",
-            "3 GB",
-            "4 GB"});
-            this.cbb_Ram.Location = new System.Drawing.Point(221, 125);
-            this.cbb_Ram.Name = "cbb_Ram";
-            this.cbb_Ram.Size = new System.Drawing.Size(152, 27);
-            this.cbb_Ram.TabIndex = 38;
-            this.cbb_Ram.Text = "--Select--";
-            // 
             // txt_ModelName
             // 
             this.txt_ModelName.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,19 +322,26 @@ namespace PhoneManagerment_ADO.net
             this.label1.TabIndex = 26;
             this.label1.Text = "Insert New Phone Records";
             // 
-            // txt_IDphone
+            // cbb_Ram
             // 
-            this.txt_IDphone.Location = new System.Drawing.Point(221, 324);
-            this.txt_IDphone.Name = "txt_IDphone";
-            this.txt_IDphone.Size = new System.Drawing.Size(100, 20);
-            this.txt_IDphone.TabIndex = 51;
+            this.cbb_Ram.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_Ram.FormattingEnabled = true;
+            this.cbb_Ram.Items.AddRange(new object[] {
+            "1 GB",
+            "2 GB",
+            "3 GB",
+            "4 GB"});
+            this.cbb_Ram.Location = new System.Drawing.Point(221, 125);
+            this.cbb_Ram.Name = "cbb_Ram";
+            this.cbb_Ram.Size = new System.Drawing.Size(152, 27);
+            this.cbb_Ram.TabIndex = 38;
+            this.cbb_Ram.Text = "--Select--";
             // 
             // Form_AddNewPhone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.txt_IDphone);
             this.Controls.Add(this.txt_Price);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btn_Reset);
@@ -393,7 +385,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.ComboBox cbb_RearCamera;
         private System.Windows.Forms.ComboBox cbb_Display;
         private System.Windows.Forms.ComboBox cbb_InternalStorage;
-        private System.Windows.Forms.ComboBox cbb_Ram;
         private System.Windows.Forms.TextBox txt_ModelName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
@@ -405,6 +396,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txt_IDphone;
+        private System.Windows.Forms.ComboBox cbb_Ram;
     }
 }
