@@ -89,6 +89,9 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhoneDBDataSet.cs">
+      <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PhoneDBDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
