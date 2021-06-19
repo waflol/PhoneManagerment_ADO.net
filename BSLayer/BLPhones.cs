@@ -19,7 +19,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
         }
         public DataSet GetPhones()
         {
-            return db.ExcuteQueryDataSet("select * from Phones", CommandType.Text);
+            return db.ExcuteQueryDataSet("select * from Phone", CommandType.Text);
         }
 
         public int returnMaxID()
