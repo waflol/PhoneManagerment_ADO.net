@@ -29,26 +29,24 @@ namespace PhoneManagerment_ADO.net
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txt_Price = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.comboBox9 = new System.Windows.Forms.ComboBox();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_Reset = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.cbb_NetworkType = new System.Windows.Forms.ComboBox();
+            this.cbb_SimType = new System.Windows.Forms.ComboBox();
+            this.cbb_FingerprintSensor = new System.Windows.Forms.ComboBox();
+            this.cbb_FrontCamera = new System.Windows.Forms.ComboBox();
+            this.cbb_RearCamera = new System.Windows.Forms.ComboBox();
+            this.cbb_Display = new System.Windows.Forms.ComboBox();
+            this.cbb_InternalStorage = new System.Windows.Forms.ComboBox();
+            this.cbb_Ram = new System.Windows.Forms.ComboBox();
+            this.txt_ModelName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -56,13 +54,13 @@ namespace PhoneManagerment_ADO.net
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox2
+            // txt_Price
             // 
-            this.textBox2.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(392, 380);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 26);
-            this.textBox2.TabIndex = 50;
+            this.txt_Price.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Price.Location = new System.Drawing.Point(392, 380);
+            this.txt_Price.Name = "txt_Price";
+            this.txt_Price.Size = new System.Drawing.Size(133, 26);
+            this.txt_Price.TabIndex = 50;
             // 
             // label12
             // 
@@ -75,90 +73,90 @@ namespace PhoneManagerment_ADO.net
             this.label12.TabIndex = 49;
             this.label12.Text = "Price";
             // 
-            // button2
+            // btn_Reset
             // 
-            this.button2.BackColor = System.Drawing.Color.SpringGreen;
-            this.button2.Font = new System.Drawing.Font("High Tower Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(447, 423);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(78, 32);
-            this.button2.TabIndex = 48;
-            this.button2.Text = "Reset";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btn_Reset.BackColor = System.Drawing.Color.SpringGreen;
+            this.btn_Reset.Font = new System.Drawing.Font("High Tower Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Reset.Location = new System.Drawing.Point(447, 423);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(78, 32);
+            this.btn_Reset.TabIndex = 48;
+            this.btn_Reset.Text = "Reset";
+            this.btn_Reset.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btn_Save
             // 
-            this.button1.BackColor = System.Drawing.Color.SpringGreen;
-            this.button1.Font = new System.Drawing.Font("High Tower Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(322, 423);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(78, 32);
-            this.button1.TabIndex = 47;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btn_Save.BackColor = System.Drawing.Color.SpringGreen;
+            this.btn_Save.Font = new System.Drawing.Font("High Tower Text", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.Location = new System.Drawing.Point(322, 423);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(78, 32);
+            this.btn_Save.TabIndex = 47;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = false;
             // 
-            // comboBox9
+            // cbb_NetworkType
             // 
-            this.comboBox9.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox9.FormattingEnabled = true;
-            this.comboBox9.Items.AddRange(new object[] {
+            this.cbb_NetworkType.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_NetworkType.FormattingEnabled = true;
+            this.cbb_NetworkType.Items.AddRange(new object[] {
             "2G",
             "2G, 3G",
             "2G, 3G & 4G VOLT"});
-            this.comboBox9.Location = new System.Drawing.Point(628, 337);
-            this.comboBox9.Name = "comboBox9";
-            this.comboBox9.Size = new System.Drawing.Size(152, 27);
-            this.comboBox9.TabIndex = 46;
-            this.comboBox9.Text = "--Select--";
+            this.cbb_NetworkType.Location = new System.Drawing.Point(631, 317);
+            this.cbb_NetworkType.Name = "cbb_NetworkType";
+            this.cbb_NetworkType.Size = new System.Drawing.Size(152, 27);
+            this.cbb_NetworkType.TabIndex = 46;
+            this.cbb_NetworkType.Text = "--Select--";
             // 
-            // comboBox8
+            // cbb_SimType
             // 
-            this.comboBox8.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Items.AddRange(new object[] {
+            this.cbb_SimType.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_SimType.FormattingEnabled = true;
+            this.cbb_SimType.Items.AddRange(new object[] {
             "One Sim",
             "Dual Sim",
             "Triple Sim"});
-            this.comboBox8.Location = new System.Drawing.Point(628, 256);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(152, 27);
-            this.comboBox8.TabIndex = 45;
-            this.comboBox8.Text = "--Select--";
+            this.cbb_SimType.Location = new System.Drawing.Point(628, 256);
+            this.cbb_SimType.Name = "cbb_SimType";
+            this.cbb_SimType.Size = new System.Drawing.Size(152, 27);
+            this.cbb_SimType.TabIndex = 45;
+            this.cbb_SimType.Text = "--Select--";
             // 
-            // comboBox7
+            // cbb_FingerprintSensor
             // 
-            this.comboBox7.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Items.AddRange(new object[] {
+            this.cbb_FingerprintSensor.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_FingerprintSensor.FormattingEnabled = true;
+            this.cbb_FingerprintSensor.Items.AddRange(new object[] {
             "Yes ",
             "No"});
-            this.comboBox7.Location = new System.Drawing.Point(628, 192);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(152, 27);
-            this.comboBox7.TabIndex = 44;
-            this.comboBox7.Text = "--Select--";
+            this.cbb_FingerprintSensor.Location = new System.Drawing.Point(628, 192);
+            this.cbb_FingerprintSensor.Name = "cbb_FingerprintSensor";
+            this.cbb_FingerprintSensor.Size = new System.Drawing.Size(152, 27);
+            this.cbb_FingerprintSensor.TabIndex = 44;
+            this.cbb_FingerprintSensor.Text = "--Select--";
             // 
-            // comboBox6
+            // cbb_FrontCamera
             // 
-            this.comboBox6.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Items.AddRange(new object[] {
+            this.cbb_FrontCamera.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_FrontCamera.FormattingEnabled = true;
+            this.cbb_FrontCamera.Items.AddRange(new object[] {
             "2 MP",
             "3 MP",
             "5 MP",
             "8 MP",
             "10 MP"});
-            this.comboBox6.Location = new System.Drawing.Point(628, 125);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(152, 27);
-            this.comboBox6.TabIndex = 43;
-            this.comboBox6.Text = "--Select--";
+            this.cbb_FrontCamera.Location = new System.Drawing.Point(628, 125);
+            this.cbb_FrontCamera.Name = "cbb_FrontCamera";
+            this.cbb_FrontCamera.Size = new System.Drawing.Size(152, 27);
+            this.cbb_FrontCamera.TabIndex = 43;
+            this.cbb_FrontCamera.Text = "--Select--";
             // 
-            // comboBox5
+            // cbb_RearCamera
             // 
-            this.comboBox5.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Items.AddRange(new object[] {
+            this.cbb_RearCamera.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_RearCamera.FormattingEnabled = true;
+            this.cbb_RearCamera.Items.AddRange(new object[] {
             "5 MP",
             "8 MP",
             "10 MP",
@@ -168,86 +166,71 @@ namespace PhoneManagerment_ADO.net
             "15 MP",
             "17 MP",
             "20 MP"});
-            this.comboBox5.Location = new System.Drawing.Point(628, 54);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(152, 27);
-            this.comboBox5.TabIndex = 42;
-            this.comboBox5.Text = "--Select--";
+            this.cbb_RearCamera.Location = new System.Drawing.Point(628, 54);
+            this.cbb_RearCamera.Name = "cbb_RearCamera";
+            this.cbb_RearCamera.Size = new System.Drawing.Size(152, 27);
+            this.cbb_RearCamera.TabIndex = 42;
+            this.cbb_RearCamera.Text = "--Select--";
             // 
-            // comboBox4
+            // cbb_Display
             // 
-            this.comboBox4.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Items.AddRange(new object[] {
+            this.cbb_Display.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_Display.FormattingEnabled = true;
+            this.cbb_Display.Items.AddRange(new object[] {
             "5.0 inch",
             "5.5 inch",
             "6.0 inch"});
-            this.comboBox4.Location = new System.Drawing.Point(221, 337);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(152, 27);
-            this.comboBox4.TabIndex = 41;
-            this.comboBox4.Text = "--Select--";
+            this.cbb_Display.Location = new System.Drawing.Point(221, 263);
+            this.cbb_Display.Name = "cbb_Display";
+            this.cbb_Display.Size = new System.Drawing.Size(152, 27);
+            this.cbb_Display.TabIndex = 41;
+            this.cbb_Display.Text = "--Select--";
             // 
-            // comboBox3
+            // cbb_InternalStorage
             // 
-            this.comboBox3.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
-            "16 GB",
-            "32 GB",
-            "64 GB",
-            "128 GB"});
-            this.comboBox3.Location = new System.Drawing.Point(221, 261);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(152, 27);
-            this.comboBox3.TabIndex = 40;
-            this.comboBox3.Text = "--Select--";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbb_InternalStorage.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_InternalStorage.FormattingEnabled = true;
+            this.cbb_InternalStorage.Items.AddRange(new object[] {
             "4 GB",
             "8 GB",
             "16 GB",
             "32 GB",
             "64 GB"});
-            this.comboBox2.Location = new System.Drawing.Point(221, 192);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(152, 27);
-            this.comboBox2.TabIndex = 39;
-            this.comboBox2.Text = "--Select--";
+            this.cbb_InternalStorage.Location = new System.Drawing.Point(221, 192);
+            this.cbb_InternalStorage.Name = "cbb_InternalStorage";
+            this.cbb_InternalStorage.Size = new System.Drawing.Size(152, 27);
+            this.cbb_InternalStorage.TabIndex = 39;
+            this.cbb_InternalStorage.Text = "--Select--";
             // 
-            // comboBox1
+            // cbb_Ram
             // 
-            this.comboBox1.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbb_Ram.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbb_Ram.FormattingEnabled = true;
+            this.cbb_Ram.Items.AddRange(new object[] {
             "1 GB",
             "2 GB",
             "3 GB",
             "4 GB"});
-            this.comboBox1.Location = new System.Drawing.Point(221, 125);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(152, 27);
-            this.comboBox1.TabIndex = 38;
-            this.comboBox1.Text = "--Select--";
+            this.cbb_Ram.Location = new System.Drawing.Point(221, 125);
+            this.cbb_Ram.Name = "cbb_Ram";
+            this.cbb_Ram.Size = new System.Drawing.Size(152, 27);
+            this.cbb_Ram.TabIndex = 38;
+            this.cbb_Ram.Text = "--Select--";
             // 
-            // textBox1
+            // txt_ModelName
             // 
-            this.textBox1.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(221, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 26);
-            this.textBox1.TabIndex = 37;
+            this.txt_ModelName.Font = new System.Drawing.Font("High Tower Text", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_ModelName.Location = new System.Drawing.Point(221, 57);
+            this.txt_ModelName.Name = "txt_ModelName";
+            this.txt_ModelName.Size = new System.Drawing.Size(203, 26);
+            this.txt_ModelName.TabIndex = 37;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("High Tower Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(477, 339);
+            this.label11.Location = new System.Drawing.Point(480, 319);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(140, 22);
             this.label11.TabIndex = 36;
@@ -297,23 +280,12 @@ namespace PhoneManagerment_ADO.net
             this.label7.TabIndex = 32;
             this.label7.Text = "Rear Camera";
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("High Tower Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(21, 263);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(200, 22);
-            this.label6.TabIndex = 31;
-            this.label6.Text = "Expandable Memory";
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("High Tower Text", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(122, 339);
+            this.label5.Location = new System.Drawing.Point(122, 265);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 22);
             this.label5.TabIndex = 30;
@@ -368,26 +340,24 @@ namespace PhoneManagerment_ADO.net
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txt_Price);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox9);
-            this.Controls.Add(this.comboBox8);
-            this.Controls.Add(this.comboBox7);
-            this.Controls.Add(this.comboBox6);
-            this.Controls.Add(this.comboBox5);
-            this.Controls.Add(this.comboBox4);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.btn_Reset);
+            this.Controls.Add(this.btn_Save);
+            this.Controls.Add(this.cbb_NetworkType);
+            this.Controls.Add(this.cbb_SimType);
+            this.Controls.Add(this.cbb_FingerprintSensor);
+            this.Controls.Add(this.cbb_FrontCamera);
+            this.Controls.Add(this.cbb_RearCamera);
+            this.Controls.Add(this.cbb_Display);
+            this.Controls.Add(this.cbb_InternalStorage);
+            this.Controls.Add(this.cbb_Ram);
+            this.Controls.Add(this.txt_ModelName);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -402,26 +372,24 @@ namespace PhoneManagerment_ADO.net
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txt_Price;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ComboBox comboBox9;
-        private System.Windows.Forms.ComboBox comboBox8;
-        private System.Windows.Forms.ComboBox comboBox7;
-        private System.Windows.Forms.ComboBox comboBox6;
-        private System.Windows.Forms.ComboBox comboBox5;
-        private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_Reset;
+        private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.ComboBox cbb_NetworkType;
+        private System.Windows.Forms.ComboBox cbb_SimType;
+        private System.Windows.Forms.ComboBox cbb_FingerprintSensor;
+        private System.Windows.Forms.ComboBox cbb_FrontCamera;
+        private System.Windows.Forms.ComboBox cbb_RearCamera;
+        private System.Windows.Forms.ComboBox cbb_Display;
+        private System.Windows.Forms.ComboBox cbb_InternalStorage;
+        private System.Windows.Forms.ComboBox cbb_Ram;
+        private System.Windows.Forms.TextBox txt_ModelName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
