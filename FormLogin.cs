@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PhoneManagerment_ADO.net.BSLayer;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -24,9 +25,10 @@ namespace PhoneManagerment_ADO.net
         {
 
             string user = txt_Username.Text;
-            string pass = txt
+            string pass = txt_Password.Text;
+            BLAccount acc = new BLAccount();
 
-            if (dr.Read())
+            if (acc.checkAccount(user,pass))
             {
                 this.Visible = false;
                 Home obj2 = new Home();
