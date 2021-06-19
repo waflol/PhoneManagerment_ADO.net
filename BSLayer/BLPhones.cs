@@ -38,17 +38,17 @@ namespace PhoneManagerment_ADO.net.BSLayer
         // them phone
         public bool addPhones(string IDphone, string nameModel,string ram, string istorage, string display, string typeCamera, string simType, string networkType, string price )
         {
-            return 0;
+            return false;
         }
         //xoa phone
         public bool deletePhones(ref string err,string IDphone)
         {
-            return 0;
+            return false;
         }
         // cap nhat phone
         public bool updatePhones(string IDphone, string nameModel, ref string err)
         {
-            return 0;
+            return false;
         }
     }
 }

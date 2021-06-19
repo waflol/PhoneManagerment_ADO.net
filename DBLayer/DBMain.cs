@@ -10,7 +10,7 @@ namespace PhoneManagerment_ADO.net.DBLayer
 {
     class DBMain
     {
-        string ConnStr = ""; // thêm conn
+        string ConnStr = Connect.Connection_String; // thêm conn
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;

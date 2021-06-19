@@ -23,7 +23,7 @@ namespace PhoneManagerment_ADO.net
 
         private void Add_Phone_Button_Click(object sender, EventArgs e)
         {
-
+            GridView_Cart.Rows.Add("Iphone X", 10, 3);
         }
 
         private void PhoneName_Label_Click(object sender, EventArgs e)

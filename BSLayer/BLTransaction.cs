@@ -37,17 +37,17 @@ namespace PhoneManagerment_ADO.net.BSLayer
         // them phone
         public bool addTransaction(string IDphone, string nameModel, string ram, string istorage, string display, string typeCamera, string simType, string networkType, string price)
         {
-            return 0;
+            return false;
         }
         //xoa phone
         public bool deleteTransaction(ref string err, string IDphone)
         {
-            return 0;
+            return false;
         }
         // cap nhat phone
         public bool updateTransaction(string IDphone, string nameModel, ref string err)
         {
-            return 0;
+            return false;
         }
     }
 }
