@@ -135,5 +135,9 @@
   <ItemGroup>
     <None Include="Resources\hand.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BSLayer\" />
+    <Folder Include="database\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
