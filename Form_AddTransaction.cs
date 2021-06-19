@@ -14,6 +14,7 @@ namespace PhoneManagerment_ADO.net {
        
         public Form_AddTransaction() {
             InitializeComponent();
+            listCart.Columns.Add("ID phone", 0);
             listCart.Columns.Add("Phone", 125);
             listCart.Columns.Add("Price", 125);
             listCart.Columns.Add("Quantity", 125);
@@ -50,13 +51,16 @@ namespace PhoneManagerment_ADO.net {
             listCart.FullRowSelect = true;
 
             listCart.Columns[0].Text = "Phone";
-            listCart.Columns[0].Width = 125;
+            listCart.Columns[0].Width = 0;
 
-            listCart.Columns[1].Text = "Price";
+            listCart.Columns[1].Text = "Phone";
             listCart.Columns[1].Width = 125;
 
-            listCart.Columns[2].Text = "Quantity";
-            listCart.Columns[1].Width = 125;
+            listCart.Columns[2].Text = "Price";
+            listCart.Columns[2].Width = 125;
+
+            listCart.Columns[3].Text = "Quantity";
+            listCart.Columns[3].Width = 125;
 
             
 
@@ -68,6 +72,8 @@ namespace PhoneManagerment_ADO.net {
             dgv_watchPhone.Columns[10].Visible = false;
         }
 
+
+        private List<string> id_phone = new List<string>();
 
 
         private void btn_Add_Click(object sender, EventArgs e)
@@ -81,14 +87,26 @@ namespace PhoneManagerment_ADO.net {
                     if(numeric_Quantity.Value > 0)
                     {
 
-                        string[] arr = new string[3];
+                        string[] arr = new string[4];
                         ListViewItem itm;
                         //add items to ListView
-                        arr[0] = dgv_watchPhone.Rows[a].Cells[0].Value.ToString();
-                        arr[1] = dgv_watchPhone.Rows[a].Cells[5].Value.ToString();
-                        arr[2] = numeric_Quantity.Value.ToString();
+                        arr[0] = dgv_watchPhone.Rows[a].Cells[10].Value.ToString();
+                        arr[1] = dgv_watchPhone.Rows[a].Cells[0].Value.ToString();
+                        arr[2] = dgv_watchPhone.Rows[a].Cells[5].Value.ToString();
+                        arr[3] = numeric_Quantity.Value.ToString();
                         itm = new ListViewItem(arr);
-                        listCart.Items.Add(itm);
+
+
+                        if(id_phone.IndexOf(arr[0]) == -1)
+                        {
+                            listCart.Items.Add(itm);
+                            id_phone.Add(arr[0]);
+                        }
+                        else
+                        {
+                            int x = Convert.ToInt32(listCart.Items[id_phone.IndexOf(arr[0])].SubItems[3].Text) + (int)numeric_Quantity.Value;
+                            listCart.Items[id_phone.IndexOf(arr[0])].SubItems[3].Text = x.ToString();
+                        }
 
                     }
                     else
@@ -103,12 +121,21 @@ namespace PhoneManagerment_ADO.net {
             }
             for (int i = 0; i < listCart.Items.Count;i++)
             {
-                totalPrice += (Convert.ToInt32(listCart.Items[i].SubItems[2].Text) * Convert.ToInt32(listCart.Items[i].SubItems[1].Text));
+                totalPrice += (Convert.ToInt32(listCart.Items[i].SubItems[2].Text) * Convert.ToInt32(listCart.Items[i].SubItems[3].Text));
             }
 
             Total_Price_Textbox.Text = totalPrice.ToString();
         }
-        
-        
+
+        private void Remove_Button_Click(object sender, EventArgs e)
+        {
+            foreach(ListViewItem item in listCart.SelectedItems)
+            {
+                int index = listCart.Items.IndexOf(item);
+                listCart.Items.RemoveAt(index);
+
+            }
+
+        }
     }
 }

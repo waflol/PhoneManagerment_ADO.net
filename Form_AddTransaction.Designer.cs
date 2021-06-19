@@ -252,6 +252,7 @@ namespace PhoneManagerment_ADO.net
             this.Remove_Button.TabIndex = 12;
             this.Remove_Button.Text = "Remove";
             this.Remove_Button.UseVisualStyleBackColor = true;
+            this.Remove_Button.Click += new System.EventHandler(this.Remove_Button_Click);
             // 
             // Reset_Button
             // 
