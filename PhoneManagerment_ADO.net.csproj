@@ -50,6 +50,7 @@
     <Compile Include="BSLayer\BLTransaction.cs" />
     <Compile Include="BSLayer\BLTransaction_details.cs" />
     <Compile Include="Connect.cs" />
+    <Compile Include="DBLayer\DBMain.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,7 +141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="database\" />
-    <Folder Include="DBLayer\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

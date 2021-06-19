@@ -8,5 +8,6 @@ namespace PhoneManagerment_ADO.net.BSLayer
 {
     class BLTransaction_details
     {
+
     }
 }
