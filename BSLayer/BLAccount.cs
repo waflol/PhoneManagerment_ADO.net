@@ -25,12 +25,12 @@ namespace PhoneManagerment_ADO.net.BSLayer
         public bool checkAccount(string user, string pass)
         {
             string sqlcmm = "select * from Accounts where username = " + user + "and password = " + pass;
-            DataSet data = db.ExcuteQueryDataSet(sqlcmm, CommandType.Text);
-            if (data.Tables[0].Rows.Count == 1)
+            DataSet ds = this.GetAccount();
+            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
             {
-                return true;
+                return false;
             }
-            return false;
+            else return true;
         }
 
         // them phone
