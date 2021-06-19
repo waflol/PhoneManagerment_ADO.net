@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PhoneManagerment_ADO.net.BSLayer;
 
 namespace PhoneManagerment_ADO.net {
     public partial class Form_AddTransaction : Form {
@@ -14,6 +15,9 @@ namespace PhoneManagerment_ADO.net {
             InitializeComponent();
 
         }
+
+        BLPhones phone = new BLPhones();
+
         private void textBox1_TextChanged(object sender, EventArgs e) {
 
         }
@@ -40,9 +44,12 @@ namespace PhoneManagerment_ADO.net {
                 if (c is TextBox) {
                     (c as TextBox).Text = "";
                 }
-                cbb_PhoneName.SelectedIndex = -1;
                 numeric_Quantity.Value = 0;
             }
+        }
+
+        private void Phone_Name_Textbox_TextChanged(object sender, EventArgs e) {
+
         }
     }
 }

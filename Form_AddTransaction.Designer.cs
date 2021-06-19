@@ -58,7 +58,6 @@ namespace PhoneManagerment_ADO.net
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbb_PhoneName = new System.Windows.Forms.ComboBox();
             this.Add_Phone_Button = new System.Windows.Forms.Button();
             this.Phone_Inf_Label = new System.Windows.Forms.Label();
             this.numeric_Quantity = new System.Windows.Forms.NumericUpDown();
@@ -73,6 +72,7 @@ namespace PhoneManagerment_ADO.net
             this.Reset_Button = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.Phone_Name_Textbox = new System.Windows.Forms.TextBox();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Phone_Info_Panel.SuspendLayout();
@@ -249,6 +249,7 @@ namespace PhoneManagerment_ADO.net
             // Phone_Info_Panel
             // 
             this.Phone_Info_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Phone_Info_Panel.Controls.Add(this.Phone_Name_Textbox);
             this.Phone_Info_Panel.Controls.Add(this.txt_camera);
             this.Phone_Info_Panel.Controls.Add(this.txt_sim);
             this.Phone_Info_Panel.Controls.Add(this.txt_Price);
@@ -261,7 +262,6 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Info_Panel.Controls.Add(this.label3);
             this.Phone_Info_Panel.Controls.Add(this.label2);
             this.Phone_Info_Panel.Controls.Add(this.label1);
-            this.Phone_Info_Panel.Controls.Add(this.cbb_PhoneName);
             this.Phone_Info_Panel.Controls.Add(this.Add_Phone_Button);
             this.Phone_Info_Panel.Controls.Add(this.Phone_Inf_Label);
             this.Phone_Info_Panel.Controls.Add(this.numeric_Quantity);
@@ -379,15 +379,6 @@ namespace PhoneManagerment_ADO.net
             this.label1.Size = new System.Drawing.Size(29, 13);
             this.label1.TabIndex = 11;
             this.label1.Text = "Ram";
-            // 
-            // cbb_PhoneName
-            // 
-            this.cbb_PhoneName.FormattingEnabled = true;
-            this.cbb_PhoneName.Location = new System.Drawing.Point(103, 33);
-            this.cbb_PhoneName.Margin = new System.Windows.Forms.Padding(2);
-            this.cbb_PhoneName.Name = "cbb_PhoneName";
-            this.cbb_PhoneName.Size = new System.Drawing.Size(254, 21);
-            this.cbb_PhoneName.TabIndex = 10;
             // 
             // Add_Phone_Button
             // 
@@ -527,6 +518,14 @@ namespace PhoneManagerment_ADO.net
             this.label4.TabIndex = 16;
             this.label4.Text = "Cart";
             // 
+            // Phone_Name_Textbox
+            // 
+            this.Phone_Name_Textbox.Location = new System.Drawing.Point(103, 36);
+            this.Phone_Name_Textbox.Name = "Phone_Name_Textbox";
+            this.Phone_Name_Textbox.Size = new System.Drawing.Size(254, 20);
+            this.Phone_Name_Textbox.TabIndex = 13;
+            this.Phone_Name_Textbox.TextChanged += new System.EventHandler(this.Phone_Name_Textbox_TextChanged);
+            // 
             // Form_AddTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -593,7 +592,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbb_PhoneName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_Price;
         private System.Windows.Forms.TextBox txt_Display;
@@ -602,5 +600,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.DataGridViewTextBoxColumn Phone_Column;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price_Column;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantity_Column;
+        private System.Windows.Forms.TextBox Phone_Name_Textbox;
     }
 }
