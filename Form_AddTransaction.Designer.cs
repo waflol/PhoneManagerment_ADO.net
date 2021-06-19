@@ -63,6 +63,9 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Inf_Label = new System.Windows.Forms.Label();
             this.numeric_Quantity = new System.Windows.Forms.NumericUpDown();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Phone_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total_Price_Label = new System.Windows.Forms.Label();
             this.Total_Price_Textbox = new System.Windows.Forms.TextBox();
             this.Export_Button = new System.Windows.Forms.Button();
@@ -71,9 +74,6 @@ namespace PhoneManagerment_ADO.net
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.Phone_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
@@ -171,7 +171,7 @@ namespace PhoneManagerment_ADO.net
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(68, 137);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
             this.dateTimePicker1.TabIndex = 12;
@@ -277,7 +277,7 @@ namespace PhoneManagerment_ADO.net
             // txt_camera
             // 
             this.txt_camera.Location = new System.Drawing.Point(272, 97);
-            this.txt_camera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_camera.Margin = new System.Windows.Forms.Padding(2);
             this.txt_camera.Name = "txt_camera";
             this.txt_camera.Size = new System.Drawing.Size(86, 20);
             this.txt_camera.TabIndex = 12;
@@ -285,7 +285,7 @@ namespace PhoneManagerment_ADO.net
             // txt_sim
             // 
             this.txt_sim.Location = new System.Drawing.Point(272, 66);
-            this.txt_sim.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_sim.Margin = new System.Windows.Forms.Padding(2);
             this.txt_sim.Name = "txt_sim";
             this.txt_sim.Size = new System.Drawing.Size(86, 20);
             this.txt_sim.TabIndex = 12;
@@ -293,7 +293,7 @@ namespace PhoneManagerment_ADO.net
             // txt_Price
             // 
             this.txt_Price.Location = new System.Drawing.Point(272, 128);
-            this.txt_Price.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Price.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(86, 20);
             this.txt_Price.TabIndex = 12;
@@ -301,7 +301,7 @@ namespace PhoneManagerment_ADO.net
             // txt_Display
             // 
             this.txt_Display.Location = new System.Drawing.Point(103, 130);
-            this.txt_Display.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Display.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Display.Name = "txt_Display";
             this.txt_Display.Size = new System.Drawing.Size(86, 20);
             this.txt_Display.TabIndex = 12;
@@ -309,7 +309,7 @@ namespace PhoneManagerment_ADO.net
             // txt_istorage
             // 
             this.txt_istorage.Location = new System.Drawing.Point(103, 97);
-            this.txt_istorage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_istorage.Margin = new System.Windows.Forms.Padding(2);
             this.txt_istorage.Name = "txt_istorage";
             this.txt_istorage.Size = new System.Drawing.Size(86, 20);
             this.txt_istorage.TabIndex = 12;
@@ -337,7 +337,7 @@ namespace PhoneManagerment_ADO.net
             // txt_Ram
             // 
             this.txt_Ram.Location = new System.Drawing.Point(103, 66);
-            this.txt_Ram.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt_Ram.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Ram.Name = "txt_Ram";
             this.txt_Ram.Size = new System.Drawing.Size(86, 20);
             this.txt_Ram.TabIndex = 12;
@@ -386,7 +386,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.cbb_PhoneName.FormattingEnabled = true;
             this.cbb_PhoneName.Location = new System.Drawing.Point(103, 33);
-            this.cbb_PhoneName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cbb_PhoneName.Margin = new System.Windows.Forms.Padding(2);
             this.cbb_PhoneName.Name = "cbb_PhoneName";
             this.cbb_PhoneName.Size = new System.Drawing.Size(254, 21);
             this.cbb_PhoneName.TabIndex = 10;
@@ -432,6 +432,30 @@ namespace PhoneManagerment_ADO.net
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(353, 229);
             this.dataGridView1.TabIndex = 8;
+            // 
+            // Phone_Column
+            // 
+            this.Phone_Column.HeaderText = "Phone";
+            this.Phone_Column.MinimumWidth = 6;
+            this.Phone_Column.Name = "Phone_Column";
+            this.Phone_Column.ReadOnly = true;
+            this.Phone_Column.Width = 175;
+            // 
+            // Price_Column
+            // 
+            this.Price_Column.HeaderText = "Price (vnđ)";
+            this.Price_Column.MinimumWidth = 6;
+            this.Price_Column.Name = "Price_Column";
+            this.Price_Column.ReadOnly = true;
+            this.Price_Column.Width = 125;
+            // 
+            // Quantity_Column
+            // 
+            this.Quantity_Column.HeaderText = "Quantity";
+            this.Quantity_Column.MinimumWidth = 6;
+            this.Quantity_Column.Name = "Quantity_Column";
+            this.Quantity_Column.ReadOnly = true;
+            this.Quantity_Column.Width = 50;
             // 
             // Total_Price_Label
             // 
@@ -505,33 +529,9 @@ namespace PhoneManagerment_ADO.net
             this.label4.Location = new System.Drawing.Point(10, 183);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 17);
+            this.label4.Size = new System.Drawing.Size(38, 17);
             this.label4.TabIndex = 16;
-            this.label4.Text = "Basket";
-            // 
-            // Phone_Column
-            // 
-            this.Phone_Column.HeaderText = "Phone";
-            this.Phone_Column.MinimumWidth = 6;
-            this.Phone_Column.Name = "Phone_Column";
-            this.Phone_Column.ReadOnly = true;
-            this.Phone_Column.Width = 175;
-            // 
-            // Price_Column
-            // 
-            this.Price_Column.HeaderText = "Price (vnđ)";
-            this.Price_Column.MinimumWidth = 6;
-            this.Price_Column.Name = "Price_Column";
-            this.Price_Column.ReadOnly = true;
-            this.Price_Column.Width = 125;
-            // 
-            // Quantity_Column
-            // 
-            this.Quantity_Column.HeaderText = "Quantity";
-            this.Quantity_Column.MinimumWidth = 6;
-            this.Quantity_Column.Name = "Quantity_Column";
-            this.Quantity_Column.ReadOnly = true;
-            this.Quantity_Column.Width = 50;
+            this.label4.Text = "Cart";
             // 
             // Form_AddTransaction
             // 

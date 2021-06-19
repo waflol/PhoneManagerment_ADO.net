@@ -36,6 +36,9 @@ namespace PhoneManagerment_ADO.net
             this.phoneDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.wareHouseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infomationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.vHGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.hTHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lNHAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_Home.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -88,9 +91,31 @@ namespace PhoneManagerment_ADO.net
             // 
             // infomationToolStripMenuItem
             // 
+            this.infomationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.vHGToolStripMenuItem,
+            this.hTHToolStripMenuItem,
+            this.lNHAToolStripMenuItem});
             this.infomationToolStripMenuItem.Name = "infomationToolStripMenuItem";
             this.infomationToolStripMenuItem.Size = new System.Drawing.Size(124, 29);
             this.infomationToolStripMenuItem.Text = "Infomation";
+            // 
+            // vHGToolStripMenuItem
+            // 
+            this.vHGToolStripMenuItem.Name = "vHGToolStripMenuItem";
+            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.vHGToolStripMenuItem.Text = "VHG";
+            // 
+            // hTHToolStripMenuItem
+            // 
+            this.hTHToolStripMenuItem.Name = "hTHToolStripMenuItem";
+            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.hTHToolStripMenuItem.Text = "HTH";
+            // 
+            // lNHAToolStripMenuItem
+            // 
+            this.lNHAToolStripMenuItem.Name = "lNHAToolStripMenuItem";
+            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.lNHAToolStripMenuItem.Text = "LNHA";
             // 
             // Home
             // 
@@ -118,5 +143,8 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.ToolStripMenuItem phoneDetailsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem wareHouseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infomationToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem vHGToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem hTHToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem lNHAToolStripMenuItem;
     }
 }
