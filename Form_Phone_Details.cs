@@ -14,6 +14,7 @@ namespace PhoneManagerment_ADO.net {
         public Form_Phone_Details() {
             InitializeComponent();
             LoadData();
+
         }
 
         BLPhones phone = new BLPhones();
@@ -23,8 +24,6 @@ namespace PhoneManagerment_ADO.net {
         void LoadData() {
             GridView_PhoneRecord.DataSource = phone.GetPhones().Tables[0];
             GridView_PhoneRecord.Columns[10].Visible = false;
-
-        
 
         }
 
