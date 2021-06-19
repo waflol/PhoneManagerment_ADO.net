@@ -13,7 +13,7 @@ namespace PhoneManagerment_ADO.net
 {
     public partial class FormLogin : Form
     {
-        private string currentAccount ="";
+        private string currentAccount = "";
        
         public FormLogin()
         {
