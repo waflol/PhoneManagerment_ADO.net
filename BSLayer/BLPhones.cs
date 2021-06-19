@@ -34,9 +34,9 @@ namespace PhoneManagerment_ADO.net.BSLayer {
         }
 
         // them phone
-        public bool addPhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera) {
+        public bool addPhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera,string Display) {
 
-            string sqlString = "Insert Into Phone Values('" + modelName + "','" + ram + "','" + frontCamera + "','" + simtype + "','" + networktype + "','" + price + "','" + finger + "','" + istorage + "','" + estorage + "','" + rearcamera + "'," + ID_phone.ToString() + ")";
+            string sqlString = "Insert Into Phone Values('" + modelName + "','" + ram + "','" + frontCamera + "','" + Display + "','" + simtype + "','" + networktype + "','" + price + "','" + finger + "','" + istorage + "','" + estorage + "','" + rearcamera + "'," + ID_phone.ToString() + ")";
 
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
 
