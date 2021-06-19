@@ -13,6 +13,8 @@ namespace PhoneManagerment_ADO.net
 {
     public partial class FormLogin : Form
     {
+        private string currentAccount = "";
+       
         public FormLogin()
         {
             InitializeComponent();
@@ -20,12 +22,10 @@ namespace PhoneManagerment_ADO.net
 
         private void btn_Login_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection(Connect.Connection_String);
-            con.Open();
-            string str = "SELECT username FROM Table1 WHERE password='" + txt_Password.Text + "'";
-            SqlCommand cmd = new SqlCommand(str, con);
-            SqlDataReader dr;
-            dr = cmd.ExecuteReader();
+
+            string user = txt_Username.Text;
+            string pass = txt
+
             if (dr.Read())
             {
                 this.Visible = false;

@@ -21,22 +21,10 @@ namespace PhoneManagerment_ADO.net.BSLayer
             return db.ExcuteQueryDataSet("select * from Phones", CommandType.Text);
         }
         
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="IDphone"></param>
-        /// <param name="nameModel"></param>
-        /// <param name="ram"></param>
-        /// <param name="istorage"></param>
-        /// <param name="display"></param>
-        /// <param name="typeCamera"></param>
-        /// <param name="simType"></param>
-        /// <param name="networkType"></param>
-        /// <param name="price"></param>
-        /// <returns></returns>
+
         
         // them phone
-        public bool addPhones(string IDphone, string nameModel,string ram, string istorage, string display, string typeCamera, string simType, string networkType, string price )
+        public bool addPhones(int ID_phone,string modelName,string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera)
         {
             return false;
         }
@@ -46,7 +34,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
             return false;
         }
         // cap nhat phone
-        public bool updatePhones(string IDphone, string nameModel, ref string err)
+        public bool updatePhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera, ref string err)
         {
             return false;
         }

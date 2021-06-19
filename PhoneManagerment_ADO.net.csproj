@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BSLayer\BLAccount.cs" />
+    <Compile Include="BSLayer\BLCustomers.cs" />
     <Compile Include="BSLayer\BLPhones.cs" />
     <Compile Include="BSLayer\BLTransaction.cs" />
     <Compile Include="BSLayer\BLTransaction_details.cs" />
