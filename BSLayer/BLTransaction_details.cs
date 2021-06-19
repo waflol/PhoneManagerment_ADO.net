@@ -16,10 +16,10 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             db = new DBMain();
         }
-        public DataSet getTransaction_details()
-        {
-            string sqlString = "select * from "
-        }
+        //public DataSet getTransaction_details()
+        //{
+        //    string sqlString = "select * from "
+        //}
 
     }
 }
