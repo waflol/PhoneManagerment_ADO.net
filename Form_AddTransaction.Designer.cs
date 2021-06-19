@@ -505,6 +505,7 @@ namespace PhoneManagerment_ADO.net
             this.Reset_Button.TabIndex = 13;
             this.Reset_Button.Text = "Reset";
             this.Reset_Button.UseVisualStyleBackColor = true;
+            this.Reset_Button.Click += new System.EventHandler(this.Reset_Button_Click);
             // 
             // btn_Edit
             // 

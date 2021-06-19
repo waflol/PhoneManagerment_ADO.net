@@ -35,5 +35,13 @@ namespace PhoneManagerment_ADO.net
         {
 
         }
+
+        private void Reset_Button_Click(object sender, EventArgs e) {
+            foreach(var c in Customer_Panel.Controls) {
+                if(c is TextBox) {
+                    (c as TextBox).Text = "";
+                }
+            }
+        }
     }
 }
