@@ -45,7 +45,7 @@ namespace PhoneManagerment_ADO.net
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.Customer_Inf_Label = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.Phone_Info_Panel = new System.Windows.Forms.Panel();
             this.txt_camera = new System.Windows.Forms.TextBox();
             this.txt_sim = new System.Windows.Forms.TextBox();
             this.txt_Price = new System.Windows.Forms.TextBox();
@@ -75,7 +75,7 @@ namespace PhoneManagerment_ADO.net
             this.label4 = new System.Windows.Forms.Label();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.Phone_Info_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_Quantity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_Cart)).BeginInit();
             this.SuspendLayout();
@@ -246,31 +246,31 @@ namespace PhoneManagerment_ADO.net
             this.Customer_Inf_Label.TabIndex = 3;
             this.Customer_Inf_Label.Text = "Customer Infomation";
             // 
-            // panel4
+            // Phone_Info_Panel
             // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.txt_camera);
-            this.panel4.Controls.Add(this.txt_sim);
-            this.panel4.Controls.Add(this.txt_Price);
-            this.panel4.Controls.Add(this.txt_Display);
-            this.panel4.Controls.Add(this.txt_istorage);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.label8);
-            this.panel4.Controls.Add(this.txt_Ram);
-            this.panel4.Controls.Add(this.label7);
-            this.panel4.Controls.Add(this.label3);
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.cbb_PhoneName);
-            this.panel4.Controls.Add(this.Add_Phone_Button);
-            this.panel4.Controls.Add(this.Phone_Inf_Label);
-            this.panel4.Controls.Add(this.numeric_Quantity);
-            this.panel4.Controls.Add(this.PhoneName_Label);
-            this.panel4.Controls.Add(this.Quantity_Label);
-            this.panel4.Location = new System.Drawing.Point(371, 12);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(417, 187);
-            this.panel4.TabIndex = 7;
+            this.Phone_Info_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Phone_Info_Panel.Controls.Add(this.txt_camera);
+            this.Phone_Info_Panel.Controls.Add(this.txt_sim);
+            this.Phone_Info_Panel.Controls.Add(this.txt_Price);
+            this.Phone_Info_Panel.Controls.Add(this.txt_Display);
+            this.Phone_Info_Panel.Controls.Add(this.txt_istorage);
+            this.Phone_Info_Panel.Controls.Add(this.label6);
+            this.Phone_Info_Panel.Controls.Add(this.label8);
+            this.Phone_Info_Panel.Controls.Add(this.txt_Ram);
+            this.Phone_Info_Panel.Controls.Add(this.label7);
+            this.Phone_Info_Panel.Controls.Add(this.label3);
+            this.Phone_Info_Panel.Controls.Add(this.label2);
+            this.Phone_Info_Panel.Controls.Add(this.label1);
+            this.Phone_Info_Panel.Controls.Add(this.cbb_PhoneName);
+            this.Phone_Info_Panel.Controls.Add(this.Add_Phone_Button);
+            this.Phone_Info_Panel.Controls.Add(this.Phone_Inf_Label);
+            this.Phone_Info_Panel.Controls.Add(this.numeric_Quantity);
+            this.Phone_Info_Panel.Controls.Add(this.PhoneName_Label);
+            this.Phone_Info_Panel.Controls.Add(this.Quantity_Label);
+            this.Phone_Info_Panel.Location = new System.Drawing.Point(371, 12);
+            this.Phone_Info_Panel.Name = "Phone_Info_Panel";
+            this.Phone_Info_Panel.Size = new System.Drawing.Size(417, 187);
+            this.Phone_Info_Panel.TabIndex = 7;
             // 
             // txt_camera
             // 
@@ -540,15 +540,15 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.Total_Price_Textbox);
             this.Controls.Add(this.Total_Price_Label);
             this.Controls.Add(this.GridView_Cart);
-            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.Phone_Info_Panel);
             this.Controls.Add(this.Customer_Panel);
             this.Name = "Form_AddTransaction";
             this.Text = "Form_AddTransaction";
             this.Customer_Panel.ResumeLayout(false);
             this.Customer_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.Phone_Info_Panel.ResumeLayout(false);
+            this.Phone_Info_Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numeric_Quantity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_Cart)).EndInit();
             this.ResumeLayout(false);
@@ -572,7 +572,7 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.TextBox Address_Textbox;
         private System.Windows.Forms.TextBox Name_Textbox;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel Phone_Info_Panel;
         private System.Windows.Forms.NumericUpDown numeric_Quantity;
         private System.Windows.Forms.Label Phone_Inf_Label;
         private System.Windows.Forms.Button Add_Phone_Button;
