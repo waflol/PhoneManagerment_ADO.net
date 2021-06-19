@@ -63,7 +63,6 @@ namespace PhoneManagerment_ADO.net.DBLayer
             {
                 conn.Close();
             }
-            
             return f;
 
         }
