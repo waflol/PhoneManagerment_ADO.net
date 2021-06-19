@@ -35,6 +35,22 @@ namespace PhoneManagerment_ADO.net.BSLayer
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
 
+        public DataSet search_byCusname(string cusname)
+        {
+            string sqltring = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone and Customer.Customer_Name like '"+cusname+"%'";
+            return db.ExcuteQueryDataSet(sqltring, CommandType.Text);
+        }
+        public DataSet search_byPhonename(string phonename)
+        {
+            string sqltring = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone and Phone.Model_Name like '" + phonename + "%'";
+            return db.ExcuteQueryDataSet(sqltring, CommandType.Text);
+        }
+
+        public DataSet search_byDate(string date)
+        {
+            string sqltring = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone and Transactions.Date = '" + date + "%'";
+            return db.ExcuteQueryDataSet(sqltring, CommandType.Text);
+        }
 
     }
 }
