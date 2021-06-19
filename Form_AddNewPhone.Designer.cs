@@ -52,6 +52,7 @@ namespace PhoneManagerment_ADO.net
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.txt_IDphone = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txt_Price
@@ -94,6 +95,7 @@ namespace PhoneManagerment_ADO.net
             this.btn_Save.TabIndex = 47;
             this.btn_Save.Text = "Save";
             this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // cbb_NetworkType
             // 
@@ -335,11 +337,19 @@ namespace PhoneManagerment_ADO.net
             this.label1.TabIndex = 26;
             this.label1.Text = "Insert New Phone Records";
             // 
+            // txt_IDphone
+            // 
+            this.txt_IDphone.Location = new System.Drawing.Point(221, 324);
+            this.txt_IDphone.Name = "txt_IDphone";
+            this.txt_IDphone.Size = new System.Drawing.Size(100, 20);
+            this.txt_IDphone.TabIndex = 51;
+            // 
             // Form_AddNewPhone
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txt_IDphone);
             this.Controls.Add(this.txt_Price);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.btn_Reset);
@@ -395,5 +405,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txt_IDphone;
     }
 }
