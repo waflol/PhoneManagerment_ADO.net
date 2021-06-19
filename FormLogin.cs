@@ -15,7 +15,7 @@ namespace PhoneManagerment_ADO.net
     public partial class FormLogin : Form
     {
         private string currentAccount = "";
-       
+        
         public FormLogin()
         {
             InitializeComponent();
@@ -30,6 +30,7 @@ namespace PhoneManagerment_ADO.net
 
             if (acc.checkAccount(user,pass))
             {
+                currentAccount = user;
                 this.Visible = false;
                 Home obj2 = new Home();
                 obj2.ShowDialog();
