@@ -43,5 +43,25 @@ namespace PhoneManagerment_ADO.net
 
             }
         }
+
+        private void txt_Password_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e) {
+            if (e.KeyCode == Keys.Enter) {
+                string user = txt_Username.Text;
+                string pass = txt_Password.Text;
+                BLAccount acc = new BLAccount();
+
+                if (acc.checkAccount(user, pass)) {
+
+                    currentAccount = user;
+                    this.Visible = false;
+                    Home obj2 = new Home();
+                    obj2.ShowDialog();
+                } else {
+
+                    MessageBox.Show("Invalid username and Password.");
+
+                }
+            }
+        }
     }
 }

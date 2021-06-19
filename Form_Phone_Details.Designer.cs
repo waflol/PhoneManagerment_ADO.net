@@ -74,10 +74,10 @@ namespace PhoneManagerment_ADO.net
             this.iDphoneDataGridViewTextBoxColumn});
             this.GridView_PhoneRecord.DataSource = this.phoneBindingSource;
             this.GridView_PhoneRecord.GridColor = System.Drawing.SystemColors.Control;
-            this.GridView_PhoneRecord.Location = new System.Drawing.Point(1, 202);
+            this.GridView_PhoneRecord.Location = new System.Drawing.Point(12, 201);
             this.GridView_PhoneRecord.Name = "GridView_PhoneRecord";
             this.GridView_PhoneRecord.RowHeadersVisible = false;
-            this.GridView_PhoneRecord.Size = new System.Drawing.Size(1140, 236);
+            this.GridView_PhoneRecord.Size = new System.Drawing.Size(1007, 236);
             this.GridView_PhoneRecord.TabIndex = 50;
             this.GridView_PhoneRecord.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_PhoneRecord_CellClick);
             // 
@@ -212,7 +212,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1146, 450);
+            this.ClientSize = new System.Drawing.Size(1026, 450);
             this.Controls.Add(this.GridView_PhoneRecord);
             this.Controls.Add(this.txt_PhoneID);
             this.Controls.Add(this.label2);
