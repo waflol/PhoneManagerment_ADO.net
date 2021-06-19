@@ -21,9 +21,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             return db.ExcuteQueryDataSet("select * from Phones", CommandType.Text);
         }
-        
-
-        
+           
         // them phone
         public bool addPhones(int ID_phone,string modelName,string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera)
         {
