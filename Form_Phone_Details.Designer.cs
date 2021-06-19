@@ -74,7 +74,7 @@ namespace PhoneManagerment_ADO.net
             this.iDphoneDataGridViewTextBoxColumn});
             this.GridView_PhoneRecord.DataSource = this.phoneBindingSource;
             this.GridView_PhoneRecord.GridColor = System.Drawing.SystemColors.Control;
-            this.GridView_PhoneRecord.Location = new System.Drawing.Point(12, 201);
+            this.GridView_PhoneRecord.Location = new System.Drawing.Point(7, 201);
             this.GridView_PhoneRecord.Name = "GridView_PhoneRecord";
             this.GridView_PhoneRecord.RowHeadersVisible = false;
             this.GridView_PhoneRecord.Size = new System.Drawing.Size(1007, 236);

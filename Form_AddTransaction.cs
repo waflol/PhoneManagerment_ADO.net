@@ -47,9 +47,17 @@ namespace PhoneManagerment_ADO.net {
                 numeric_Quantity.Value = 0;
             }
         }
-
+        DataSet phone_search_model = new DataSet();
         private void Phone_Name_Textbox_TextChanged(object sender, EventArgs e) {
+            
+            phone_search_model = phone.search_ModelName(Phone_Name_Textbox.Text);
 
+            txt_Ram.Text = phone_search_model.Tables[0].Rows[1]["ram"].ToString();
+            txt_istorage.Text = phone_search_model.Tables[0].Rows[1]["istorage"].ToString();
+            //txt_Display.Text = phone_search_model.Tables[0].Rows[1]["Display"].ToString();
+            txt_sim.Text = phone_search_model.Tables[0].Rows[1]["Sim_Type"].ToString();
+            txt_camera.Text = phone_search_model.Tables[0].Rows[1]["Front_Camera"].ToString();
+            txt_Price.Text = phone_search_model.Tables[0].Rows[1]["Price"].ToString();
         }
     }
 }
