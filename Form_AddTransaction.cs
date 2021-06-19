@@ -53,7 +53,7 @@ namespace PhoneManagerment_ADO.net {
             try {
                 phone_search_model = phone.search_ModelName(Phone_Search_Textbox.Text);
 
-                if (phone_search_model.Tables.Count > 0) {
+                if (phone_search_model.Tables.Count > 0 && Phone_Search_Textbox.Text != "") {
                     Phone_Name_Textbox.Text = phone_search_model.Tables[0].Rows[0][0].ToString();
                     txt_Ram.Text = phone_search_model.Tables[0].Rows[0][1].ToString();
                     txt_istorage.Text = phone_search_model.Tables[0].Rows[0][8].ToString();
@@ -61,7 +61,8 @@ namespace PhoneManagerment_ADO.net {
                     txt_sim.Text = phone_search_model.Tables[0].Rows[0][4].ToString();
                     txt_camera.Text = phone_search_model.Tables[0].Rows[0][5].ToString();
                     txt_Price.Text = phone_search_model.Tables[0].Rows[0][6].ToString();
-                }
+                } else
+                    throw new Exception();
             } catch {
                 Phone_Name_Textbox.Text = "";
                 txt_Ram.Text = "";
