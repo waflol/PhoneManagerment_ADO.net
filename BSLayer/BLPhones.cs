@@ -42,10 +42,10 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         }
         //xoa phone
-        public bool deletePhones(ref string err,string IDphone)
+        public bool deletePhones(string IDphone)
         {
             string sqlString = "Delete From Phone where ID_phone = '" + IDphone+"'";
-            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text);
         }
         // cap nhat phone
         public bool updatePhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera, ref string err)
