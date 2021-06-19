@@ -30,6 +30,7 @@ namespace PhoneManagerment_ADO.net
 
             if (acc.checkAccount(user,pass))
             {
+
                 currentAccount = user;
                 this.Visible = false;
                 Home obj2 = new Home();
@@ -37,7 +38,9 @@ namespace PhoneManagerment_ADO.net
             }
             else
             {
+                
                 MessageBox.Show("Invalid username and Password.");
+
             }
         }
     }
