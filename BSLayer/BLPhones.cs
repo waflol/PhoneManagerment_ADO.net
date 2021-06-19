@@ -44,7 +44,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
         //xoa phone
         public bool deletePhones(ref string err,string IDphone)
         {
-            string sqlString = "Delete From Phone where ID_phone = '" + IDphone+"'";
+            string sqlString = "Delete From Phone where ID_phone = " + IDphone;
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         // cap nhat phone
