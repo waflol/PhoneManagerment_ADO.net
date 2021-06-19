@@ -53,5 +53,11 @@ namespace PhoneManagerment_ADO.net.BSLayer
             string sqlString = "Update Phone Set Model_Name = '" + modelName + "', ram = '" + ram + ",Front_Camera = '" + frontCamera + "',Sim_Type = '" + simtype + "',Network_Type = '" + networktype + "', Price = '" + price + "',Finger = '" + finger + "',istorage = '" + istorage + "',estorage = '" + estorage + "',Rear_Camera = '" + rearcamera + "' where ID_phone = " + ID_phone.ToString();
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
+
+        public DataSet search_ModelName(string namephone)
+        {
+            string sqltring = "SELECT * FROM Phone WHERE Model_Name LIKE '" + namephone + "%'";
+            return db.ExcuteQueryDataSet(sqltring, CommandType.Text);
+        }
     }
 }
