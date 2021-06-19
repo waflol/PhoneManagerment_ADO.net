@@ -46,6 +46,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BSLayer\BLPhones.cs" />
+    <Compile Include="BSLayer\BLTransaction.cs" />
+    <Compile Include="BSLayer\BLTransaction_details.cs" />
     <Compile Include="Connect.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -136,7 +139,6 @@
     <None Include="Resources\hand.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BSLayer\" />
     <Folder Include="database\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
