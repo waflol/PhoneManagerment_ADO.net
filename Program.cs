@@ -16,7 +16,7 @@ namespace PhoneManagerment_ADO.net
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_AddTransaction());
+            Application.Run(new FormLogin());
         }
     }
 }
