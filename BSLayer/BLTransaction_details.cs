@@ -31,7 +31,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public bool deleteTransaction_details(string idtransaction)
         {
-            string sqlString = "Delete From Phone where ID_phone = " + idtransaction;
+            string sqlString = "Delete From Transaction_Details where ID_transaction = " + idtransaction;
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
 
@@ -57,6 +57,5 @@ namespace PhoneManagerment_ADO.net.BSLayer
             string sqltring = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone and Customer.PhoneNumber like '" + phonenum + "%'";
             return db.ExcuteQueryDataSet(sqltring, CommandType.Text);
         }
-
     }
 }
