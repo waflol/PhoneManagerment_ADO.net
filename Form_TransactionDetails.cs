@@ -52,7 +52,7 @@ namespace PhoneManagerment_ADO.net
 
         private void txt_IDTrans_TextChanged(object sender, EventArgs e)
         {
-            GridView_Details_Trans.DataSource = transaction_Detail.search_byCusname(txt_IDTrans.Text).Tables[0];
+            GridView_Details_Trans.DataSource = transaction_Detail.search_byPhonenum(txt_IDTrans.Text).Tables[0];
         }
     }
 }
