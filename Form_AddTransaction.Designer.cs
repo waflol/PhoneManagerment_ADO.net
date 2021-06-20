@@ -515,7 +515,7 @@ namespace PhoneManagerment_ADO.net
             this.Export_Button.Name = "Export_Button";
             this.Export_Button.Size = new System.Drawing.Size(118, 111);
             this.Export_Button.TabIndex = 11;
-            this.Export_Button.Text = "Export - Deal";
+            this.Export_Button.Text = "OK - Deal";
             this.Export_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Export_Button.UseVisualStyleBackColor = true;
             this.Export_Button.Click += new System.EventHandler(this.Export_Button_Click);
