@@ -46,6 +46,8 @@ namespace PhoneManagerment_ADO.net
             this.panel2 = new System.Windows.Forms.Panel();
             this.Customer_Inf_Label = new System.Windows.Forms.Label();
             this.Phone_Info_Panel = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Phone_Name_Textbox = new System.Windows.Forms.TextBox();
             this.Phone_Search_Textbox = new System.Windows.Forms.TextBox();
             this.txt_camera = new System.Windows.Forms.TextBox();
             this.txt_sim = new System.Windows.Forms.TextBox();
@@ -73,8 +75,6 @@ namespace PhoneManagerment_ADO.net
             this.Reset_Button = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.Phone_Name_Textbox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Phone_Info_Panel.SuspendLayout();
@@ -123,7 +123,6 @@ namespace PhoneManagerment_ADO.net
             this.PhoneName_Label.Size = new System.Drawing.Size(69, 13);
             this.PhoneName_Label.TabIndex = 3;
             this.PhoneName_Label.Text = "Phone Name";
-//            this.PhoneName_Label.Click += new System.EventHandler(this.PhoneName_Label_Click);
             // 
             // Quantity_Label
             // 
@@ -276,6 +275,22 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Info_Panel.Size = new System.Drawing.Size(417, 226);
             this.Phone_Info_Panel.TabIndex = 7;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 32);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(75, 13);
+            this.label9.TabIndex = 15;
+            this.label9.Text = "Search Phone";
+            // 
+            // Phone_Name_Textbox
+            // 
+            this.Phone_Name_Textbox.Location = new System.Drawing.Point(102, 65);
+            this.Phone_Name_Textbox.Name = "Phone_Name_Textbox";
+            this.Phone_Name_Textbox.Size = new System.Drawing.Size(150, 20);
+            this.Phone_Name_Textbox.TabIndex = 14;
+            // 
             // Phone_Search_Textbox
             // 
             this.Phone_Search_Textbox.Location = new System.Drawing.Point(102, 29);
@@ -418,6 +433,11 @@ namespace PhoneManagerment_ADO.net
             this.numeric_Quantity.Name = "numeric_Quantity";
             this.numeric_Quantity.Size = new System.Drawing.Size(85, 20);
             this.numeric_Quantity.TabIndex = 7;
+            this.numeric_Quantity.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // GridView_Cart
             // 
@@ -467,7 +487,6 @@ namespace PhoneManagerment_ADO.net
             this.Total_Price_Label.Size = new System.Drawing.Size(56, 24);
             this.Total_Price_Label.TabIndex = 9;
             this.Total_Price_Label.Text = "Total";
-      //      this.Total_Price_Label.Click += new System.EventHandler(this.Total_Price_Label_Click);
             // 
             // Total_Price_Textbox
             // 
@@ -529,22 +548,6 @@ namespace PhoneManagerment_ADO.net
             this.label4.Size = new System.Drawing.Size(38, 17);
             this.label4.TabIndex = 16;
             this.label4.Text = "Cart";
-            // 
-            // Phone_Name_Textbox
-            // 
-            this.Phone_Name_Textbox.Location = new System.Drawing.Point(102, 65);
-            this.Phone_Name_Textbox.Name = "Phone_Name_Textbox";
-            this.Phone_Name_Textbox.Size = new System.Drawing.Size(150, 20);
-            this.Phone_Name_Textbox.TabIndex = 14;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 32);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(75, 13);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Search Phone";
             // 
             // Form_AddTransaction
             // 

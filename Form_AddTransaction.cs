@@ -16,10 +16,22 @@ namespace PhoneManagerment_ADO.net {
 
         }
 
+        // tạo đối tượng thực thi tầng nghiệp vụ
         BLPhones phone = new BLPhones();
+        // biến để lưu dữ liệu truy vẫn
+        DataSet phone_search_dataset = new DataSet();
+        // biến tổng tiền
+        private int total_cost = 0;
+        // tạo mảng lưu tên điện thoại đã chọn
+        private List<string> Phones_name_buying = new List<string>();
 
         private void Add_Phone_Button_Click(object sender, EventArgs e) {
-            GridView_Cart.Rows.Add("Iphone X", 10, 3);
+            if ((int)numeric_Quantity.Value > 0) {
+                GridView_Cart.Rows.Add(Phone_Name_Textbox.Text, txt_Price.Text, numeric_Quantity.Value);
+                Phones_name_buying.Add(Phone_Name_Textbox.Text);
+            } else {
+                MessageBox.Show("An image Phone ?");
+            }
         }
 
         private void Reset_Button_Click(object sender, EventArgs e) {
@@ -35,20 +47,19 @@ namespace PhoneManagerment_ADO.net {
                 numeric_Quantity.Value = 0;
             }
         }
-        DataSet phone_search_model = new DataSet();
         private void Phone_Name_Textbox_TextChanged(object sender, EventArgs e) {
 
             try {
-                phone_search_model = phone.search_ModelName(Phone_Search_Textbox.Text);
+                phone_search_dataset = phone.search_ModelName(Phone_Search_Textbox.Text);
 
-                if (phone_search_model.Tables.Count > 0 && Phone_Search_Textbox.Text != "") {
-                    Phone_Name_Textbox.Text = phone_search_model.Tables[0].Rows[0][0].ToString();
-                    txt_Ram.Text = phone_search_model.Tables[0].Rows[0][1].ToString();
-                    txt_istorage.Text = phone_search_model.Tables[0].Rows[0][8].ToString();
-                    txt_Display.Text = phone_search_model.Tables[0].Rows[0][3].ToString();
-                    txt_sim.Text = phone_search_model.Tables[0].Rows[0][4].ToString();
-                    txt_camera.Text = phone_search_model.Tables[0].Rows[0][5].ToString();
-                    txt_Price.Text = phone_search_model.Tables[0].Rows[0][6].ToString();
+                if (phone_search_dataset.Tables.Count > 0 && Phone_Search_Textbox.Text != "") {
+                    Phone_Name_Textbox.Text = phone_search_dataset.Tables[0].Rows[0][0].ToString();
+                    txt_Ram.Text = phone_search_dataset.Tables[0].Rows[0][1].ToString();
+                    txt_istorage.Text = phone_search_dataset.Tables[0].Rows[0][8].ToString();
+                    txt_Display.Text = phone_search_dataset.Tables[0].Rows[0][3].ToString();
+                    txt_sim.Text = phone_search_dataset.Tables[0].Rows[0][4].ToString();
+                    txt_camera.Text = phone_search_dataset.Tables[0].Rows[0][5].ToString();
+                    txt_Price.Text = phone_search_dataset.Tables[0].Rows[0][6].ToString();
                 } else
                     throw new Exception();
             } catch {
