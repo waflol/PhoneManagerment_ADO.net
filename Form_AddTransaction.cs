@@ -137,16 +137,15 @@ namespace PhoneManagerment_ADO.net {
         private void Export_Button_Click(object sender, EventArgs e)
         {
 
-            //customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID()+1);
-            //transaction.addTransaction(transaction.returnMaxID() + 1,Total_cost, dtpk_BuyDate.Value, customer.returnMaxID(), FormLogin.currentAccount);
-            transaction.addTransaction(transaction.returnMaxID() + 1, 22222, dtpk_BuyDate.Value.ToString(),1, "ha");
-            //MessageBox.Show(dtpk_BuyDate.Value.ToShortDateString());
-            //int index_Row = 0;
-            //foreach (DataRow rows in GridView_Cart.Rows)
-            //{
-            //    transaction_Detail.addTransaction_details(rows[2].ToString(), transaction.returnMaxID().ToString(), phoneID[index_Row]);
-            //    index_Row += 1;
-            //}
+            customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID() + 1);
+            transaction.addTransaction(transaction.returnMaxID() + 1, Total_cost, dtpk_BuyDate.Value.ToString(), customer.returnMaxID(), FormLogin.currentAccount);
+            
+            ///int index_Row = 0;
+            for (int i = 0; i < GridView_Cart.Rows.Count; i++)
+            {
+                transaction_Detail.addTransaction_details((GridView_Cart[2, i].Value.ToString()), transaction.returnMaxID().ToString(), Phone.returnMaxID().ToString());
+                
+            }
         }
     }
 }
