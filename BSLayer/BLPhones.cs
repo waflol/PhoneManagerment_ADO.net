@@ -47,8 +47,8 @@ namespace PhoneManagerment_ADO.net.BSLayer {
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         // cap nhat phone
-        public bool updatePhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera, ref string err) {
-            string sqlString = "Update Phone Set Model_Name = '" + modelName + "', ram = '" + ram + ",Front_Camera = '" + frontCamera + "',Sim_Type = '" + simtype + "',Network_Type = '" + networktype + "', Price = '" + price + "',Finger = '" + finger + "',istorage = '" + istorage + "',estorage = '" + estorage + "',Rear_Camera = '" + rearcamera + "' where ID_phone = " + ID_phone.ToString();
+        public bool updatePhones(int ID_phone, string modelName, string ram, string frontCamera, string simtype, string networktype, string price, string finger, string istorage, string estorage, string rearcamera, string Display, ref string err) {
+            string sqlString = "Update Phone Set Model_Name = '" + modelName + "', ram = '" + ram + ",Front_Camera = '" + frontCamera + "',Sim_Type = '" + simtype + "',Network_Type = '" + networktype + "', Price = '" + price + "',Finger = '" + finger + "',istorage = '" + istorage + "',estorage = '" + estorage + "',Rear_Camera = '" + rearcamera + "',"+"Display = '"+Display +"' where ID_phone = " + ID_phone.ToString();
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
 
