@@ -42,5 +42,27 @@ namespace PhoneManagerment_ADO.net.Properties {
                 return ((string)(this["PhoneDBConnectionString1"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=PhoneDB;Integrated" +
+            " Security=True")]
+        public string PhoneDBConnectionString2 {
+            get {
+                return ((string)(this["PhoneDBConnectionString2"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;Initial Catalog=PhoneDB;Integrated Security=Tr" +
+            "ue")]
+        public string PhoneDBConnectionString3 {
+            get {
+                return ((string)(this["PhoneDBConnectionString3"]));
+            }
+        }
     }
 }
