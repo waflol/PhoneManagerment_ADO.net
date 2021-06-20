@@ -75,6 +75,7 @@ namespace PhoneManagerment_ADO.net
             this.Reset_Button = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Phone_Info_Panel.SuspendLayout();
@@ -251,6 +252,7 @@ namespace PhoneManagerment_ADO.net
             // Phone_Info_Panel
             // 
             this.Phone_Info_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Phone_Info_Panel.Controls.Add(this.label10);
             this.Phone_Info_Panel.Controls.Add(this.label9);
             this.Phone_Info_Panel.Controls.Add(this.Phone_Name_Textbox);
             this.Phone_Info_Panel.Controls.Add(this.Phone_Search_Textbox);
@@ -560,6 +562,15 @@ namespace PhoneManagerment_ADO.net
             this.label4.TabIndex = 16;
             this.label4.Text = "Cart";
             // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(273, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "label10";
+            // 
             // Form_AddTransaction
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -637,5 +648,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.TextBox Phone_Search_Textbox;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox Phone_Name_Textbox;
+        private System.Windows.Forms.Label label10;
     }
 }

@@ -38,7 +38,6 @@ namespace PhoneManagerment_ADO.net {
         // phone id tạm để gán
         private string temp_phoneID;
 
-
         private bool isAlready(string PhoneName) {
             for (int i = 0; i < GridView_Cart.Rows.Count; i++) {
                 if (GridView_Cart.Rows[i].Cells[0].Value != null) {
@@ -56,13 +55,15 @@ namespace PhoneManagerment_ADO.net {
                 if (!isAlready(Phone_Name_Textbox.Text)) {
                     GridView_Cart.Rows.Add(Phone_Name_Textbox.Text, txt_Price.Text, numeric_Quantity.Value);
                     Phones_name_buying.Add(Phone_Name_Textbox.Text);
+                    phoneID.Add(temp_phoneID);
                 } else {
                     // cập nhật lại cột số lượng trong hoá đơn
                     GridView_Cart[2, index].Value = int.Parse(GridView_Cart[2, index].Value.ToString()) + (int)numeric_Quantity.Value;
-                    phoneID.Add(temp_phoneID);
+                    //phoneID.Add(temp_phoneID);
                 }
                 Total_cost += int.Parse(txt_Price.Text) * (int)numeric_Quantity.Value;
                 Total_Cost_Textbox.Text = Total_cost.ToString();
+                label10.Text = phoneID.Count.ToString();
                 // reset lại panel điện thoại
                 foreach (var c in Phone_Info_Panel.Controls) {
                     if (c is TextBox) {
@@ -76,28 +77,16 @@ namespace PhoneManagerment_ADO.net {
         }
 
         private void Reset_Button_Click(object sender, EventArgs e) {
-            foreach (var c in Customer_Panel.Controls) {
-                if (c is TextBox) {
-                    (c as TextBox).Text = "";
-                }
-            }
-            foreach (var c in Phone_Info_Panel.Controls) {
-                if (c is TextBox) {
-                    (c as TextBox).Text = "";
-                }
-                numeric_Quantity.Value = 1;
-            }
-            GridView_Cart.Rows.Clear();
-            GridView_Cart.Refresh();
+            clearall_form();
         }
         private void Phone_Name_Textbox_TextChanged(object sender, EventArgs e) {
-            
+
             try {
                 Phone_search_dataset = Phone.search_ModelName(Phone_Search_Textbox.Text);
 
                 if (Phone_search_dataset.Tables.Count > 0 && Phone_Search_Textbox.Text != "") {
 
-                    temp_phoneID = Phone_search_dataset.Tables[0].Rows[0][10].ToString();
+                    temp_phoneID = Phone_search_dataset.Tables[0].Rows[0][11].ToString();
                     Phone_Name_Textbox.Text = Phone_search_dataset.Tables[0].Rows[0][0].ToString();
                     txt_Ram.Text = Phone_search_dataset.Tables[0].Rows[0][1].ToString();
                     txt_istorage.Text = Phone_search_dataset.Tables[0].Rows[0][8].ToString();
@@ -105,6 +94,7 @@ namespace PhoneManagerment_ADO.net {
                     txt_sim.Text = Phone_search_dataset.Tables[0].Rows[0][4].ToString();
                     txt_camera.Text = Phone_search_dataset.Tables[0].Rows[0][5].ToString();
                     txt_Price.Text = Phone_search_dataset.Tables[0].Rows[0][6].ToString();
+                    label10.Text = temp_phoneID;
                 } else
                     throw new Exception();
             } catch {
@@ -124,6 +114,7 @@ namespace PhoneManagerment_ADO.net {
                 if (GridView_Cart.Rows[index_remove].Cells[0].Value != null) {
                     // gán phone trong datagridview đã chọn
                     Phone_remove = GridView_Cart.Rows[index_remove].Cells[0].Value.ToString();
+                    //temp_phoneID_remove= GridView_Cart.Rows[index_remove].Cells[11].Value.ToString()
                 }
             } catch { }
         }
@@ -132,6 +123,7 @@ namespace PhoneManagerment_ADO.net {
             try {
                 // xoá tên điện thoại ra khỏi mảnng
                 Phones_name_buying.RemoveAt(index_remove);
+                phoneID.RemoveAt(index_remove);
                 Total_cost -= int.Parse(GridView_Cart.Rows[index_remove].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[index_remove].Cells[2].Value.ToString());
                 // xoá row trên datagridview
                 GridView_Cart.Rows.RemoveAt(index_remove);
@@ -139,9 +131,30 @@ namespace PhoneManagerment_ADO.net {
             } catch { }
         }
 
-        private void Export_Button_Click(object sender, EventArgs e)
-        {
+        private void Export_Button_Click(object sender, EventArgs e) {
+            customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID() + 1);
+            transaction.addTransaction(transaction.returnMaxID() + 1, Total_cost, dtpk_BuyDate.Value.ToString(), customer.returnMaxID(), FormLogin.currentAccount);
 
+            ///int index_Row = 0;
+            for (int i = 0; i < phoneID.Count; i++) {
+                transaction_Detail.addTransaction_details((GridView_Cart[2, i].Value.ToString()), transaction.returnMaxID().ToString(), phoneID[i]);
+            }
+            clearall_form();
+        }
+        void clearall_form() {
+            foreach (var c in Customer_Panel.Controls) {
+                if (c is TextBox) {
+                    (c as TextBox).Text = "";
+                }
+            }
+            foreach (var c in Phone_Info_Panel.Controls) {
+                if (c is TextBox) {
+                    (c as TextBox).Text = "";
+                }
+                numeric_Quantity.Value = 1;
+            }
+            GridView_Cart.Rows.Clear();
+            GridView_Cart.Refresh();
         }
     }
 }
