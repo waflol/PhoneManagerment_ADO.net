@@ -46,6 +46,7 @@ namespace PhoneManagerment_ADO.net
             this.panel2 = new System.Windows.Forms.Panel();
             this.Customer_Inf_Label = new System.Windows.Forms.Label();
             this.Phone_Info_Panel = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.Phone_Name_Textbox = new System.Windows.Forms.TextBox();
             this.Phone_Search_Textbox = new System.Windows.Forms.TextBox();
@@ -75,7 +76,6 @@ namespace PhoneManagerment_ADO.net
             this.Reset_Button = new System.Windows.Forms.Button();
             this.btn_Edit = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.Customer_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Phone_Info_Panel.SuspendLayout();
@@ -245,7 +245,7 @@ namespace PhoneManagerment_ADO.net
             this.Customer_Inf_Label.ForeColor = System.Drawing.Color.Blue;
             this.Customer_Inf_Label.Location = new System.Drawing.Point(105, 4);
             this.Customer_Inf_Label.Name = "Customer_Inf_Label";
-            this.Customer_Inf_Label.Size = new System.Drawing.Size(148, 16);
+            this.Customer_Inf_Label.Size = new System.Drawing.Size(157, 16);
             this.Customer_Inf_Label.TabIndex = 3;
             this.Customer_Inf_Label.Text = "Customer Infomation";
             // 
@@ -277,6 +277,15 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Info_Panel.Name = "Phone_Info_Panel";
             this.Phone_Info_Panel.Size = new System.Drawing.Size(417, 226);
             this.Phone_Info_Panel.TabIndex = 7;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(273, 68);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(41, 13);
+            this.label10.TabIndex = 16;
+            this.label10.Text = "label10";
             // 
             // label9
             // 
@@ -433,7 +442,7 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Inf_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Phone_Inf_Label.Location = new System.Drawing.Point(145, 7);
             this.Phone_Inf_Label.Name = "Phone_Inf_Label";
-            this.Phone_Inf_Label.Size = new System.Drawing.Size(127, 16);
+            this.Phone_Inf_Label.Size = new System.Drawing.Size(134, 16);
             this.Phone_Inf_Label.TabIndex = 8;
             this.Phone_Inf_Label.Text = "Phone Infomation";
             // 
@@ -493,7 +502,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.Total_Price_Label.AutoSize = true;
             this.Total_Price_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Price_Label.Location = new System.Drawing.Point(485, 321);
+            this.Total_Price_Label.Location = new System.Drawing.Point(371, 343);
             this.Total_Price_Label.Name = "Total_Price_Label";
             this.Total_Price_Label.Size = new System.Drawing.Size(56, 24);
             this.Total_Price_Label.TabIndex = 9;
@@ -503,7 +512,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.Total_Cost_Textbox.Enabled = false;
             this.Total_Cost_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Cost_Textbox.Location = new System.Drawing.Point(369, 364);
+            this.Total_Cost_Textbox.Location = new System.Drawing.Point(371, 380);
             this.Total_Cost_Textbox.Name = "Total_Cost_Textbox";
             this.Total_Cost_Textbox.Size = new System.Drawing.Size(288, 27);
             this.Total_Cost_Textbox.TabIndex = 10;
@@ -561,15 +570,6 @@ namespace PhoneManagerment_ADO.net
             this.label4.Size = new System.Drawing.Size(38, 17);
             this.label4.TabIndex = 16;
             this.label4.Text = "Cart";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(273, 68);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 13);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "label10";
             // 
             // Form_AddTransaction
             // 

@@ -52,14 +52,16 @@ namespace PhoneManagerment_ADO.net
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.cbb_Ram = new System.Windows.Forms.ComboBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // txt_Price
             // 
             this.txt_Price.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Price.Location = new System.Drawing.Point(392, 380);
+            this.txt_Price.Location = new System.Drawing.Point(628, 341);
             this.txt_Price.Name = "txt_Price";
-            this.txt_Price.Size = new System.Drawing.Size(133, 26);
+            this.txt_Price.Size = new System.Drawing.Size(152, 26);
             this.txt_Price.TabIndex = 50;
             // 
             // label12
@@ -67,17 +69,17 @@ namespace PhoneManagerment_ADO.net
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(325, 383);
+            this.label12.Location = new System.Drawing.Point(508, 341);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(58, 24);
+            this.label12.Size = new System.Drawing.Size(106, 24);
             this.label12.TabIndex = 49;
-            this.label12.Text = "Price";
+            this.label12.Text = "Price(vnd)";
             // 
             // btn_Reset
             // 
             this.btn_Reset.BackColor = System.Drawing.Color.SpringGreen;
             this.btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reset.Location = new System.Drawing.Point(447, 423);
+            this.btn_Reset.Location = new System.Drawing.Point(442, 406);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(78, 32);
             this.btn_Reset.TabIndex = 48;
@@ -89,7 +91,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.btn_Save.BackColor = System.Drawing.Color.SpringGreen;
             this.btn_Save.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.Location = new System.Drawing.Point(322, 423);
+            this.btn_Save.Location = new System.Drawing.Point(329, 406);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(78, 32);
             this.btn_Save.TabIndex = 47;
@@ -106,7 +108,7 @@ namespace PhoneManagerment_ADO.net
             "2G, 3G",
             "2G, 3G & 4G VOLT",
             "5G"});
-            this.cbb_NetworkType.Location = new System.Drawing.Point(631, 317);
+            this.cbb_NetworkType.Location = new System.Drawing.Point(628, 288);
             this.cbb_NetworkType.Name = "cbb_NetworkType";
             this.cbb_NetworkType.Size = new System.Drawing.Size(152, 28);
             this.cbb_NetworkType.TabIndex = 46;
@@ -120,7 +122,7 @@ namespace PhoneManagerment_ADO.net
             "One Sim",
             "Dual Sim",
             "Triple Sim"});
-            this.cbb_SimType.Location = new System.Drawing.Point(628, 256);
+            this.cbb_SimType.Location = new System.Drawing.Point(628, 235);
             this.cbb_SimType.Name = "cbb_SimType";
             this.cbb_SimType.Size = new System.Drawing.Size(152, 28);
             this.cbb_SimType.TabIndex = 45;
@@ -133,7 +135,7 @@ namespace PhoneManagerment_ADO.net
             this.cbb_FingerprintSensor.Items.AddRange(new object[] {
             "Yes ",
             "No"});
-            this.cbb_FingerprintSensor.Location = new System.Drawing.Point(628, 192);
+            this.cbb_FingerprintSensor.Location = new System.Drawing.Point(185, 341);
             this.cbb_FingerprintSensor.Name = "cbb_FingerprintSensor";
             this.cbb_FingerprintSensor.Size = new System.Drawing.Size(152, 28);
             this.cbb_FingerprintSensor.TabIndex = 44;
@@ -150,7 +152,7 @@ namespace PhoneManagerment_ADO.net
             "8 MP",
             "10 MP",
             "12 MP"});
-            this.cbb_FrontCamera.Location = new System.Drawing.Point(628, 125);
+            this.cbb_FrontCamera.Location = new System.Drawing.Point(185, 288);
             this.cbb_FrontCamera.Name = "cbb_FrontCamera";
             this.cbb_FrontCamera.Size = new System.Drawing.Size(152, 28);
             this.cbb_FrontCamera.TabIndex = 43;
@@ -173,7 +175,7 @@ namespace PhoneManagerment_ADO.net
             "32 MP",
             "64 MP",
             "128 MP"});
-            this.cbb_RearCamera.Location = new System.Drawing.Point(628, 54);
+            this.cbb_RearCamera.Location = new System.Drawing.Point(185, 239);
             this.cbb_RearCamera.Name = "cbb_RearCamera";
             this.cbb_RearCamera.Size = new System.Drawing.Size(152, 28);
             this.cbb_RearCamera.TabIndex = 42;
@@ -190,7 +192,7 @@ namespace PhoneManagerment_ADO.net
             "6.0 inch",
             "6.3 inch",
             "7.0 inch"});
-            this.cbb_Display.Location = new System.Drawing.Point(221, 263);
+            this.cbb_Display.Location = new System.Drawing.Point(185, 192);
             this.cbb_Display.Name = "cbb_Display";
             this.cbb_Display.Size = new System.Drawing.Size(152, 28);
             this.cbb_Display.TabIndex = 41;
@@ -210,7 +212,7 @@ namespace PhoneManagerment_ADO.net
             "256 GB",
             "512 GB",
             "1 TB"});
-            this.cbb_InternalStorage.Location = new System.Drawing.Point(221, 192);
+            this.cbb_InternalStorage.Location = new System.Drawing.Point(185, 150);
             this.cbb_InternalStorage.Name = "cbb_InternalStorage";
             this.cbb_InternalStorage.Size = new System.Drawing.Size(152, 28);
             this.cbb_InternalStorage.TabIndex = 39;
@@ -219,7 +221,7 @@ namespace PhoneManagerment_ADO.net
             // txt_ModelName
             // 
             this.txt_ModelName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_ModelName.Location = new System.Drawing.Point(221, 57);
+            this.txt_ModelName.Location = new System.Drawing.Point(185, 58);
             this.txt_ModelName.Name = "txt_ModelName";
             this.txt_ModelName.Size = new System.Drawing.Size(203, 26);
             this.txt_ModelName.TabIndex = 37;
@@ -229,7 +231,7 @@ namespace PhoneManagerment_ADO.net
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(480, 319);
+            this.label11.Location = new System.Drawing.Point(483, 288);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(139, 24);
             this.label11.TabIndex = 36;
@@ -240,7 +242,7 @@ namespace PhoneManagerment_ADO.net
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(516, 263);
+            this.label10.Location = new System.Drawing.Point(516, 235);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(98, 24);
             this.label10.TabIndex = 35;
@@ -251,7 +253,7 @@ namespace PhoneManagerment_ADO.net
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(447, 194);
+            this.label9.Location = new System.Drawing.Point(3, 345);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(187, 24);
             this.label9.TabIndex = 34;
@@ -262,7 +264,7 @@ namespace PhoneManagerment_ADO.net
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label8.Location = new System.Drawing.Point(487, 127);
+            this.label8.Location = new System.Drawing.Point(32, 288);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(137, 24);
             this.label8.TabIndex = 33;
@@ -273,7 +275,7 @@ namespace PhoneManagerment_ADO.net
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(495, 56);
+            this.label7.Location = new System.Drawing.Point(37, 239);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(132, 24);
             this.label7.TabIndex = 32;
@@ -284,7 +286,7 @@ namespace PhoneManagerment_ADO.net
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(122, 265);
+            this.label5.Location = new System.Drawing.Point(92, 192);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 24);
             this.label5.TabIndex = 30;
@@ -295,7 +297,7 @@ namespace PhoneManagerment_ADO.net
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(59, 194);
+            this.label4.Location = new System.Drawing.Point(12, 150);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(157, 24);
             this.label4.TabIndex = 29;
@@ -306,7 +308,7 @@ namespace PhoneManagerment_ADO.net
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(140, 127);
+            this.label3.Location = new System.Drawing.Point(114, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 24);
             this.label3.TabIndex = 28;
@@ -317,7 +319,7 @@ namespace PhoneManagerment_ADO.net
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(84, 59);
+            this.label2.Location = new System.Drawing.Point(40, 60);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(129, 24);
             this.label2.TabIndex = 27;
@@ -328,7 +330,7 @@ namespace PhoneManagerment_ADO.net
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(256, -5);
+            this.label1.Location = new System.Drawing.Point(25, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(363, 31);
             this.label1.TabIndex = 26;
@@ -348,11 +350,21 @@ namespace PhoneManagerment_ADO.net
             "16 GB",
             "32 GB",
             "64 GB"});
-            this.cbb_Ram.Location = new System.Drawing.Point(221, 125);
+            this.cbb_Ram.Location = new System.Drawing.Point(185, 100);
             this.cbb_Ram.Name = "cbb_Ram";
             this.cbb_Ram.Size = new System.Drawing.Size(152, 28);
             this.cbb_Ram.TabIndex = 38;
             this.cbb_Ram.Text = "--Select--";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::PhoneManagerment_ADO.net.Properties.Resources.CLaI;
+            this.pictureBox1.Location = new System.Drawing.Point(442, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(338, 208);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 51;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_AddNewPhone
             // 
@@ -382,8 +394,10 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "Form_AddNewPhone";
             this.Text = "Form_AddNewPhone";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,5 +428,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox cbb_Ram;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

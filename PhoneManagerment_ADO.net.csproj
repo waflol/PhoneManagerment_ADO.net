@@ -230,6 +230,12 @@
     <None Include="Resources\3416-bonk.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\200.gif" />
+    <None Include="Resources\CLaI.gif" />
+    <None Include="Resources\hand-gesture-holding-a-phone-stock-gif-4033-1280x720.gif" />
+    <None Include="Resources\37076cce35285997d32d4a4f71f9c4a0.gif" />
+    <None Include="Resources\giphy.gif" />
+    <None Include="Resources\247WallSt.com-247WS-559997-old-phones.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -33,15 +33,17 @@ namespace PhoneManagerment_ADO.net
             this.GridView_PhoneRecord = new System.Windows.Forms.DataGridView();
             this.phoneBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.phoneDBDataSet = new PhoneManagerment_ADO.net.PhoneDBDataSet();
-            this.phonesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txt_PhoneID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.phoneTableAdapter = new PhoneManagerment_ADO.net.PhoneDBDataSetTableAdapters.PhoneTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.phonesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.GridView_PhoneRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonesBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -49,10 +51,10 @@ namespace PhoneManagerment_ADO.net
             // 
             this.GridView_PhoneRecord.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.GridView_PhoneRecord.GridColor = System.Drawing.SystemColors.Control;
-            this.GridView_PhoneRecord.Location = new System.Drawing.Point(7, 201);
+            this.GridView_PhoneRecord.Location = new System.Drawing.Point(12, 202);
             this.GridView_PhoneRecord.Name = "GridView_PhoneRecord";
             this.GridView_PhoneRecord.RowHeadersVisible = false;
-            this.GridView_PhoneRecord.Size = new System.Drawing.Size(1007, 236);
+            this.GridView_PhoneRecord.Size = new System.Drawing.Size(1002, 236);
             this.GridView_PhoneRecord.TabIndex = 50;
             this.GridView_PhoneRecord.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_PhoneRecord_CellClick);
             // 
@@ -65,10 +67,6 @@ namespace PhoneManagerment_ADO.net
             // 
             this.phoneDBDataSet.DataSetName = "PhoneDBDataSet";
             this.phoneDBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // phonesBindingSource
-            // 
-            this.phonesBindingSource.DataMember = "Phones";
             // 
             // txt_PhoneID
             // 
@@ -95,11 +93,11 @@ namespace PhoneManagerment_ADO.net
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(387, 9);
+            this.label1.Location = new System.Drawing.Point(428, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 31);
+            this.label1.Size = new System.Drawing.Size(224, 31);
             this.label1.TabIndex = 46;
-            this.label1.Text = "Delete Phone Record";
+            this.label1.Text = "Phone Available";
             // 
             // btn_Delete
             // 
@@ -118,6 +116,20 @@ namespace PhoneManagerment_ADO.net
             // 
             this.phoneTableAdapter.ClearBeforeFill = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::PhoneManagerment_ADO.net.Properties.Resources._247WallSt_com_247WS_559997_old_phones;
+            this.pictureBox2.Location = new System.Drawing.Point(7, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(1016, 435);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 52;
+            this.pictureBox2.TabStop = false;
+            // 
+            // phonesBindingSource
+            // 
+            this.phonesBindingSource.DataMember = "Phones";
+            // 
             // Form_Phone_Details
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,11 +140,13 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_Delete);
+            this.Controls.Add(this.pictureBox2);
             this.Name = "Form_Phone_Details";
             this.Text = "Form_Phone_Details";
             ((System.ComponentModel.ISupportInitialize)(this.GridView_PhoneRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phonesBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -150,5 +164,6 @@ namespace PhoneManagerment_ADO.net
         private PhoneDBDataSet phoneDBDataSet;
         private System.Windows.Forms.BindingSource phoneBindingSource;
         private PhoneDBDataSetTableAdapters.PhoneTableAdapter phoneTableAdapter;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
