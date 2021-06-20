@@ -84,7 +84,7 @@ namespace PhoneManagerment_ADO.net {
             GridView_Cart.Refresh();
         }
         private void Phone_Name_Textbox_TextChanged(object sender, EventArgs e) {
-
+            
             try {
                 Phone_search_dataset = Phone.search_ModelName(Phone_Search_Textbox.Text);
 

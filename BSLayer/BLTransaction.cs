@@ -25,16 +25,24 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             string sqlString = "select max(ID_transaction) as max_id from Transactions";
             DataSet ds = db.ExcuteQueryDataSet(sqlString, CommandType.Text);
-            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+            try
+            {
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return 0;
+                else
+                    return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+            }
+            catch(Exception error)
+            {
                 return 0;
-            else
-                return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+            }
+            
         }
 
         // them phone
         public bool addTransaction(int idtrans, int totalprice, DateTime date, int idcus, string username)
         {
-            string sqlString = "Insert Into Transactions Values("+idtrans.ToString()+","+totalprice.ToString()+","+date.ToString()+","+idcus.ToString()+",'"+username+"')";
+            string sqlString = "Insert Into Transactions Values("+idtrans.ToString()+","+totalprice.ToString()+",'"+date.ToString()+"',"+idcus.ToString()+",'"+username+"')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         //xoa phone
