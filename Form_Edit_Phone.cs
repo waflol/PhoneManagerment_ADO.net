@@ -54,13 +54,7 @@ namespace PhoneManagerment_ADO.net
             }
             catch
             {
-                ////Phone_Name_Textbox.Text = "";
-                //cbb_Ram.Text = "";
-                //cbb_InternalStorage.Text = "";
-                //cbb_Display.Text = "";
-                //cbb_SimType.Text = "";
-                //cbb_RearCamera.Text = "";
-                //txt_Price.Text = "";
+               
             }
         }
         string x = " ";
