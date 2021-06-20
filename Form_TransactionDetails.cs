@@ -59,6 +59,7 @@ namespace PhoneManagerment_ADO.net
         private void btn_remove_Click(object sender, EventArgs e)
         {
             transaction_Detail.deleteTransaction_details(Phone_Id);
+            txt_IDTrans.Text = "";
             LoadData();
         }
 
@@ -72,7 +73,6 @@ namespace PhoneManagerment_ADO.net
                 {
                     // gán model name trong datagridview đã chọn
                     Phone_Id = GridView_Details_Trans.Rows[a].Cells[17].Value.ToString();
-                    label3.Text = GridView_Details_Trans.Rows[a].Cells[17].Value.ToString();
                 }
               
             }

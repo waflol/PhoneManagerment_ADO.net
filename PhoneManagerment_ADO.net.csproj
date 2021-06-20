@@ -179,5 +179,8 @@
   <ItemGroup>
     <Folder Include="database\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3416-bonk.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

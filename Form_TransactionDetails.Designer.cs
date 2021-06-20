@@ -34,15 +34,12 @@ namespace PhoneManagerment_ADO.net
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_IDTrans = new System.Windows.Forms.TextBox();
-            this.btn_Edit = new System.Windows.Forms.Button();
-            this.btn_remove = new System.Windows.Forms.Button();
-            this.btn_Reset = new System.Windows.Forms.Button();
             this.phoneDBDataSet = new PhoneManagerment_ADO.net.PhoneDBDataSet();
             this.phoneDBDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.phoneDB_Transaction_Details = new PhoneManagerment_ADO.net.PhoneDB_Transaction_Details();
             this.transactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.transactionsTableAdapter = new PhoneManagerment_ADO.net.PhoneDB_Transaction_DetailsTableAdapters.TransactionsTableAdapter();
-            this.label3 = new System.Windows.Forms.Label();
+            this.btn_remove = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_Details_Trans)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSetBindingSource)).BeginInit();
@@ -93,37 +90,6 @@ namespace PhoneManagerment_ADO.net
             this.txt_IDTrans.TabIndex = 3;
             this.txt_IDTrans.TextChanged += new System.EventHandler(this.txt_IDTrans_TextChanged);
             // 
-            // btn_Edit
-            // 
-            this.btn_Edit.Location = new System.Drawing.Point(57, 382);
-            this.btn_Edit.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(100, 46);
-            this.btn_Edit.TabIndex = 4;
-            this.btn_Edit.Text = "Edit";
-            this.btn_Edit.UseVisualStyleBackColor = true;
-            // 
-            // btn_remove
-            // 
-            this.btn_remove.Location = new System.Drawing.Point(238, 382);
-            this.btn_remove.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_remove.Name = "btn_remove";
-            this.btn_remove.Size = new System.Drawing.Size(100, 46);
-            this.btn_remove.TabIndex = 4;
-            this.btn_remove.Text = "Remove";
-            this.btn_remove.UseVisualStyleBackColor = true;
-            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
-            // 
-            // btn_Reset
-            // 
-            this.btn_Reset.Location = new System.Drawing.Point(404, 379);
-            this.btn_Reset.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Reset.Name = "btn_Reset";
-            this.btn_Reset.Size = new System.Drawing.Size(100, 46);
-            this.btn_Reset.TabIndex = 4;
-            this.btn_Reset.Text = "Reset";
-            this.btn_Reset.UseVisualStyleBackColor = true;
-            // 
             // phoneDBDataSet
             // 
             this.phoneDBDataSet.DataSetName = "PhoneDBDataSet";
@@ -148,24 +114,25 @@ namespace PhoneManagerment_ADO.net
             // 
             this.transactionsTableAdapter.ClearBeforeFill = true;
             // 
-            // label3
+            // btn_remove
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(547, 50);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "label3";
+            this.btn_remove.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_remove.Location = new System.Drawing.Point(429, 48);
+            this.btn_remove.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_remove.Name = "btn_remove";
+            this.btn_remove.Size = new System.Drawing.Size(61, 27);
+            this.btn_remove.TabIndex = 4;
+            this.btn_remove.Text = "Remove";
+            this.btn_remove.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_remove.UseVisualStyleBackColor = true;
+            this.btn_remove.Click += new System.EventHandler(this.btn_remove_Click);
             // 
             // Form_TransactionDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 436);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.btn_Reset);
+            this.ClientSize = new System.Drawing.Size(742, 387);
             this.Controls.Add(this.btn_remove);
-            this.Controls.Add(this.btn_Edit);
             this.Controls.Add(this.txt_IDTrans);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -189,14 +156,11 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_IDTrans;
-        private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Button btn_remove;
-        private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.BindingSource phoneDBDataSetBindingSource;
         private PhoneDBDataSet phoneDBDataSet;
         private PhoneDB_Transaction_Details phoneDB_Transaction_Details;
         private System.Windows.Forms.BindingSource transactionsBindingSource;
         private PhoneDB_Transaction_DetailsTableAdapters.TransactionsTableAdapter transactionsTableAdapter;
-        private System.Windows.Forms.Label label3;
     }
 }
