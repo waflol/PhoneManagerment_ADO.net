@@ -78,6 +78,20 @@ namespace PhoneManagerment_ADO.net
             }
             catch { }
         }
-        
+
+        private void GridView_Details_Trans_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

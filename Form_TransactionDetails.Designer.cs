@@ -62,6 +62,7 @@ namespace PhoneManagerment_ADO.net
             this.GridView_Details_Trans.Size = new System.Drawing.Size(722, 297);
             this.GridView_Details_Trans.TabIndex = 0;
             this.GridView_Details_Trans.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_Details_Trans_CellClick);
+            this.GridView_Details_Trans.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_Details_Trans_CellContentClick);
             // 
             // label1
             // 
@@ -73,6 +74,7 @@ namespace PhoneManagerment_ADO.net
             this.label1.Size = new System.Drawing.Size(86, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Details";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -84,6 +86,7 @@ namespace PhoneManagerment_ADO.net
             this.label2.Size = new System.Drawing.Size(118, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Find Phone Number";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_IDTrans
             // 
