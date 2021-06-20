@@ -26,6 +26,8 @@ namespace PhoneManagerment_ADO.net {
         private int Phone_remove_cost = 0;
         // biến trỏ giá trị trong datagridvieww
         private int index;
+        // biến trỏ giá trị để xoá trong datagridview
+        private int index_remove;
         // tạo mảng lưu tên điện thoại đã chọn
         private List<string> Phones_name_buying = new List<string>();
         // tạo biến điện thoại sẽ bị xoá
@@ -110,13 +112,22 @@ namespace PhoneManagerment_ADO.net {
 
         private void GridView_Cart_CellClick(object sender, DataGridViewCellEventArgs e) {
             try {
-                int a = GridView_Cart.CurrentCell.RowIndex;
-                if (GridView_Cart.Rows[a].Cells[0].Value != null) {
+                index_remove = GridView_Cart.CurrentCell.RowIndex;
+                if (GridView_Cart.Rows[index_remove].Cells[0].Value != null) {
                     // gán phone trong datagridview đã chọn
-                    Phone_remove = GridView_Cart.Rows[a].Cells[0].Value.ToString();
-                    Phone_remove_cost = int.Parse(GridView_Cart.Rows[a].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[a].Cells[2].Value.ToString());
-                    Total_Cost_Textbox.Text = Phone_remove_cost.ToString();
+                    Phone_remove = GridView_Cart.Rows[index_remove].Cells[0].Value.ToString();
+                    //Phone_remove_cost = int.Parse(GridView_Cart.Rows[index_remove].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[index_remove].Cells[2].Value.ToString());
+                    //Total_Cost_Textbox.Text = Phone_remove_cost.ToString();
                 }
+            } catch { }
+        }
+
+        private void Remove_Button_Click(object sender, EventArgs e) {
+            try {
+                Phones_name_buying.RemoveAt(index_remove);
+                Total_cost-= int.Parse(GridView_Cart.Rows[index_remove].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[index_remove].Cells[2].Value.ToString());
+                GridView_Cart.Rows.RemoveAt(index_remove);
+                Total_Cost_Textbox.Text = Total_cost.ToString();
             } catch { }
         }
     }
