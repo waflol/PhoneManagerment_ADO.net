@@ -63,9 +63,29 @@ namespace PhoneManagerment_ADO.net.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _247WallSt_com_247WS_559997_old_phones {
+            get {
+                object obj = ResourceManager.GetObject("247WallSt.com-247WS-559997-old-phones", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3416_bonk {
             get {
                 object obj = ResourceManager.GetObject("3416-bonk", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CLaI {
+            get {
+                object obj = ResourceManager.GetObject("CLaI", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -236,6 +236,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\earn-money-png-4.png" />
+    <Content Include="Resources\247WallSt.com-247WS-559997-old-phones.jpg" />
+    <None Include="Resources\247WallSt.com-247WS-559997-old-phones1.jpg" />
+    <Content Include="Resources\CLaI.gif" />
+    <None Include="Resources\CLaI1.gif" />
     <Content Include="Resources\iphone1.png" />
     <Content Include="Resources\iphone2.png" />
     <Content Include="Resources\iphone3.png" />
