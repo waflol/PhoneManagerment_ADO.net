@@ -40,9 +40,9 @@ namespace PhoneManagerment_ADO.net.BSLayer
         }
 
         // them phone
-        public bool addTransaction(int idtrans, int totalprice, DateTime date, int idcus, string username)
+        public bool addTransaction(int idtrans, int totalprice, string date, int idcus, string username)
         {
-            string sqlString = "Insert Into Transactions Values("+idtrans.ToString()+","+totalprice.ToString()+",'"+date.ToString()+"',"+idcus.ToString()+",'"+username+"')";
+            string sqlString = "Insert Into Transactions Values("+idtrans.ToString()+","+totalprice.ToString()+",'"+date+"',"+idcus.ToString()+",'"+username+"')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         //xoa phone
