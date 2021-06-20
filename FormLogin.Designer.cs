@@ -42,7 +42,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.lb_Main.AutoSize = true;
             this.lb_Main.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Main.Location = new System.Drawing.Point(166, 15);
+            this.lb_Main.Location = new System.Drawing.Point(311, 13);
             this.lb_Main.Name = "lb_Main";
             this.lb_Main.Size = new System.Drawing.Size(392, 24);
             this.lb_Main.TabIndex = 15;
@@ -51,7 +51,7 @@ namespace PhoneManagerment_ADO.net
             // btn_Reset
             // 
             this.btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Reset.Location = new System.Drawing.Point(390, 394);
+            this.btn_Reset.Location = new System.Drawing.Point(535, 392);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(78, 32);
             this.btn_Reset.TabIndex = 13;
@@ -61,7 +61,7 @@ namespace PhoneManagerment_ADO.net
             // btn_Login
             // 
             this.btn_Login.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Login.Location = new System.Drawing.Point(193, 394);
+            this.btn_Login.Location = new System.Drawing.Point(338, 392);
             this.btn_Login.Name = "btn_Login";
             this.btn_Login.Size = new System.Drawing.Size(78, 32);
             this.btn_Login.TabIndex = 12;
@@ -72,7 +72,7 @@ namespace PhoneManagerment_ADO.net
             // txt_Password
             // 
             this.txt_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Password.Location = new System.Drawing.Point(296, 325);
+            this.txt_Password.Location = new System.Drawing.Point(441, 323);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.PasswordChar = '*';
             this.txt_Password.Size = new System.Drawing.Size(172, 26);
@@ -82,7 +82,7 @@ namespace PhoneManagerment_ADO.net
             // txt_Username
             // 
             this.txt_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Username.Location = new System.Drawing.Point(296, 275);
+            this.txt_Username.Location = new System.Drawing.Point(441, 273);
             this.txt_Username.Name = "txt_Username";
             this.txt_Username.Size = new System.Drawing.Size(172, 26);
             this.txt_Username.TabIndex = 10;
@@ -92,7 +92,7 @@ namespace PhoneManagerment_ADO.net
             this.lb_Password.AutoSize = true;
             this.lb_Password.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Password.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_Password.Location = new System.Drawing.Point(166, 328);
+            this.lb_Password.Location = new System.Drawing.Point(311, 326);
             this.lb_Password.Name = "lb_Password";
             this.lb_Password.Size = new System.Drawing.Size(100, 24);
             this.lb_Password.TabIndex = 9;
@@ -103,7 +103,7 @@ namespace PhoneManagerment_ADO.net
             this.lb_Username.AutoSize = true;
             this.lb_Username.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lb_Username.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lb_Username.Location = new System.Drawing.Point(166, 279);
+            this.lb_Username.Location = new System.Drawing.Point(311, 277);
             this.lb_Username.Name = "lb_Username";
             this.lb_Username.Size = new System.Drawing.Size(105, 24);
             this.lb_Username.TabIndex = 8;
@@ -113,7 +113,9 @@ namespace PhoneManagerment_ADO.net
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(688, 448);
+            this.BackgroundImage = global::PhoneManagerment_ADO.net.Properties.Resources.spkt;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(893, 448);
             this.Controls.Add(this.lb_Main);
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Login);
@@ -121,6 +123,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.txt_Username);
             this.Controls.Add(this.lb_Password);
             this.Controls.Add(this.lb_Username);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormLogin";
             this.Text = "Login";
