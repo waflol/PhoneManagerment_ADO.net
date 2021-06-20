@@ -230,6 +230,9 @@
     <None Include="Resources\3416-bonk.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\iphone1.jpg" />
+    <Content Include="Resources\iphone2.jpg" />
+    <Content Include="Resources\iphone3.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

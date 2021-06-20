@@ -12,9 +12,11 @@ namespace PhoneManagerment_ADO.net
 {
     public partial class Home : Form
     {
+        //public Image image1 = Image.FromFile("Resource//iphone1.jpg");
         public Home()
         {
             InitializeComponent();
+            //pb_HinhNen.BackgroundImage = image1;
         }
 
         private void addTransactionToolStripMenuItem_Click(object sender, EventArgs e)
@@ -47,6 +49,19 @@ namespace PhoneManagerment_ADO.net
         private void benefitToolStripMenuItem_Click(object sender, EventArgs e) {
             Form_Report report = new Form_Report();
             report.ShowDialog();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            
+        }
+        private void LoadHinhNen()
+        {
+
+        }
+        private void pb_HinhNen_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
