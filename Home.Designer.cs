@@ -34,11 +34,11 @@ namespace PhoneManagerment_ADO.net
             this.transactionDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phoneDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.wareHouseToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infomationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vHGToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hTHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lNHAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.benefitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_Home.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,8 +50,8 @@ namespace PhoneManagerment_ADO.net
             this.transactionDetailToolStripMenuItem,
             this.addNewPhoneToolStripMenuItem,
             this.phoneDetailsToolStripMenuItem,
-            this.wareHouseToolStripMenuItem,
-            this.infomationToolStripMenuItem});
+            this.infomationToolStripMenuItem,
+            this.benefitToolStripMenuItem});
             this.menu_Home.Location = new System.Drawing.Point(0, 0);
             this.menu_Home.Name = "menu_Home";
             this.menu_Home.Size = new System.Drawing.Size(981, 33);
@@ -86,12 +86,6 @@ namespace PhoneManagerment_ADO.net
             this.phoneDetailsToolStripMenuItem.Text = "Phone details";
             this.phoneDetailsToolStripMenuItem.Click += new System.EventHandler(this.phoneDetailsToolStripMenuItem_Click);
             // 
-            // wareHouseToolStripMenuItem
-            // 
-            this.wareHouseToolStripMenuItem.Name = "wareHouseToolStripMenuItem";
-            this.wareHouseToolStripMenuItem.Size = new System.Drawing.Size(127, 29);
-            this.wareHouseToolStripMenuItem.Text = "WareHouse";
-            // 
             // infomationToolStripMenuItem
             // 
             this.infomationToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -105,20 +99,27 @@ namespace PhoneManagerment_ADO.net
             // vHGToolStripMenuItem
             // 
             this.vHGToolStripMenuItem.Name = "vHGToolStripMenuItem";
-            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
+            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.vHGToolStripMenuItem.Text = "VHG";
             // 
             // hTHToolStripMenuItem
             // 
             this.hTHToolStripMenuItem.Name = "hTHToolStripMenuItem";
-            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
+            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.hTHToolStripMenuItem.Text = "HTH";
             // 
             // lNHAToolStripMenuItem
             // 
             this.lNHAToolStripMenuItem.Name = "lNHAToolStripMenuItem";
-            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
+            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
             this.lNHAToolStripMenuItem.Text = "LNHA";
+            // 
+            // benefitToolStripMenuItem
+            // 
+            this.benefitToolStripMenuItem.Name = "benefitToolStripMenuItem";
+            this.benefitToolStripMenuItem.Size = new System.Drawing.Size(87, 29);
+            this.benefitToolStripMenuItem.Text = "Benefit";
+            this.benefitToolStripMenuItem.Click += new System.EventHandler(this.benefitToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -144,10 +145,10 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.ToolStripMenuItem transactionDetailToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem addNewPhoneToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem phoneDetailsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem wareHouseToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infomationToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vHGToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem hTHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lNHAToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem benefitToolStripMenuItem;
     }
 }

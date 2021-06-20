@@ -43,5 +43,10 @@ namespace PhoneManagerment_ADO.net
             Form_TransactionDetails form_TransactionDetails = new Form_TransactionDetails();
             form_TransactionDetails.ShowDialog();
         }
+
+        private void benefitToolStripMenuItem_Click(object sender, EventArgs e) {
+            Form_Report report = new Form_Report();
+            report.ShowDialog();
+        }
     }
 }

@@ -96,6 +96,12 @@
     <Compile Include="Form_Phone_Details.Designer.cs">
       <DependentUpon>Form_Phone_Details.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Report.Designer.cs">
+      <DependentUpon>Form_Report.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_TransactionDetails.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +113,11 @@
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
     </Compile>
     <Compile Include="PhoneDBDataSet.cs">
       <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
@@ -136,6 +147,9 @@
     <EmbeddedResource Include="Form_Phone_Details.resx">
       <DependentUpon>Form_Phone_Details.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form_Report.resx">
+      <DependentUpon>Form_Report.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form_TransactionDetails.resx">
       <DependentUpon>Form_TransactionDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -152,7 +166,19 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Report_TongTienBanDt.rdlc" />
     <None Include="packages.config" />
+    <None Include="PhoneDB.xsc">
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
+    </None>
+    <None Include="PhoneDB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhoneDB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PhoneDB.xss">
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
+    </None>
     <None Include="PhoneDBDataSet.xsc">
       <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
     </None>
