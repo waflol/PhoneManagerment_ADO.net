@@ -35,6 +35,8 @@ namespace PhoneManagerment_ADO.net {
         string Phone_remove;
         // tạo biến phoneID để lấy phoneID report
         private List<string> phoneID = new List<string>();
+        // phone id tạm để gán
+        private string temp_phoneID;
 
 
         private bool isAlready(string PhoneName) {
@@ -57,6 +59,7 @@ namespace PhoneManagerment_ADO.net {
                 } else {
                     // cập nhật lại cột số lượng trong hoá đơn
                     GridView_Cart[2, index].Value = int.Parse(GridView_Cart[2, index].Value.ToString()) + (int)numeric_Quantity.Value;
+                    phoneID.Add(temp_phoneID);
                 }
                 Total_cost += int.Parse(txt_Price.Text) * (int)numeric_Quantity.Value;
                 Total_Cost_Textbox.Text = Total_cost.ToString();
@@ -93,6 +96,8 @@ namespace PhoneManagerment_ADO.net {
                 Phone_search_dataset = Phone.search_ModelName(Phone_Search_Textbox.Text);
 
                 if (Phone_search_dataset.Tables.Count > 0 && Phone_Search_Textbox.Text != "") {
+
+                    temp_phoneID = Phone_search_dataset.Tables[0].Rows[0][10].ToString();
                     Phone_Name_Textbox.Text = Phone_search_dataset.Tables[0].Rows[0][0].ToString();
                     txt_Ram.Text = Phone_search_dataset.Tables[0].Rows[0][1].ToString();
                     txt_istorage.Text = Phone_search_dataset.Tables[0].Rows[0][8].ToString();
@@ -137,15 +142,6 @@ namespace PhoneManagerment_ADO.net {
         private void Export_Button_Click(object sender, EventArgs e)
         {
 
-            customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID() + 1);
-            transaction.addTransaction(transaction.returnMaxID() + 1, Total_cost, dtpk_BuyDate.Value.ToString(), customer.returnMaxID(), FormLogin.currentAccount);
-            
-            ///int index_Row = 0;
-            for (int i = 0; i < GridView_Cart.Rows.Count; i++)
-            {
-                transaction_Detail.addTransaction_details((GridView_Cart[2, i].Value.ToString()), transaction.returnMaxID().ToString(), Phone.returnMaxID().ToString());
-                
-            }
         }
     }
 }
