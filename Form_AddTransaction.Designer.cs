@@ -169,6 +169,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // dtpk_BuyDate
             // 
+            this.dtpk_BuyDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpk_BuyDate.Location = new System.Drawing.Point(68, 137);
             this.dtpk_BuyDate.Margin = new System.Windows.Forms.Padding(2);
             this.dtpk_BuyDate.Name = "dtpk_BuyDate";
