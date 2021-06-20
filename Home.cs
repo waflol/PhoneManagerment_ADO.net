@@ -8,17 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PhoneManagerment_ADO.net
-{
-    public partial class Home : Form
-    {
+namespace PhoneManagerment_ADO.net {
+    public partial class Home : Form {
         public Image image1 = Image.FromFile("Resources\\store2.png");
         public Image image2 = Image.FromFile("Resources\\store.png");
         public Image image3 = Image.FromFile("Resources\\9531_smart.png");
         private List<Image> images = new List<Image>();
         int b = 0;
-        public Home()
-        {
+        public Home() {
             InitializeComponent();
             images.Add(image1);
             images.Add(image2);
@@ -26,11 +23,10 @@ namespace PhoneManagerment_ADO.net
             pb_HinhNen.BackgroundImage = images[b];
             pb_HinhNen.SizeMode = PictureBoxSizeMode.StretchImage;
             Timer_BackGroundChange.Start();
-            
+
         }
-         
-        private void addTransactionToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+
+        private void addTransactionToolStripMenuItem_Click(object sender, EventArgs e) {
             Form_AddTransaction form_addTrans = new Form_AddTransaction();
             form_addTrans.ShowDialog();
         }
@@ -39,14 +35,12 @@ namespace PhoneManagerment_ADO.net
             Application.Exit();
         }
 
-        private void addNewPhoneToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void addNewPhoneToolStripMenuItem_Click(object sender, EventArgs e) {
             Form_AddNewPhone form_addnewphone = new Form_AddNewPhone();
             form_addnewphone.ShowDialog();
         }
 
-        private void phoneDetailsToolStripMenuItem_Click(object sender, EventArgs e)
-        {
+        private void phoneDetailsToolStripMenuItem_Click(object sender, EventArgs e) {
             Form_Phone_Details formphonedetail = new Form_Phone_Details();
             formphonedetail.ShowDialog();
         }
@@ -61,28 +55,20 @@ namespace PhoneManagerment_ADO.net
             report.ShowDialog();
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (b == 0)
-            {
-                b = 1;
-            }
-            if (b == 1)
-                b = 2;
-            else
+        private void timer1_Tick(object sender, EventArgs e) {
+            if (b == 2) {
                 b = 0;
+            } else b++;
 
             pb_HinhNen.BackgroundImage = images[b];
             pb_HinhNen.SizeMode = PictureBoxSizeMode.StretchImage;
             Timer_BackGroundChange.Start();
-         
-        }
-        private void LoadHinhNen()
-        {
 
         }
-        private void pb_HinhNen_Click(object sender, EventArgs e)
-        {
+        private void LoadHinhNen() {
+
+        }
+        private void pb_HinhNen_Click(object sender, EventArgs e) {
 
         }
     }
