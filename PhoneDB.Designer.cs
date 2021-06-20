@@ -2852,7 +2852,7 @@ namespace PhoneManagerment_ADO.net.PhoneDBTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3202,7 +3202,7 @@ SELECT Customer_Name, PhoneNumber, Address, ID_customer FROM Customer WHERE (ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3618,7 +3618,7 @@ SELECT Model_Name, ram, Front_Camera, Display, Sim_Type, Network_Type, Price, Fi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4231,7 +4231,7 @@ SELECT quantity, ID_transaction, ID_phone FROM Transaction_Details WHERE (ID_pho
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4551,7 +4551,7 @@ SELECT ID_transaction, Total_price, Date, ID_customer, username FROM Transaction
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

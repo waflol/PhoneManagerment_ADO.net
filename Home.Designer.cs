@@ -29,6 +29,7 @@ namespace PhoneManagerment_ADO.net
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.menu_Home = new System.Windows.Forms.MenuStrip();
             this.addTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -39,7 +40,10 @@ namespace PhoneManagerment_ADO.net
             this.hTHToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lNHAToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.benefitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Timer_BackGroundChange = new System.Windows.Forms.Timer(this.components);
+            this.pb_HinhNen = new System.Windows.Forms.PictureBox();
             this.menu_Home.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_HinhNen)).BeginInit();
             this.SuspendLayout();
             // 
             // menu_Home
@@ -99,19 +103,19 @@ namespace PhoneManagerment_ADO.net
             // vHGToolStripMenuItem
             // 
             this.vHGToolStripMenuItem.Name = "vHGToolStripMenuItem";
-            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.vHGToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
             this.vHGToolStripMenuItem.Text = "VHG";
             // 
             // hTHToolStripMenuItem
             // 
             this.hTHToolStripMenuItem.Name = "hTHToolStripMenuItem";
-            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.hTHToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
             this.hTHToolStripMenuItem.Text = "HTH";
             // 
             // lNHAToolStripMenuItem
             // 
             this.lNHAToolStripMenuItem.Name = "lNHAToolStripMenuItem";
-            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(180, 30);
+            this.lNHAToolStripMenuItem.Size = new System.Drawing.Size(137, 30);
             this.lNHAToolStripMenuItem.Text = "LNHA";
             // 
             // benefitToolStripMenuItem
@@ -121,11 +125,26 @@ namespace PhoneManagerment_ADO.net
             this.benefitToolStripMenuItem.Text = "Benefit";
             this.benefitToolStripMenuItem.Click += new System.EventHandler(this.benefitToolStripMenuItem_Click);
             // 
+            // Timer_BackGroundChange
+            // 
+            this.Timer_BackGroundChange.Interval = 3000;
+            this.Timer_BackGroundChange.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // pb_HinhNen
+            // 
+            this.pb_HinhNen.Location = new System.Drawing.Point(12, 36);
+            this.pb_HinhNen.Name = "pb_HinhNen";
+            this.pb_HinhNen.Size = new System.Drawing.Size(957, 466);
+            this.pb_HinhNen.TabIndex = 1;
+            this.pb_HinhNen.TabStop = false;
+            this.pb_HinhNen.Click += new System.EventHandler(this.pb_HinhNen_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 514);
+            this.Controls.Add(this.pb_HinhNen);
             this.Controls.Add(this.menu_Home);
             this.MainMenuStrip = this.menu_Home;
             this.Name = "Home";
@@ -133,6 +152,7 @@ namespace PhoneManagerment_ADO.net
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_FormClosing);
             this.menu_Home.ResumeLayout(false);
             this.menu_Home.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_HinhNen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,5 +170,7 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.ToolStripMenuItem hTHToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lNHAToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem benefitToolStripMenuItem;
+        private System.Windows.Forms.Timer Timer_BackGroundChange;
+        private System.Windows.Forms.PictureBox pb_HinhNen;
     }
 }
