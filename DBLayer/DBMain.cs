@@ -10,30 +10,31 @@ namespace PhoneManagerment_ADO.net.DBLayer
 {
     class DBMain
     {
-        string ConnStr1 = Connect.Connection_String1; // thêm conn
-        string ConnStr2 = Connect.Connection_String2;
-        string ConnStr3 = Connect.Connection_String3;
+        string ConnStr = Connect.Connection_String; // thêm conn
+        //string ConnStr2 = Connect.Connection_String2;
+        //string ConnStr3 = Connect.Connection_String3;
         SqlConnection conn = null;
         SqlCommand comm = null;
         SqlDataAdapter da = null;
 
         public DBMain()
         {
-            try
-            {
-                conn = new SqlConnection(ConnStr1);
-            }
-            catch
-            {
-                try
-                {
-                    conn = new SqlConnection(ConnStr2);
-                }
-                catch
-                {
-                    conn = new SqlConnection(ConnStr3);
-                }
-            }
+            conn = new SqlConnection(ConnStr);
+            //try
+            //{
+                
+            //}
+            //catch
+            //{
+            //    try
+            //    {
+            //        conn = new SqlConnection(ConnStr2);
+            //    }
+            //    catch
+            //    {
+            //        conn = new SqlConnection(ConnStr3);
+            //    }
+            //}
             
             comm = conn.CreateCommand();
         }
