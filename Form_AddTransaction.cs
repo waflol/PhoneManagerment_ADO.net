@@ -139,7 +139,8 @@ namespace PhoneManagerment_ADO.net {
 
             //customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID()+1);
             //transaction.addTransaction(transaction.returnMaxID() + 1,Total_cost, dtpk_BuyDate.Value, customer.returnMaxID(), FormLogin.currentAccount);
-            transaction.addTransaction(transaction.returnMaxID() + 1, 3000, DateTime.Parse(" 10/10/2021"),1, "TheHien");
+            //transaction.addTransaction(transaction.returnMaxID() + 1, 3000, " 10/10/2021",1, "TheHien");
+            MessageBox.Show(dtpk_BuyDate.Value.ToShortDateString());
             //int index_Row = 0;
             //foreach (DataRow rows in GridView_Cart.Rows)
             //{
