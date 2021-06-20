@@ -136,16 +136,16 @@ namespace PhoneManagerment_ADO.net {
 
         private void Export_Button_Click(object sender, EventArgs e)
         {
-           
-            customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID()+1);
-            int currentID = customer.returnMaxID();
-            transaction.addTransaction(transaction.returnMaxID() + 1,Total_cost, dtpk_BuyDate.Value, currentID, "ha");
-            int index_Row = 0;
-            foreach (DataRow rows in GridView_Cart.Rows)
-            {
-                transaction_Detail.addTransaction_details(rows[2].ToString(), transaction.returnMaxID().ToString(), phoneID[index_Row]);
-                index_Row += 1;
-            }
+
+            //customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID()+1);
+            //transaction.addTransaction(transaction.returnMaxID() + 1,Total_cost, dtpk_BuyDate.Value, customer.returnMaxID(), FormLogin.currentAccount);
+            transaction.addTransaction(transaction.returnMaxID() + 1, 3000, DateTime.Parse(" 10/10/2021"),1, "TheHien");
+            //int index_Row = 0;
+            //foreach (DataRow rows in GridView_Cart.Rows)
+            //{
+            //    transaction_Detail.addTransaction_details(rows[2].ToString(), transaction.returnMaxID().ToString(), phoneID[index_Row]);
+            //    index_Row += 1;
+            //}
         }
     }
 }
