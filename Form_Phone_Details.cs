@@ -53,7 +53,7 @@ namespace PhoneManagerment_ADO.net {
             //    }
             //}
             GridView_PhoneRecord.DataSource = phone.search_ModelName(txt_PhoneID.Text).Tables[0];
-            GridView_PhoneRecord.Columns[10].Visible = false;
+            //GridView_PhoneRecord.Columns[10].Visible = false;
 
         }
     }
