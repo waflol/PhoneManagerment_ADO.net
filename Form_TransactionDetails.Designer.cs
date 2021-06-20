@@ -66,7 +66,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(233, 9);
+            this.label1.Location = new System.Drawing.Point(295, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 26);
@@ -80,13 +80,13 @@ namespace PhoneManagerment_ADO.net
             this.label2.Location = new System.Drawing.Point(124, 50);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(118, 15);
             this.label2.TabIndex = 2;
-            this.label2.Text = "ID transaction";
+            this.label2.Text = "Find Phone Number";
             // 
             // txt_IDTrans
             // 
-            this.txt_IDTrans.Location = new System.Drawing.Point(227, 47);
+            this.txt_IDTrans.Location = new System.Drawing.Point(246, 49);
             this.txt_IDTrans.Margin = new System.Windows.Forms.Padding(2);
             this.txt_IDTrans.Name = "txt_IDTrans";
             this.txt_IDTrans.Size = new System.Drawing.Size(162, 20);
