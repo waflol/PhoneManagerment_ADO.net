@@ -23,12 +23,20 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public int returnMaxID()
         {
-            string sqlString = "select max(ID_transaction) as max_id from Customer";
+            string sqlString = "select max(ID_customer) as max_id from Customer";
             DataSet ds = db.ExcuteQueryDataSet(sqlString, CommandType.Text);
-            if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+            try
+            {
+                if (ds == null || ds.Tables.Count == 0 || ds.Tables[0].Rows.Count == 0)
+                    return 0;
+                else
+                    return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+            }
+            catch(Exception error)
+            {
                 return 0;
-            else
-                return int.Parse(ds.Tables[0].Rows[0]["max_id"].ToString());
+            }
+            
         }
 
         // them phone

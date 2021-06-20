@@ -14,7 +14,9 @@ namespace PhoneManagerment_ADO.net {
         public Form_AddTransaction() {
             InitializeComponent();
         }
-
+        BLTransaction_details transaction_Detail = new BLTransaction_details();
+        BLTransaction transaction = new BLTransaction();
+        BLCustomers customer = new BLCustomers();
         // tạo đối tượng thực thi tầng nghiệp vụ
         BLPhones Phone = new BLPhones();
         // biến để lưu dữ liệu truy vẫn
@@ -31,6 +33,8 @@ namespace PhoneManagerment_ADO.net {
         private List<string> Phones_name_buying = new List<string>();
         // tạo biến điện thoại sẽ bị xoá
         string Phone_remove;
+        // tạo biến phoneID để lấy phoneID report
+        private List<string> phoneID = new List<string>();
 
 
         private bool isAlready(string PhoneName) {
@@ -84,7 +88,7 @@ namespace PhoneManagerment_ADO.net {
             GridView_Cart.Refresh();
         }
         private void Phone_Name_Textbox_TextChanged(object sender, EventArgs e) {
-
+            
             try {
                 Phone_search_dataset = Phone.search_ModelName(Phone_Search_Textbox.Text);
 
@@ -128,6 +132,21 @@ namespace PhoneManagerment_ADO.net {
                 GridView_Cart.Rows.RemoveAt(index_remove);
                 Total_Cost_Textbox.Text = Total_cost.ToString();
             } catch { }
+        }
+
+        private void Export_Button_Click(object sender, EventArgs e)
+        {
+
+            //customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID()+1);
+            //transaction.addTransaction(transaction.returnMaxID() + 1,Total_cost, dtpk_BuyDate.Value, customer.returnMaxID(), FormLogin.currentAccount);
+            transaction.addTransaction(transaction.returnMaxID() + 1, 22222, dtpk_BuyDate.Value.ToString(),1, "ha");
+            //MessageBox.Show(dtpk_BuyDate.Value.ToShortDateString());
+            //int index_Row = 0;
+            //foreach (DataRow rows in GridView_Cart.Rows)
+            //{
+            //    transaction_Detail.addTransaction_details(rows[2].ToString(), transaction.returnMaxID().ToString(), phoneID[index_Row]);
+            //    index_Row += 1;
+            //}
         }
     }
 }
