@@ -36,7 +36,7 @@ namespace PhoneManagerment_ADO.net
             this.Quantity_Label = new System.Windows.Forms.Label();
             this.Customer_Panel = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpk_BuyDate = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Phone_Number_Textbox = new System.Windows.Forms.TextBox();
             this.Address_Textbox = new System.Windows.Forms.TextBox();
@@ -137,7 +137,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.Customer_Panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Customer_Panel.Controls.Add(this.label5);
-            this.Customer_Panel.Controls.Add(this.dateTimePicker1);
+            this.Customer_Panel.Controls.Add(this.dtpk_BuyDate);
             this.Customer_Panel.Controls.Add(this.pictureBox1);
             this.Customer_Panel.Controls.Add(this.Phone_Number_Textbox);
             this.Customer_Panel.Controls.Add(this.Address_Textbox);
@@ -167,13 +167,13 @@ namespace PhoneManagerment_ADO.net
             this.label5.TabIndex = 13;
             this.label5.Text = "Date:";
             // 
-            // dateTimePicker1
+            // dtpk_BuyDate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(68, 137);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(151, 20);
-            this.dateTimePicker1.TabIndex = 12;
+            this.dtpk_BuyDate.Location = new System.Drawing.Point(68, 137);
+            this.dtpk_BuyDate.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpk_BuyDate.Name = "dtpk_BuyDate";
+            this.dtpk_BuyDate.Size = new System.Drawing.Size(151, 20);
+            this.dtpk_BuyDate.TabIndex = 12;
             // 
             // pictureBox1
             // 
@@ -286,6 +286,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // Phone_Name_Textbox
             // 
+            this.Phone_Name_Textbox.Enabled = false;
             this.Phone_Name_Textbox.Location = new System.Drawing.Point(102, 65);
             this.Phone_Name_Textbox.Name = "Phone_Name_Textbox";
             this.Phone_Name_Textbox.Size = new System.Drawing.Size(150, 20);
@@ -301,6 +302,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // txt_camera
             // 
+            this.txt_camera.Enabled = false;
             this.txt_camera.Location = new System.Drawing.Point(272, 127);
             this.txt_camera.Margin = new System.Windows.Forms.Padding(2);
             this.txt_camera.Name = "txt_camera";
@@ -309,6 +311,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // txt_sim
             // 
+            this.txt_sim.Enabled = false;
             this.txt_sim.Location = new System.Drawing.Point(271, 98);
             this.txt_sim.Margin = new System.Windows.Forms.Padding(2);
             this.txt_sim.Name = "txt_sim";
@@ -317,6 +320,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // txt_Price
             // 
+            this.txt_Price.Enabled = false;
             this.txt_Price.Location = new System.Drawing.Point(273, 160);
             this.txt_Price.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Price.Name = "txt_Price";
@@ -325,6 +329,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // txt_Display
             // 
+            this.txt_Display.Enabled = false;
             this.txt_Display.Location = new System.Drawing.Point(102, 164);
             this.txt_Display.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Display.Name = "txt_Display";
@@ -333,6 +338,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // txt_istorage
             // 
+            this.txt_istorage.Enabled = false;
             this.txt_istorage.Location = new System.Drawing.Point(102, 134);
             this.txt_istorage.Margin = new System.Windows.Forms.Padding(2);
             this.txt_istorage.Name = "txt_istorage";
@@ -345,9 +351,9 @@ namespace PhoneManagerment_ADO.net
             this.label6.Location = new System.Drawing.Point(207, 130);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 13);
+            this.label6.Size = new System.Drawing.Size(66, 13);
             this.label6.TabIndex = 11;
-            this.label6.Text = "camera type";
+            this.label6.Text = "Camera type";
             // 
             // label8
             // 
@@ -361,6 +367,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // txt_Ram
             // 
+            this.txt_Ram.Enabled = false;
             this.txt_Ram.Location = new System.Drawing.Point(102, 98);
             this.txt_Ram.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Ram.Name = "txt_Ram";
@@ -373,9 +380,9 @@ namespace PhoneManagerment_ADO.net
             this.label7.Location = new System.Drawing.Point(39, 167);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(39, 13);
+            this.label7.Size = new System.Drawing.Size(41, 13);
             this.label7.TabIndex = 11;
-            this.label7.Text = "display";
+            this.label7.Text = "Display";
             // 
             // label3
             // 
@@ -383,9 +390,9 @@ namespace PhoneManagerment_ADO.net
             this.label3.Location = new System.Drawing.Point(221, 101);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(45, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 11;
-            this.label3.Text = "sim type";
+            this.label3.Text = "Sim type";
             // 
             // label2
             // 
@@ -393,9 +400,9 @@ namespace PhoneManagerment_ADO.net
             this.label2.Location = new System.Drawing.Point(39, 137);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(45, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "istorage";
+            this.label2.Text = "Istorage";
             // 
             // label1
             // 
@@ -510,6 +517,7 @@ namespace PhoneManagerment_ADO.net
             this.Export_Button.Text = "Export - Deal";
             this.Export_Button.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.Export_Button.UseVisualStyleBackColor = true;
+            this.Export_Button.Click += new System.EventHandler(this.Export_Button_Click);
             // 
             // Remove_Button
             // 
@@ -608,7 +616,7 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Button Reset_Button;
         private System.Windows.Forms.Button btn_Edit;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpk_BuyDate;
         private System.Windows.Forms.TextBox txt_camera;
         private System.Windows.Forms.TextBox txt_sim;
         private System.Windows.Forms.TextBox txt_istorage;
