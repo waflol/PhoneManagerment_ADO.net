@@ -54,7 +54,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public DataSet search_byPhonenum(string phonenum)
         {
-            string sqltring = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone and Customer.PhoneNumber = '" + phonenum + "%'";
+            string sqltring = "select * from Customer, Phone, Transaction_Details, Transactions where Customer.ID_customer = Transactions.ID_customer and Transactions.ID_transaction = Transaction_Details.ID_transaction and Transaction_Details.ID_phone = Phone.ID_phone and Customer.PhoneNumber like '" + phonenum + "%'";
             return db.ExcuteQueryDataSet(sqltring, CommandType.Text);
         }
 
