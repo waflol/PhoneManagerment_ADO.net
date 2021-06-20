@@ -116,9 +116,6 @@
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="PhoneDB.cs">
-      <DependentUpon>PhoneDB.xsd</DependentUpon>
-    </Compile>
     <Compile Include="PhoneDB.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

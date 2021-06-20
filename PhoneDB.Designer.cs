@@ -34,13 +34,13 @@ namespace PhoneManagerment_ADO.net {
         
         private TransactionsDataTable tableTransactions;
         
-        private global::System.Data.DataRelation relationFK__Transacti__ID_ph__2D27B809;
+        private global::System.Data.DataRelation relationFK__Transacti__ID_ph__2E1BDC42;
         
-        private global::System.Data.DataRelation relationFK__Transacti__ID_tr__2E1BDC42;
+        private global::System.Data.DataRelation relationFK__Transacti__ID_tr__2F10007B;
         
-        private global::System.Data.DataRelation relationFK__Transacti__ID_cu__2F10007B;
+        private global::System.Data.DataRelation relationFK__Transacti__ID_cu__300424B4;
         
-        private global::System.Data.DataRelation relationFK__Transacti__usern__300424B4;
+        private global::System.Data.DataRelation relationFK__Transacti__usern__30F848ED;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
@@ -298,10 +298,10 @@ namespace PhoneManagerment_ADO.net {
                     this.tableTransactions.InitVars();
                 }
             }
-            this.relationFK__Transacti__ID_ph__2D27B809 = this.Relations["FK__Transacti__ID_ph__2D27B809"];
-            this.relationFK__Transacti__ID_tr__2E1BDC42 = this.Relations["FK__Transacti__ID_tr__2E1BDC42"];
-            this.relationFK__Transacti__ID_cu__2F10007B = this.Relations["FK__Transacti__ID_cu__2F10007B"];
-            this.relationFK__Transacti__usern__300424B4 = this.Relations["FK__Transacti__usern__300424B4"];
+            this.relationFK__Transacti__ID_ph__2E1BDC42 = this.Relations["FK__Transacti__ID_ph__2E1BDC42"];
+            this.relationFK__Transacti__ID_tr__2F10007B = this.Relations["FK__Transacti__ID_tr__2F10007B"];
+            this.relationFK__Transacti__ID_cu__300424B4 = this.Relations["FK__Transacti__ID_cu__300424B4"];
+            this.relationFK__Transacti__usern__30F848ED = this.Relations["FK__Transacti__usern__30F848ED"];
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -322,22 +322,22 @@ namespace PhoneManagerment_ADO.net {
             base.Tables.Add(this.tableTransaction_Details);
             this.tableTransactions = new TransactionsDataTable();
             base.Tables.Add(this.tableTransactions);
-            this.relationFK__Transacti__ID_ph__2D27B809 = new global::System.Data.DataRelation("FK__Transacti__ID_ph__2D27B809", new global::System.Data.DataColumn[] {
+            this.relationFK__Transacti__ID_ph__2E1BDC42 = new global::System.Data.DataRelation("FK__Transacti__ID_ph__2E1BDC42", new global::System.Data.DataColumn[] {
                         this.tablePhone.ID_phoneColumn}, new global::System.Data.DataColumn[] {
                         this.tableTransaction_Details.ID_phoneColumn}, false);
-            this.Relations.Add(this.relationFK__Transacti__ID_ph__2D27B809);
-            this.relationFK__Transacti__ID_tr__2E1BDC42 = new global::System.Data.DataRelation("FK__Transacti__ID_tr__2E1BDC42", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Transacti__ID_ph__2E1BDC42);
+            this.relationFK__Transacti__ID_tr__2F10007B = new global::System.Data.DataRelation("FK__Transacti__ID_tr__2F10007B", new global::System.Data.DataColumn[] {
                         this.tableTransactions.ID_transactionColumn}, new global::System.Data.DataColumn[] {
                         this.tableTransaction_Details.ID_transactionColumn}, false);
-            this.Relations.Add(this.relationFK__Transacti__ID_tr__2E1BDC42);
-            this.relationFK__Transacti__ID_cu__2F10007B = new global::System.Data.DataRelation("FK__Transacti__ID_cu__2F10007B", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Transacti__ID_tr__2F10007B);
+            this.relationFK__Transacti__ID_cu__300424B4 = new global::System.Data.DataRelation("FK__Transacti__ID_cu__300424B4", new global::System.Data.DataColumn[] {
                         this.tableCustomer.ID_customerColumn}, new global::System.Data.DataColumn[] {
                         this.tableTransactions.ID_customerColumn}, false);
-            this.Relations.Add(this.relationFK__Transacti__ID_cu__2F10007B);
-            this.relationFK__Transacti__usern__300424B4 = new global::System.Data.DataRelation("FK__Transacti__usern__300424B4", new global::System.Data.DataColumn[] {
+            this.Relations.Add(this.relationFK__Transacti__ID_cu__300424B4);
+            this.relationFK__Transacti__usern__30F848ED = new global::System.Data.DataRelation("FK__Transacti__usern__30F848ED", new global::System.Data.DataColumn[] {
                         this.tableAccounts.usernameColumn}, new global::System.Data.DataColumn[] {
                         this.tableTransactions.usernameColumn}, false);
-            this.Relations.Add(this.relationFK__Transacti__usern__300424B4);
+            this.Relations.Add(this.relationFK__Transacti__usern__30F848ED);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1562,17 +1562,17 @@ namespace PhoneManagerment_ADO.net {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public Transaction_DetailsRow AddTransaction_DetailsRow(int quantity, TransactionsRow parentTransactionsRowByFK__Transacti__ID_tr__2E1BDC42, PhoneRow parentPhoneRowByFK__Transacti__ID_ph__2D27B809) {
+            public Transaction_DetailsRow AddTransaction_DetailsRow(int quantity, TransactionsRow parentTransactionsRowByFK__Transacti__ID_tr__2F10007B, PhoneRow parentPhoneRowByFK__Transacti__ID_ph__2E1BDC42) {
                 Transaction_DetailsRow rowTransaction_DetailsRow = ((Transaction_DetailsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         quantity,
                         null,
                         null};
-                if ((parentTransactionsRowByFK__Transacti__ID_tr__2E1BDC42 != null)) {
-                    columnValuesArray[1] = parentTransactionsRowByFK__Transacti__ID_tr__2E1BDC42[0];
+                if ((parentTransactionsRowByFK__Transacti__ID_tr__2F10007B != null)) {
+                    columnValuesArray[1] = parentTransactionsRowByFK__Transacti__ID_tr__2F10007B[0];
                 }
-                if ((parentPhoneRowByFK__Transacti__ID_ph__2D27B809 != null)) {
-                    columnValuesArray[2] = parentPhoneRowByFK__Transacti__ID_ph__2D27B809[11];
+                if ((parentPhoneRowByFK__Transacti__ID_ph__2E1BDC42 != null)) {
+                    columnValuesArray[2] = parentPhoneRowByFK__Transacti__ID_ph__2E1BDC42[11];
                 }
                 rowTransaction_DetailsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTransaction_DetailsRow);
@@ -1877,7 +1877,7 @@ namespace PhoneManagerment_ADO.net {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public TransactionsRow AddTransactionsRow(int ID_transaction, int Total_price, System.DateTime Date, CustomerRow parentCustomerRowByFK__Transacti__ID_cu__2F10007B, AccountsRow parentAccountsRowByFK__Transacti__usern__300424B4) {
+            public TransactionsRow AddTransactionsRow(int ID_transaction, int Total_price, System.DateTime Date, CustomerRow parentCustomerRowByFK__Transacti__ID_cu__300424B4, AccountsRow parentAccountsRowByFK__Transacti__usern__30F848ED) {
                 TransactionsRow rowTransactionsRow = ((TransactionsRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         ID_transaction,
@@ -1885,11 +1885,11 @@ namespace PhoneManagerment_ADO.net {
                         Date,
                         null,
                         null};
-                if ((parentCustomerRowByFK__Transacti__ID_cu__2F10007B != null)) {
-                    columnValuesArray[3] = parentCustomerRowByFK__Transacti__ID_cu__2F10007B[3];
+                if ((parentCustomerRowByFK__Transacti__ID_cu__300424B4 != null)) {
+                    columnValuesArray[3] = parentCustomerRowByFK__Transacti__ID_cu__300424B4[3];
                 }
-                if ((parentAccountsRowByFK__Transacti__usern__300424B4 != null)) {
-                    columnValuesArray[4] = parentAccountsRowByFK__Transacti__usern__300424B4[0];
+                if ((parentAccountsRowByFK__Transacti__usern__30F848ED != null)) {
+                    columnValuesArray[4] = parentAccountsRowByFK__Transacti__usern__30F848ED[0];
                 }
                 rowTransactionsRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowTransactionsRow);
@@ -2114,11 +2114,11 @@ namespace PhoneManagerment_ADO.net {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TransactionsRow[] GetTransactionsRows() {
-                if ((this.Table.ChildRelations["FK__Transacti__usern__300424B4"] == null)) {
+                if ((this.Table.ChildRelations["FK__Transacti__usern__30F848ED"] == null)) {
                     return new TransactionsRow[0];
                 }
                 else {
-                    return ((TransactionsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__usern__300424B4"])));
+                    return ((TransactionsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__usern__30F848ED"])));
                 }
             }
         }
@@ -2184,11 +2184,11 @@ namespace PhoneManagerment_ADO.net {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TransactionsRow[] GetTransactionsRows() {
-                if ((this.Table.ChildRelations["FK__Transacti__ID_cu__2F10007B"] == null)) {
+                if ((this.Table.ChildRelations["FK__Transacti__ID_cu__300424B4"] == null)) {
                     return new TransactionsRow[0];
                 }
                 else {
-                    return ((TransactionsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__ID_cu__2F10007B"])));
+                    return ((TransactionsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__ID_cu__300424B4"])));
                 }
             }
         }
@@ -2342,11 +2342,11 @@ namespace PhoneManagerment_ADO.net {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Transaction_DetailsRow[] GetTransaction_DetailsRows() {
-                if ((this.Table.ChildRelations["FK__Transacti__ID_ph__2D27B809"] == null)) {
+                if ((this.Table.ChildRelations["FK__Transacti__ID_ph__2E1BDC42"] == null)) {
                     return new Transaction_DetailsRow[0];
                 }
                 else {
-                    return ((Transaction_DetailsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__ID_ph__2D27B809"])));
+                    return ((Transaction_DetailsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__ID_ph__2E1BDC42"])));
                 }
             }
         }
@@ -2402,10 +2402,10 @@ namespace PhoneManagerment_ADO.net {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public PhoneRow PhoneRow {
                 get {
-                    return ((PhoneRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__ID_ph__2D27B809"])));
+                    return ((PhoneRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__ID_ph__2E1BDC42"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__ID_ph__2D27B809"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__ID_ph__2E1BDC42"]);
                 }
             }
             
@@ -2413,10 +2413,10 @@ namespace PhoneManagerment_ADO.net {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public TransactionsRow TransactionsRow {
                 get {
-                    return ((TransactionsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__ID_tr__2E1BDC42"])));
+                    return ((TransactionsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__ID_tr__2F10007B"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__ID_tr__2E1BDC42"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__ID_tr__2F10007B"]);
                 }
             }
         }
@@ -2494,10 +2494,10 @@ namespace PhoneManagerment_ADO.net {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public CustomerRow CustomerRow {
                 get {
-                    return ((CustomerRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__ID_cu__2F10007B"])));
+                    return ((CustomerRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__ID_cu__300424B4"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__ID_cu__2F10007B"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__ID_cu__300424B4"]);
                 }
             }
             
@@ -2505,21 +2505,21 @@ namespace PhoneManagerment_ADO.net {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public AccountsRow AccountsRow {
                 get {
-                    return ((AccountsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__usern__300424B4"])));
+                    return ((AccountsRow)(this.GetParentRow(this.Table.ParentRelations["FK__Transacti__usern__30F848ED"])));
                 }
                 set {
-                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__usern__300424B4"]);
+                    this.SetParentRow(value, this.Table.ParentRelations["FK__Transacti__usern__30F848ED"]);
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public Transaction_DetailsRow[] GetTransaction_DetailsRows() {
-                if ((this.Table.ChildRelations["FK__Transacti__ID_tr__2E1BDC42"] == null)) {
+                if ((this.Table.ChildRelations["FK__Transacti__ID_tr__2F10007B"] == null)) {
                     return new Transaction_DetailsRow[0];
                 }
                 else {
-                    return ((Transaction_DetailsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__ID_tr__2E1BDC42"])));
+                    return ((Transaction_DetailsRow[])(base.GetChildRows(this.Table.ChildRelations["FK__Transacti__ID_tr__2F10007B"])));
                 }
             }
         }
@@ -2852,7 +2852,7 @@ namespace PhoneManagerment_ADO.net.PhoneDBTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString3;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3202,7 +3202,7 @@ SELECT Customer_Name, PhoneNumber, Address, ID_customer FROM Customer WHERE (ID_
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString3;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3618,7 +3618,7 @@ SELECT Model_Name, ram, Front_Camera, Display, Sim_Type, Network_Type, Price, Fi
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString3;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4231,7 +4231,7 @@ SELECT quantity, ID_transaction, ID_phone FROM Transaction_Details WHERE (ID_pho
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString3;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4551,7 +4551,7 @@ SELECT ID_transaction, Total_price, Date, ID_customer, username FROM Transaction
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString3;
+            this._connection.ConnectionString = global::PhoneManagerment_ADO.net.Properties.Settings.Default.PhoneDBConnectionString1;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4561,16 +4561,23 @@ SELECT ID_transaction, Total_price, Date, ID_customer, username FROM Transaction
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT ID_transaction, Total_price, Date, ID_customer, username FROM dbo.Transact" +
-                "ions";
+                "ions\r\nwhere Date = CONVERT(datetime,@x,103)";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[0].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@x", global::System.Data.SqlDbType.Date, 3, global::System.Data.ParameterDirection.Input, 0, 0, "Date", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(PhoneDB.TransactionsDataTable dataTable) {
+        public virtual int Fill(PhoneDB.TransactionsDataTable dataTable, string x) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((x == null)) {
+                throw new global::System.ArgumentNullException("x");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(x));
+            }
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
             }
@@ -4582,8 +4589,14 @@ SELECT ID_transaction, Total_price, Date, ID_customer, username FROM Transaction
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual PhoneDB.TransactionsDataTable GetData() {
+        public virtual PhoneDB.TransactionsDataTable GetData(string x) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((x == null)) {
+                throw new global::System.ArgumentNullException("x");
+            }
+            else {
+                this.Adapter.SelectCommand.Parameters[0].Value = ((string)(x));
+            }
             PhoneDB.TransactionsDataTable dataTable = new PhoneDB.TransactionsDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
