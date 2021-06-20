@@ -12,7 +12,7 @@ namespace PhoneManagerment_ADO.net {
     public partial class Home : Form {
         public Image image1 = Image.FromFile("Resources\\store2.png");
         public Image image2 = Image.FromFile("Resources\\store.png");
-        public Image image3 = Image.FromFile("Resources\\9531_smart.png");
+        public Image image3 = Image.FromFile("Resources\\smartphone-redmi_800x450.jpg");
         private List<Image> images = new List<Image>();
         int b = 0;
         public Home() {
