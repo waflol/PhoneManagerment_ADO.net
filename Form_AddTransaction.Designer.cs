@@ -123,7 +123,7 @@ namespace PhoneManagerment_ADO.net
             this.PhoneName_Label.Size = new System.Drawing.Size(69, 13);
             this.PhoneName_Label.TabIndex = 3;
             this.PhoneName_Label.Text = "Phone Name";
-            this.PhoneName_Label.Click += new System.EventHandler(this.PhoneName_Label_Click);
+//            this.PhoneName_Label.Click += new System.EventHandler(this.PhoneName_Label_Click);
             // 
             // Quantity_Label
             // 
@@ -467,7 +467,7 @@ namespace PhoneManagerment_ADO.net
             this.Total_Price_Label.Size = new System.Drawing.Size(56, 24);
             this.Total_Price_Label.TabIndex = 9;
             this.Total_Price_Label.Text = "Total";
-            this.Total_Price_Label.Click += new System.EventHandler(this.Total_Price_Label_Click);
+      //      this.Total_Price_Label.Click += new System.EventHandler(this.Total_Price_Label_Click);
             // 
             // Total_Price_Textbox
             // 

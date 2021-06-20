@@ -18,20 +18,8 @@ namespace PhoneManagerment_ADO.net {
 
         BLPhones phone = new BLPhones();
 
-        private void textBox1_TextChanged(object sender, EventArgs e) {
-
-        }
-
         private void Add_Phone_Button_Click(object sender, EventArgs e) {
             GridView_Cart.Rows.Add("Iphone X", 10, 3);
-        }
-
-        private void PhoneName_Label_Click(object sender, EventArgs e) {
-
-        }
-
-        private void Total_Price_Label_Click(object sender, EventArgs e) {
-
         }
 
         private void Reset_Button_Click(object sender, EventArgs e) {
