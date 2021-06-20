@@ -92,6 +92,12 @@
     <Compile Include="Form_AddTransaction.Designer.cs">
       <DependentUpon>Form_AddTransaction.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form_Edit_Phone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Edit_Phone.Designer.cs">
+      <DependentUpon>Form_Edit_Phone.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form_Phone_Details.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -145,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form_AddTransaction.resx">
       <DependentUpon>Form_AddTransaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Edit_Phone.resx">
+      <DependentUpon>Form_Edit_Phone.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Phone_Details.resx">
       <DependentUpon>Form_Phone_Details.cs</DependentUpon>
@@ -233,6 +242,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\earn-money-png-4.png" />
+    <None Include="Resources\2001.gif" />
     <Content Include="Resources\247WallSt.com-247WS-559997-old-phones.jpg" />
     <None Include="Resources\247WallSt.com-247WS-559997-old-phones1.jpg" />
     <Content Include="Resources\CLaI.gif" />

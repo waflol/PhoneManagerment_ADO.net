@@ -245,7 +245,7 @@ namespace PhoneManagerment_ADO.net
             this.Customer_Inf_Label.ForeColor = System.Drawing.Color.Blue;
             this.Customer_Inf_Label.Location = new System.Drawing.Point(105, 4);
             this.Customer_Inf_Label.Name = "Customer_Inf_Label";
-            this.Customer_Inf_Label.Size = new System.Drawing.Size(157, 16);
+            this.Customer_Inf_Label.Size = new System.Drawing.Size(148, 16);
             this.Customer_Inf_Label.TabIndex = 3;
             this.Customer_Inf_Label.Text = "Customer Infomation";
             // 
@@ -315,7 +315,7 @@ namespace PhoneManagerment_ADO.net
             // txt_camera
             // 
             this.txt_camera.Enabled = false;
-            this.txt_camera.Location = new System.Drawing.Point(272, 127);
+            this.txt_camera.Location = new System.Drawing.Point(287, 127);
             this.txt_camera.Margin = new System.Windows.Forms.Padding(2);
             this.txt_camera.Name = "txt_camera";
             this.txt_camera.Size = new System.Drawing.Size(86, 20);
@@ -324,7 +324,7 @@ namespace PhoneManagerment_ADO.net
             // txt_sim
             // 
             this.txt_sim.Enabled = false;
-            this.txt_sim.Location = new System.Drawing.Point(271, 98);
+            this.txt_sim.Location = new System.Drawing.Point(287, 99);
             this.txt_sim.Margin = new System.Windows.Forms.Padding(2);
             this.txt_sim.Name = "txt_sim";
             this.txt_sim.Size = new System.Drawing.Size(86, 20);
@@ -333,7 +333,7 @@ namespace PhoneManagerment_ADO.net
             // txt_Price
             // 
             this.txt_Price.Enabled = false;
-            this.txt_Price.Location = new System.Drawing.Point(273, 160);
+            this.txt_Price.Location = new System.Drawing.Point(287, 161);
             this.txt_Price.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(86, 20);
@@ -363,14 +363,14 @@ namespace PhoneManagerment_ADO.net
             this.label6.Location = new System.Drawing.Point(207, 130);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(66, 13);
+            this.label6.Size = new System.Drawing.Size(76, 13);
             this.label6.TabIndex = 11;
-            this.label6.Text = "Camera type";
+            this.label6.Text = "Camera quality";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(235, 164);
+            this.label8.Location = new System.Drawing.Point(241, 164);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
@@ -399,7 +399,7 @@ namespace PhoneManagerment_ADO.net
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(221, 101);
+            this.label3.Location = new System.Drawing.Point(225, 102);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 13);
@@ -442,7 +442,7 @@ namespace PhoneManagerment_ADO.net
             this.Phone_Inf_Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold);
             this.Phone_Inf_Label.Location = new System.Drawing.Point(145, 7);
             this.Phone_Inf_Label.Name = "Phone_Inf_Label";
-            this.Phone_Inf_Label.Size = new System.Drawing.Size(134, 16);
+            this.Phone_Inf_Label.Size = new System.Drawing.Size(127, 16);
             this.Phone_Inf_Label.TabIndex = 8;
             this.Phone_Inf_Label.Text = "Phone Infomation";
             // 

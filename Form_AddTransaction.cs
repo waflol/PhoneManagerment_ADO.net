@@ -96,7 +96,7 @@ namespace PhoneManagerment_ADO.net {
                     txt_istorage.Text = Phone_search_dataset.Tables[0].Rows[0][8].ToString();
                     txt_Display.Text = Phone_search_dataset.Tables[0].Rows[0][3].ToString();
                     txt_sim.Text = Phone_search_dataset.Tables[0].Rows[0][4].ToString();
-                    txt_camera.Text = Phone_search_dataset.Tables[0].Rows[0][5].ToString();
+                    txt_camera.Text = Phone_search_dataset.Tables[0].Rows[0][10].ToString();
                     txt_Price.Text = Phone_search_dataset.Tables[0].Rows[0][6].ToString();
                     //label10.Text = temp_phoneID;
                 } else

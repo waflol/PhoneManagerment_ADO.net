@@ -56,5 +56,23 @@ namespace PhoneManagerment_ADO.net {
             //GridView_PhoneRecord.Columns[10].Visible = false;
 
         }
+
+        private void btn_Edit_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int a = GridView_PhoneRecord.CurrentCell.RowIndex;
+                if (GridView_PhoneRecord.Rows[a].Cells[0].Value != null)
+                {
+                    
+                    //label3.Text = Phone_Id;
+                    Form_Edit_Phone editphone = new Form_Edit_Phone(GridView_PhoneRecord.Rows[a].Cells[0].Value.ToString());
+                    editphone.ShowDialog();
+                    LoadData();
+                    
+                }
+            }
+            catch { }
+        }
     }
 }
