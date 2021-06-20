@@ -35,7 +35,7 @@ namespace PhoneManagerment_ADO.net {
                 if (GridView_PhoneRecord.Rows[a].Cells[11].Value != null) {
                     // gán model name trong datagridview đã chọn
                     Phone_Id = GridView_PhoneRecord.Rows[a].Cells[11].Value.ToString();
-                    label3.Text = Phone_Id;
+                    //label3.Text = Phone_Id;
                 }
             } catch { }
         }
