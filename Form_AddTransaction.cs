@@ -13,7 +13,6 @@ namespace PhoneManagerment_ADO.net {
     public partial class Form_AddTransaction : Form {
         public Form_AddTransaction() {
             InitializeComponent();
-
         }
 
         // tạo đối tượng thực thi tầng nghiệp vụ
@@ -46,14 +45,14 @@ namespace PhoneManagerment_ADO.net {
             return false;
         }
         private void Add_Phone_Button_Click(object sender, EventArgs e) {
-            if ((int)numeric_Quantity.Value > 0 && Phone_Name_Textbox.Text!="") {
+            if ((int)numeric_Quantity.Value > 0 && Phone_Name_Textbox.Text != "") {
                 // kiểm tra điện thoại đã đươcc thêm hay chưa
                 if (!isAlready(Phone_Name_Textbox.Text)) {
                     GridView_Cart.Rows.Add(Phone_Name_Textbox.Text, txt_Price.Text, numeric_Quantity.Value);
                     Phones_name_buying.Add(Phone_Name_Textbox.Text);
                 } else {
                     // cập nhật lại cột số lượng trong hoá đơn
-                    GridView_Cart[2,index].Value = int.Parse(GridView_Cart[2, index].Value.ToString()) + (int)numeric_Quantity.Value;
+                    GridView_Cart[2, index].Value = int.Parse(GridView_Cart[2, index].Value.ToString()) + (int)numeric_Quantity.Value;
                 }
                 Total_cost += int.Parse(txt_Price.Text) * (int)numeric_Quantity.Value;
                 Total_Cost_Textbox.Text = Total_cost.ToString();
@@ -116,16 +115,16 @@ namespace PhoneManagerment_ADO.net {
                 if (GridView_Cart.Rows[index_remove].Cells[0].Value != null) {
                     // gán phone trong datagridview đã chọn
                     Phone_remove = GridView_Cart.Rows[index_remove].Cells[0].Value.ToString();
-                    //Phone_remove_cost = int.Parse(GridView_Cart.Rows[index_remove].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[index_remove].Cells[2].Value.ToString());
-                    //Total_Cost_Textbox.Text = Phone_remove_cost.ToString();
                 }
             } catch { }
         }
 
         private void Remove_Button_Click(object sender, EventArgs e) {
             try {
+                // xoá tên điện thoại ra khỏi mảnng
                 Phones_name_buying.RemoveAt(index_remove);
-                Total_cost-= int.Parse(GridView_Cart.Rows[index_remove].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[index_remove].Cells[2].Value.ToString());
+                Total_cost -= int.Parse(GridView_Cart.Rows[index_remove].Cells[1].Value.ToString()) * int.Parse(GridView_Cart.Rows[index_remove].Cells[2].Value.ToString());
+                // xoá row trên datagridview
                 GridView_Cart.Rows.RemoveAt(index_remove);
                 Total_Cost_Textbox.Text = Total_cost.ToString();
             } catch { }
