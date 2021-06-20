@@ -23,7 +23,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
 
         public int returnMaxID()
         {
-            string sqlString = "select max(ID_transaction) as max_id from Customer";
+            string sqlString = "select max(ID_customer) as max_id from Customer";
             DataSet ds = db.ExcuteQueryDataSet(sqlString, CommandType.Text);
             try
             {
