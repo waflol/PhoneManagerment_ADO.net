@@ -97,6 +97,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PhoneDB_Transaction_Details.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhoneDB_Transaction_Details.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FormLogin.resx">
@@ -137,6 +142,17 @@
     </None>
     <None Include="PhoneDBDataSet.xss">
       <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PhoneDB_Transaction_Details.xsc">
+      <DependentUpon>PhoneDB_Transaction_Details.xsd</DependentUpon>
+    </None>
+    <None Include="PhoneDB_Transaction_Details.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhoneDB_Transaction_Details.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PhoneDB_Transaction_Details.xss">
+      <DependentUpon>PhoneDB_Transaction_Details.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

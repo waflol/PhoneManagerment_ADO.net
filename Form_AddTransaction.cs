@@ -13,7 +13,9 @@ namespace PhoneManagerment_ADO.net {
     public partial class Form_AddTransaction : Form {
         public Form_AddTransaction() {
             InitializeComponent();
+            label10.Visible = false;
         }
+        
         BLTransaction_details transaction_Detail = new BLTransaction_details();
         BLTransaction transaction = new BLTransaction();
         BLCustomers customer = new BLCustomers();
@@ -63,7 +65,9 @@ namespace PhoneManagerment_ADO.net {
                 }
                 Total_cost += int.Parse(txt_Price.Text) * (int)numeric_Quantity.Value;
                 Total_Cost_Textbox.Text = Total_cost.ToString();
-                label10.Text = phoneID.Count.ToString();
+                ////Debug
+                //label10.Text = phoneID.Count.ToString();
+                
                 // reset lại panel điện thoại
                 foreach (var c in Phone_Info_Panel.Controls) {
                     if (c is TextBox) {
@@ -94,7 +98,7 @@ namespace PhoneManagerment_ADO.net {
                     txt_sim.Text = Phone_search_dataset.Tables[0].Rows[0][4].ToString();
                     txt_camera.Text = Phone_search_dataset.Tables[0].Rows[0][5].ToString();
                     txt_Price.Text = Phone_search_dataset.Tables[0].Rows[0][6].ToString();
-                    label10.Text = temp_phoneID;
+                    //label10.Text = temp_phoneID;
                 } else
                     throw new Exception();
             } catch {

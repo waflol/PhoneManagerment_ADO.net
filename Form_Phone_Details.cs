@@ -23,9 +23,6 @@ namespace PhoneManagerment_ADO.net {
         void LoadData() {
             GridView_PhoneRecord.DataSource = phone.GetPhones().Tables[0];
             GridView_PhoneRecord.Columns[10].Visible = false;
-
-        
-
         }
 
         private void btn_Delete_Click(object sender, EventArgs e) {
