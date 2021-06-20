@@ -33,9 +33,9 @@ namespace PhoneManagerment_ADO.net {
         private void GridView_PhoneRecord_CellClick(object sender, DataGridViewCellEventArgs e) {
             try {
                 int a = GridView_PhoneRecord.CurrentCell.RowIndex;
-                if (GridView_PhoneRecord.Rows[a].Cells[10].Value != null) {
+                if (GridView_PhoneRecord.Rows[a].Cells[11].Value != null) {
                     // gán model name trong datagridview đã chọn
-                    Phone_Id = GridView_PhoneRecord.Rows[a].Cells[10].Value.ToString();
+                    Phone_Id = GridView_PhoneRecord.Rows[a].Cells[11].Value.ToString();
                 }
             } catch { }
         }

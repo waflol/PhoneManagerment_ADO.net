@@ -18,7 +18,8 @@ namespace PhoneManagerment_ADO.net
             InitializeComponent();
         }
         BLTransaction_details transaction_Detail = new BLTransaction_details();
-
+        private string Phone_Id;
+        private string x = " ";
         void LoadData()
         {
             GridView_Details_Trans.DataSource = transaction_Detail.getTransaction_details().Tables[0];
@@ -54,5 +55,29 @@ namespace PhoneManagerment_ADO.net
         {
             GridView_Details_Trans.DataSource = transaction_Detail.search_byPhonenum(txt_IDTrans.Text).Tables[0];
         }
+
+        private void btn_remove_Click(object sender, EventArgs e)
+        {
+            transaction_Detail.deleteTransaction_details(Phone_Id);
+            LoadData();
+        }
+
+        private void GridView_Details_Trans_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            
+            try
+            {
+                int a = GridView_Details_Trans.CurrentCell.RowIndex;
+                if (GridView_Details_Trans.Rows[a].Cells[17].Value != null)
+                {
+                    // gán model name trong datagridview đã chọn
+                    Phone_Id = GridView_Details_Trans.Rows[a].Cells[17].Value.ToString();
+                    label3.Text = GridView_Details_Trans.Rows[a].Cells[17].Value.ToString();
+                }
+              
+            }
+            catch { }
+        }
+        
     }
 }
