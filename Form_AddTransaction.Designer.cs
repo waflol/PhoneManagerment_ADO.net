@@ -69,7 +69,7 @@ namespace PhoneManagerment_ADO.net
             this.Price_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantity_Column = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Total_Price_Label = new System.Windows.Forms.Label();
-            this.Total_Price_Textbox = new System.Windows.Forms.TextBox();
+            this.Total_Cost_Textbox = new System.Windows.Forms.TextBox();
             this.Export_Button = new System.Windows.Forms.Button();
             this.Remove_Button = new System.Windows.Forms.Button();
             this.Reset_Button = new System.Windows.Forms.Button();
@@ -453,6 +453,7 @@ namespace PhoneManagerment_ADO.net
             this.GridView_Cart.RowHeadersWidth = 51;
             this.GridView_Cart.Size = new System.Drawing.Size(353, 229);
             this.GridView_Cart.TabIndex = 8;
+            this.GridView_Cart.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_Cart_CellClick);
             // 
             // Phone_Column
             // 
@@ -488,14 +489,14 @@ namespace PhoneManagerment_ADO.net
             this.Total_Price_Label.TabIndex = 9;
             this.Total_Price_Label.Text = "Total";
             // 
-            // Total_Price_Textbox
+            // Total_Cost_Textbox
             // 
-            this.Total_Price_Textbox.Enabled = false;
-            this.Total_Price_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Total_Price_Textbox.Location = new System.Drawing.Point(369, 364);
-            this.Total_Price_Textbox.Name = "Total_Price_Textbox";
-            this.Total_Price_Textbox.Size = new System.Drawing.Size(288, 27);
-            this.Total_Price_Textbox.TabIndex = 10;
+            this.Total_Cost_Textbox.Enabled = false;
+            this.Total_Cost_Textbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Total_Cost_Textbox.Location = new System.Drawing.Point(369, 364);
+            this.Total_Cost_Textbox.Name = "Total_Cost_Textbox";
+            this.Total_Cost_Textbox.Size = new System.Drawing.Size(288, 27);
+            this.Total_Cost_Textbox.TabIndex = 10;
             // 
             // Export_Button
             // 
@@ -559,7 +560,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.Reset_Button);
             this.Controls.Add(this.Remove_Button);
             this.Controls.Add(this.Export_Button);
-            this.Controls.Add(this.Total_Price_Textbox);
+            this.Controls.Add(this.Total_Cost_Textbox);
             this.Controls.Add(this.Total_Price_Label);
             this.Controls.Add(this.GridView_Cart);
             this.Controls.Add(this.Phone_Info_Panel);
@@ -600,7 +601,7 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.Button Add_Phone_Button;
         private System.Windows.Forms.DataGridView GridView_Cart;
         private System.Windows.Forms.Label Total_Price_Label;
-        private System.Windows.Forms.TextBox Total_Price_Textbox;
+        private System.Windows.Forms.TextBox Total_Cost_Textbox;
         private System.Windows.Forms.Button Export_Button;
         private System.Windows.Forms.Button Remove_Button;
         private System.Windows.Forms.Button Reset_Button;
