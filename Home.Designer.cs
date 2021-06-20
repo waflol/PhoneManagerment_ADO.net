@@ -135,6 +135,7 @@ namespace PhoneManagerment_ADO.net
             this.pb_HinhNen.Location = new System.Drawing.Point(12, 36);
             this.pb_HinhNen.Name = "pb_HinhNen";
             this.pb_HinhNen.Size = new System.Drawing.Size(957, 466);
+            this.pb_HinhNen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_HinhNen.TabIndex = 1;
             this.pb_HinhNen.TabStop = false;
             this.pb_HinhNen.Click += new System.EventHandler(this.pb_HinhNen_Click);

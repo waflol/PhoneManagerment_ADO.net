@@ -51,7 +51,9 @@
     <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
     <Reference Include="System.Xml.Linq" />
@@ -113,6 +115,9 @@
     </Compile>
     <Compile Include="Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhoneDB.cs">
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
     </Compile>
     <Compile Include="PhoneDB.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -230,12 +235,13 @@
     <None Include="Resources\3416-bonk.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\200.gif" />
-    <None Include="Resources\CLaI.gif" />
-    <None Include="Resources\hand-gesture-holding-a-phone-stock-gif-4033-1280x720.gif" />
-    <None Include="Resources\37076cce35285997d32d4a4f71f9c4a0.gif" />
-    <None Include="Resources\giphy.gif" />
-    <None Include="Resources\247WallSt.com-247WS-559997-old-phones.jpg" />
+    <None Include="Resources\earn-money-png-4.png" />
+    <Content Include="Resources\iphone1.png" />
+    <Content Include="Resources\iphone2.png" />
+    <Content Include="Resources\iphone3.png" />
+    <None Include="Resources\store.png" />
+    <None Include="Resources\spkt.png" />
+    <None Include="Resources\transaction.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
