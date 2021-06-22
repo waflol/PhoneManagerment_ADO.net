@@ -69,14 +69,14 @@ namespace PhoneManagerment_ADO.net.DBLayer
             try
             {
                 comm.ExecuteNonQuery();
-                System.Windows.Forms.MessageBox.Show("Successed");
+                //System.Windows.Forms.MessageBox.Show("Successed");
                 f = true;
 
             }
             catch(SqlException err)
             {
                 error = err.Message;
-                System.Windows.Forms.MessageBox.Show("Un Successed");
+                //System.Windows.Forms.MessageBox.Show("Un Successed");
             }
             finally
             {
