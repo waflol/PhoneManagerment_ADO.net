@@ -50,17 +50,21 @@ namespace PhoneManagerment_ADO.net.BSLayer
         // them phone
         public bool addAccount(string user, string pass)
         {
-            return false;
+
+            string sqlString = "Insert Into Accounts Values('" + user + "','" + pass + "')";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         //xoa phone
         public bool deleteAccount(ref string err, string user)
         {
-            return false;
+            string sqlString = "Delete From Accounts where username = '" + user+"'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         // cap nhat phone
         public bool updateAccount(string user, string pass, ref string err)
         {
-            return false;
+            string sqlString = "Update Accounts Set password = '" + pass + "' where username = '" + user+"'";
+            return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
     }
 }

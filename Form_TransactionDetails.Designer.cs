@@ -59,9 +59,10 @@ namespace PhoneManagerment_ADO.net
             this.GridView_Details_Trans.Name = "GridView_Details_Trans";
             this.GridView_Details_Trans.RowHeadersWidth = 51;
             this.GridView_Details_Trans.RowTemplate.Height = 24;
-            this.GridView_Details_Trans.Size = new System.Drawing.Size(722, 297);
+            this.GridView_Details_Trans.Size = new System.Drawing.Size(769, 297);
             this.GridView_Details_Trans.TabIndex = 0;
             this.GridView_Details_Trans.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_Details_Trans_CellClick);
+            this.GridView_Details_Trans.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GridView_Details_Trans_CellContentClick);
             // 
             // label1
             // 
@@ -73,6 +74,7 @@ namespace PhoneManagerment_ADO.net
             this.label1.Size = new System.Drawing.Size(86, 26);
             this.label1.TabIndex = 1;
             this.label1.Text = "Details";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -84,6 +86,7 @@ namespace PhoneManagerment_ADO.net
             this.label2.Size = new System.Drawing.Size(118, 15);
             this.label2.TabIndex = 2;
             this.label2.Text = "Find Phone Number";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // txt_IDTrans
             // 
@@ -134,7 +137,7 @@ namespace PhoneManagerment_ADO.net
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PhoneManagerment_ADO.net.Properties.Resources.earn_money_png_4;
-            this.pictureBox2.Location = new System.Drawing.Point(12, 8);
+            this.pictureBox2.Location = new System.Drawing.Point(28, 9);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(107, 67);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +147,7 @@ namespace PhoneManagerment_ADO.net
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PhoneManagerment_ADO.net.Properties.Resources.transaction;
-            this.pictureBox1.Location = new System.Drawing.Point(660, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(691, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(71, 67);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,7 +158,7 @@ namespace PhoneManagerment_ADO.net
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(742, 387);
+            this.ClientSize = new System.Drawing.Size(789, 387);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_remove);

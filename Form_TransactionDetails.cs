@@ -26,7 +26,7 @@ namespace PhoneManagerment_ADO.net
             GridView_Details_Trans.Columns[23].HeaderText = "Seller";
 
             // Ẩn các dòng ko cần thiết
-          
+
             GridView_Details_Trans.Columns[5].Visible = false;
             GridView_Details_Trans.Columns[6].Visible = false;
             GridView_Details_Trans.Columns[7].Visible = false;
@@ -37,7 +37,7 @@ namespace PhoneManagerment_ADO.net
             GridView_Details_Trans.Columns[13].Visible = false;
             GridView_Details_Trans.Columns[14].Visible = false;
             GridView_Details_Trans.Columns[15].Visible = false;
-            GridView_Details_Trans.Columns[16].Visible = false;
+            //GridView_Details_Trans.Columns[16].Visible = false;
             GridView_Details_Trans.Columns[17].Visible = false;
             GridView_Details_Trans.Columns[18].Visible = false;
             GridView_Details_Trans.Columns[19].Visible = false;
@@ -78,6 +78,20 @@ namespace PhoneManagerment_ADO.net
             }
             catch { }
         }
-        
+
+        private void GridView_Details_Trans_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

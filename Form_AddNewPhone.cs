@@ -20,7 +20,14 @@ namespace PhoneManagerment_ADO.net
         BLPhones phone = new BLPhones();
         private void btn_Save_Click(object sender, EventArgs e)
         {
-            phone.addPhones(phone.returnMaxID()+1,txt_ModelName.Text, cbb_Ram.Text, cbb_FrontCamera.Text, cbb_SimType.Text, cbb_NetworkType.Text, txt_Price.Text, cbb_FingerprintSensor.Text, cbb_InternalStorage.Text, cbb_InternalStorage.Text, cbb_RearCamera.Text,cbb_Display.Text);
+            try
+            {
+                if (int.TryParse(txt_Price.Text, out int result))
+                    phone.addPhones(phone.returnMaxID() + 1, txt_ModelName.Text, cbb_Ram.Text, cbb_FrontCamera.Text, cbb_SimType.Text, cbb_NetworkType.Text, txt_Price.Text, cbb_FingerprintSensor.Text, cbb_InternalStorage.Text, cbb_InternalStorage.Text, cbb_RearCamera.Text, cbb_Display.Text);
+                else
+                    MessageBox.Show("Nhập sai. Vui lòng nhập lại");
+            }
+            catch { }
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)
