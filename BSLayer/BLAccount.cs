@@ -21,6 +21,10 @@ namespace PhoneManagerment_ADO.net.BSLayer
         {
             return db.ExcuteQueryDataSet("select * from Accounts", CommandType.Text);
         }
+        public DataSet FindAccount(string name) {
+            return db.ExcuteQueryDataSet("select * from Accounts where username Like '" + name + "%'", CommandType.Text);
+        }
+
 
         public bool checkAccount(string user, string pass)
         {

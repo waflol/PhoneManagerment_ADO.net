@@ -76,7 +76,7 @@ namespace PhoneManagerment_ADO.net.DBLayer
             catch(SqlException err)
             {
                 error = err.Message;
-                //System.Windows.Forms.MessageBox.Show("Un Successed");
+                System.Windows.Forms.MessageBox.Show("Un Successed");
             }
             finally
             {
@@ -85,9 +85,5 @@ namespace PhoneManagerment_ADO.net.DBLayer
             return f;
 
         }
-
-
-
-
     }
 }

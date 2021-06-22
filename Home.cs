@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using PhoneManagerment_ADO.net.DBLayer;
 
 namespace PhoneManagerment_ADO.net {
     public partial class Home : Form {
@@ -70,6 +71,32 @@ namespace PhoneManagerment_ADO.net {
         }
         private void pb_HinhNen_Click(object sender, EventArgs e) {
 
+        }
+
+
+
+
+        private void changePassWordToolStripMenuItem_Click(object sender, EventArgs e) {
+            Change_Pass change_Pass = new Change_Pass();
+            change_Pass.ShowDialog();
+        }
+
+        private void addNewAccountToolStripMenuItem_Click(object sender, EventArgs e) {
+            if (FormLogin.currentAccount == "Admin") {
+                New_Acc new_Acc = new New_Acc();
+                new_Acc.ShowDialog();
+            } else {
+                MessageBox.Show("You are not the Administrator");
+            }
+        }
+
+        private void manageToolStripMenuItem_Click(object sender, EventArgs e) {
+            if (FormLogin.currentAccount == "Admin") {
+                Mange_Acc acc = new Mange_Acc();
+                acc.ShowDialog();
+            } else {
+                MessageBox.Show("You are not the Administrator");
+            }
         }
     }
 }
