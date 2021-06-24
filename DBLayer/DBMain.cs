@@ -66,22 +66,22 @@ namespace PhoneManagerment_ADO.net.DBLayer
             conn.Open();
             comm.CommandText = strSQL;
             comm.CommandType = ct;
-            try
-            {
+            //try
+            //{
                 comm.ExecuteNonQuery();
                 //System.Windows.Forms.MessageBox.Show("Successed");
                 f = true;
 
-            }
-            catch(SqlException err)
-            {
-                error = err.Message;
-                System.Windows.Forms.MessageBox.Show("Un Successed");
-            }
-            finally
-            {
-                conn.Close();
-            }
+            //}
+            //catch(SqlException err)
+            //{
+            //    error = err.Message;
+            //    System.Windows.Forms.MessageBox.Show("Un Successed");
+            //}
+            //finally
+            //{
+            //    conn.Close();
+            //}
             return f;
 
         }

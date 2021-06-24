@@ -25,11 +25,11 @@ namespace PhoneManagerment_ADO.net {
         /// </summary>
         private void InitializeComponent() {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource3 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.Show_Button = new System.Windows.Forms.Button();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.TransactionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PhoneDB = new PhoneManagerment_ADO.net.PhoneDB();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
+            this.Show_Button = new System.Windows.Forms.Button();
             this.TransactionsTableAdapter = new PhoneManagerment_ADO.net.PhoneDBTableAdapters.TransactionsTableAdapter();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,11 +37,21 @@ namespace PhoneManagerment_ADO.net {
             ((System.ComponentModel.ISupportInitialize)(this.PhoneDB)).BeginInit();
             this.SuspendLayout();
             // 
+            // TransactionsBindingSource
+            // 
+            this.TransactionsBindingSource.DataMember = "Transactions";
+            this.TransactionsBindingSource.DataSource = this.PhoneDB;
+            // 
+            // PhoneDB
+            // 
+            this.PhoneDB.DataSetName = "PhoneDB";
+            this.PhoneDB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // reportViewer1
             // 
-            reportDataSource3.Name = "Dataset_PhoneDB";
-            reportDataSource3.Value = this.TransactionsBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource3);
+            reportDataSource1.Name = "Dataset_PhoneDB";
+            reportDataSource1.Value = this.TransactionsBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "PhoneManagerment_ADO.net.Report_TongTienBanDt.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(12, 98);
             this.reportViewer1.Name = "reportViewer1";
@@ -58,16 +68,6 @@ namespace PhoneManagerment_ADO.net {
             this.Show_Button.Text = "Show";
             this.Show_Button.UseVisualStyleBackColor = true;
             this.Show_Button.Click += new System.EventHandler(this.Show_Button_Click);
-            // 
-            // TransactionsBindingSource
-            // 
-            this.TransactionsBindingSource.DataMember = "Transactions";
-            this.TransactionsBindingSource.DataSource = this.PhoneDB;
-            // 
-            // PhoneDB
-            // 
-            this.PhoneDB.DataSetName = "PhoneDB";
-            this.PhoneDB.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // TransactionsTableAdapter
             // 
@@ -100,6 +100,7 @@ namespace PhoneManagerment_ADO.net {
             this.Controls.Add(this.Show_Button);
             this.Controls.Add(this.reportViewer1);
             this.Name = "Form_Report";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Report";
             this.Load += new System.EventHandler(this.Form_Report_Load);
             ((System.ComponentModel.ISupportInitialize)(this.TransactionsBindingSource)).EndInit();

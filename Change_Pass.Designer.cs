@@ -95,6 +95,7 @@ namespace PhoneManagerment_ADO.net {
             this.Controls.Add(this.cc2);
             this.Controls.Add(this.cc);
             this.Name = "Change_Pass";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Change_Pass";
             this.ResumeLayout(false);
             this.PerformLayout();

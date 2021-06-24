@@ -64,5 +64,15 @@ namespace PhoneManagerment_ADO.net.Properties {
                 return ((string)(this["PhoneDBConnectionString3"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=Noice;Initial Catalog=PHONEDBMS;Integrated Security=True")]
+        public string PHONEDBMSConnectionString {
+            get {
+                return ((string)(this["PHONEDBMSConnectionString"]));
+            }
+        }
     }
 }

@@ -383,6 +383,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form_Edit_Phone";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Edit_Phone";
             this.Load += new System.EventHandler(this.Form_Edit_Phone_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

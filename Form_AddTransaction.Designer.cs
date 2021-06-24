@@ -428,7 +428,7 @@ namespace PhoneManagerment_ADO.net
             // 
             // Add_Phone_Button
             // 
-            this.Add_Phone_Button.Location = new System.Drawing.Point(273, 185);
+            this.Add_Phone_Button.Location = new System.Drawing.Point(287, 186);
             this.Add_Phone_Button.Name = "Add_Phone_Button";
             this.Add_Phone_Button.Size = new System.Drawing.Size(85, 25);
             this.Add_Phone_Button.TabIndex = 9;
@@ -587,6 +587,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.Phone_Info_Panel);
             this.Controls.Add(this.Customer_Panel);
             this.Name = "Form_AddTransaction";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_AddTransaction";
             this.Customer_Panel.ResumeLayout(false);
             this.Customer_Panel.PerformLayout();

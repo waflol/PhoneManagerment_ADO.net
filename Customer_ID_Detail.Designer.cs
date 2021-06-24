@@ -79,6 +79,7 @@ namespace PhoneManagerment_ADO.net {
             this.Controls.Add(this.SDT_Textbox);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Customer_ID_Detail";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customer_ID_Detail";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

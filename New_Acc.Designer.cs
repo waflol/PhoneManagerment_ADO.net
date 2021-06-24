@@ -107,6 +107,7 @@ namespace PhoneManagerment_ADO.net {
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "New_Acc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New_Acc";
             this.ResumeLayout(false);
             this.PerformLayout();

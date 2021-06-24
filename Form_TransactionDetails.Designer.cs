@@ -167,6 +167,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.label1);
             this.Controls.Add(this.GridView_Details_Trans);
             this.Name = "Form_TransactionDetails";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_TransactionDetails";
             this.Load += new System.EventHandler(this.Form_TransactionDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.GridView_Details_Trans)).EndInit();

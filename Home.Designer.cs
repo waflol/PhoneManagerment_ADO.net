@@ -33,6 +33,7 @@ namespace PhoneManagerment_ADO.net
             this.menu_Home = new System.Windows.Forms.MenuStrip();
             this.addTransactionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.transactionDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewPhoneToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.phoneDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.infomationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -50,7 +51,6 @@ namespace PhoneManagerment_ADO.net
             this.Timer_BackGroundChange = new System.Windows.Forms.Timer(this.components);
             this.Add_Employee_button = new System.Windows.Forms.Button();
             this.pb_HinhNen = new System.Windows.Forms.PictureBox();
-            this.customerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_HinhNen)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +90,13 @@ namespace PhoneManagerment_ADO.net
             this.transactionDetailToolStripMenuItem.Size = new System.Drawing.Size(136, 21);
             this.transactionDetailToolStripMenuItem.Text = "Transaction details";
             this.transactionDetailToolStripMenuItem.Click += new System.EventHandler(this.transactionDetailToolStripMenuItem_Click);
+            // 
+            // customerDetailToolStripMenuItem
+            // 
+            this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
+            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(176, 22);
+            this.customerDetailToolStripMenuItem.Text = "Customer Detail";
+            this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
             // 
             // addNewPhoneToolStripMenuItem
             // 
@@ -211,13 +218,6 @@ namespace PhoneManagerment_ADO.net
             this.pb_HinhNen.TabStop = false;
             this.pb_HinhNen.Click += new System.EventHandler(this.pb_HinhNen_Click);
             // 
-            // customerDetailToolStripMenuItem
-            // 
-            this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
-            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.customerDetailToolStripMenuItem.Text = "Customer Detail";
-            this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
-            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -227,6 +227,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.menu_Home);
             this.MainMenuStrip = this.menu_Home;
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Home_FormClosing);
             this.menu_Home.ResumeLayout(false);

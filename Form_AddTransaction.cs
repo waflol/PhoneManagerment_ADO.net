@@ -25,8 +25,6 @@ namespace PhoneManagerment_ADO.net {
         DataSet Phone_search_dataset = new DataSet();
         // biến tổng tiền
         private int Total_cost = 0;
-        // biến giá tiền điện thoại bị xoá
-        private int Phone_remove_cost = 0;
         // biến trỏ giá trị trong datagridvieww
         private int index;
         // biến trỏ giá trị để xoá trong datagridview
@@ -150,6 +148,8 @@ namespace PhoneManagerment_ADO.net {
             for (int i = 0; i < phoneID.Count; i++) {
                 transaction_Detail.addTransaction_details((GridView_Cart[2, i].Value.ToString()), transaction.returnMaxID().ToString(), phoneID[i]);
             }
+            Deal_Result deal_Result = new Deal_Result(transaction.returnMaxID());
+            deal_Result.ShowDialog();
             clearall_form();
         }
         void clearall_form() {

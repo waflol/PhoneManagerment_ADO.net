@@ -157,6 +157,7 @@ namespace PhoneManagerment_ADO.net
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.pictureBox2);
             this.Name = "Form_Phone_Details";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form_Phone_Details";
             ((System.ComponentModel.ISupportInitialize)(this.GridView_PhoneRecord)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).EndInit();

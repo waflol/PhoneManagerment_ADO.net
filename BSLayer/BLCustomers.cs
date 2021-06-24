@@ -50,7 +50,7 @@ namespace PhoneManagerment_ADO.net.BSLayer
         // them phone
         public bool addCustomer(string cusname, string phonenumber, string address, int ID_customer)
         {
-            string sqlString = "Insert Into Customer Values('" + cusname + "','" + phonenumber + "','" + address + "'," + ID_customer.ToString() + ")";
+            string sqlString = "Insert Into Customer Values('" + cusname + "','" + phonenumber + "','" + address + "','" + ID_customer.ToString() + "','No')";
             return db.MyExecuteNonQuery(sqlString, CommandType.Text, ref err);
         }
         //xoa phone

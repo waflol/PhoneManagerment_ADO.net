@@ -86,6 +86,12 @@
       <DependentUpon>Customer_ID_Detail.cs</DependentUpon>
     </Compile>
     <Compile Include="DBLayer\DBMain.cs" />
+    <Compile Include="Deal_Result.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deal_Result.Designer.cs">
+      <DependentUpon>Deal_Result.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,11 @@
     <Compile Include="New_Acc.Designer.cs">
       <DependentUpon>New_Acc.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhoneDB.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PhoneDBDataSet.cs">
       <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
     </Compile>
@@ -167,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Customer_ID_Detail.resx">
       <DependentUpon>Customer_ID_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deal_Result.resx">
+      <DependentUpon>Deal_Result.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>
@@ -210,6 +224,17 @@
     </Compile>
     <EmbeddedResource Include="Report_TongTienBanDt.rdlc" />
     <None Include="packages.config" />
+    <None Include="PhoneDB.xsc">
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
+    </None>
+    <None Include="PhoneDB.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PhoneDB.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="PhoneDB.xss">
+      <DependentUpon>PhoneDB.xsd</DependentUpon>
+    </None>
     <None Include="PhoneDBDataSet.xsc">
       <DependentUpon>PhoneDBDataSet.xsd</DependentUpon>
     </None>
