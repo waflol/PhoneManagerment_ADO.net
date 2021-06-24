@@ -21,6 +21,14 @@ namespace PhoneManagerment_ADO.net.BSLayer
             return db.ExcuteQueryDataSet("select * from Customer", CommandType.Text);
         }
 
+        public DataSet FindCustomer(string name,string phone,string address) {
+            return db.ExcuteQueryDataSet("select * from Customer where Customer_Name= '" + name + "' and PhoneNumber = '" + phone + "' and Address= '" + address+"'", CommandType.Text);
+        }
+
+        public DataSet FindCustomer_SDT(string phone) {
+            return db.ExcuteQueryDataSet("select * from Customer where PhoneNumber like '" + phone + "%'", CommandType.Text);
+        }
+
         public int returnMaxID()
         {
             string sqlString = "select max(ID_customer) as max_id from Customer";

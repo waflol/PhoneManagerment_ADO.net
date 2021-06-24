@@ -136,10 +136,17 @@ namespace PhoneManagerment_ADO.net {
         }
 
         private void Export_Button_Click(object sender, EventArgs e) {
-            customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID() + 1);
-            transaction.addTransaction(transaction.returnMaxID() + 1, Total_cost, dtpk_BuyDate.Value.ToString(), customer.returnMaxID(), FormLogin.currentAccount);
-
-            ///int index_Row = 0;
+            DataSet da = new DataSet();
+            da = customer.FindCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text);
+            // kiểm tra nêu khách hàng đã tồn tại
+            if (da.Tables[0].Rows.Count > 0) {
+                //MessageBox.Show(da.Tables[0].Rows[0][3].ToString());
+               transaction.addTransaction(transaction.returnMaxID() + 1, Total_cost, dtpk_BuyDate.Value.ToString(), int.Parse(da.Tables[0].Rows[0][3].ToString()), FormLogin.currentAccount);
+            } else {
+                customer.addCustomer(Name_Textbox.Text, Phone_Number_Textbox.Text, Address_Textbox.Text, customer.returnMaxID() + 1);
+                transaction.addTransaction(transaction.returnMaxID() + 1, Total_cost, dtpk_BuyDate.Value.ToString(), customer.returnMaxID(), FormLogin.currentAccount);
+            }
+            // int index_Row = 0;
             for (int i = 0; i < phoneID.Count; i++) {
                 transaction_Detail.addTransaction_details((GridView_Cart[2, i].Value.ToString()), transaction.returnMaxID().ToString(), phoneID[i]);
             }

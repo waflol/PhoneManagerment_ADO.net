@@ -98,5 +98,10 @@ namespace PhoneManagerment_ADO.net {
                 MessageBox.Show("You are not the Administrator");
             }
         }
+
+        private void customerDetailToolStripMenuItem_Click(object sender, EventArgs e) {
+            Customer_ID_Detail customer_ID_Detail = new Customer_ID_Detail();
+            customer_ID_Detail.ShowDialog();
+        }
     }
 }

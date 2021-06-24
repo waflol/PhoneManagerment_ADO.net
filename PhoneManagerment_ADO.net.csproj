@@ -79,6 +79,12 @@
       <DependentUpon>Change_Pass.cs</DependentUpon>
     </Compile>
     <Compile Include="Connect.cs" />
+    <Compile Include="Customer_ID_Detail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customer_ID_Detail.Designer.cs">
+      <DependentUpon>Customer_ID_Detail.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBLayer\DBMain.cs" />
     <Compile Include="FormLogin.cs">
       <SubType>Form</SubType>
@@ -163,6 +169,9 @@
     <Compile Include="SqlServerTypes\Loader.cs" />
     <EmbeddedResource Include="Change_Pass.resx">
       <DependentUpon>Change_Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer_ID_Detail.resx">
+      <DependentUpon>Customer_ID_Detail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormLogin.resx">
       <DependentUpon>FormLogin.cs</DependentUpon>

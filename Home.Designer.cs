@@ -43,13 +43,14 @@ namespace PhoneManagerment_ADO.net
             this.addNewEmpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.changePassWordToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.addNewAccountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.Timer_BackGroundChange = new System.Windows.Forms.Timer(this.components);
             this.Add_Employee_button = new System.Windows.Forms.Button();
             this.pb_HinhNen = new System.Windows.Forms.PictureBox();
-            this.manageToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.customerDetailToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menu_Home.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_HinhNen)).BeginInit();
             this.SuspendLayout();
@@ -83,6 +84,8 @@ namespace PhoneManagerment_ADO.net
             // 
             // transactionDetailToolStripMenuItem
             // 
+            this.transactionDetailToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.customerDetailToolStripMenuItem});
             this.transactionDetailToolStripMenuItem.Name = "transactionDetailToolStripMenuItem";
             this.transactionDetailToolStripMenuItem.Size = new System.Drawing.Size(136, 21);
             this.transactionDetailToolStripMenuItem.Text = "Transaction details";
@@ -162,6 +165,13 @@ namespace PhoneManagerment_ADO.net
             this.addNewAccountToolStripMenuItem.Text = "Add New Account";
             this.addNewAccountToolStripMenuItem.Click += new System.EventHandler(this.addNewAccountToolStripMenuItem_Click);
             // 
+            // manageToolStripMenuItem
+            // 
+            this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
+            this.manageToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
+            this.manageToolStripMenuItem.Text = "Manage";
+            this.manageToolStripMenuItem.Click += new System.EventHandler(this.manageToolStripMenuItem_Click);
+            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
@@ -201,12 +211,12 @@ namespace PhoneManagerment_ADO.net
             this.pb_HinhNen.TabStop = false;
             this.pb_HinhNen.Click += new System.EventHandler(this.pb_HinhNen_Click);
             // 
-            // manageToolStripMenuItem
+            // customerDetailToolStripMenuItem
             // 
-            this.manageToolStripMenuItem.Name = "manageToolStripMenuItem";
-            this.manageToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
-            this.manageToolStripMenuItem.Text = "Manage";
-            this.manageToolStripMenuItem.Click += new System.EventHandler(this.manageToolStripMenuItem_Click);
+            this.customerDetailToolStripMenuItem.Name = "customerDetailToolStripMenuItem";
+            this.customerDetailToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.customerDetailToolStripMenuItem.Text = "Customer Detail";
+            this.customerDetailToolStripMenuItem.Click += new System.EventHandler(this.customerDetailToolStripMenuItem_Click);
             // 
             // Home
             // 
@@ -249,5 +259,6 @@ namespace PhoneManagerment_ADO.net
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
         private System.Windows.Forms.ToolStripMenuItem manageToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem customerDetailToolStripMenuItem;
     }
 }
