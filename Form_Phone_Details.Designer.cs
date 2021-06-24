@@ -38,9 +38,9 @@ namespace PhoneManagerment_ADO.net
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Delete = new System.Windows.Forms.Button();
             this.phoneTableAdapter = new PhoneManagerment_ADO.net.PhoneDBDataSetTableAdapters.PhoneTableAdapter();
+            this.btn_Edit = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.phonesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.btn_Edit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GridView_PhoneRecord)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phoneDBDataSet)).BeginInit();
@@ -117,6 +117,19 @@ namespace PhoneManagerment_ADO.net
             // 
             this.phoneTableAdapter.ClearBeforeFill = true;
             // 
+            // btn_Edit
+            // 
+            this.btn_Edit.BackColor = System.Drawing.Color.DarkGreen;
+            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btn_Edit.Location = new System.Drawing.Point(552, 164);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(78, 32);
+            this.btn_Edit.TabIndex = 53;
+            this.btn_Edit.Text = "Edit";
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PhoneManagerment_ADO.net.Properties.Resources._247WallSt_com_247WS_559997_old_phones;
@@ -130,19 +143,6 @@ namespace PhoneManagerment_ADO.net
             // phonesBindingSource
             // 
             this.phonesBindingSource.DataMember = "Phones";
-            // 
-            // btn_Edit
-            // 
-            this.btn_Edit.BackColor = System.Drawing.Color.DarkGreen;
-            this.btn_Edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Edit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btn_Edit.Location = new System.Drawing.Point(552, 164);
-            this.btn_Edit.Name = "btn_Edit";
-            this.btn_Edit.Size = new System.Drawing.Size(78, 32);
-            this.btn_Edit.TabIndex = 53;
-            this.btn_Edit.Text = "Edit";
-            this.btn_Edit.UseVisualStyleBackColor = false;
-            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
             // Form_Phone_Details
             // 

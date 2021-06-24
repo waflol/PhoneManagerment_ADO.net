@@ -143,6 +143,16 @@ namespace PhoneManagerment_ADO.net.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap smartphone_redmi_800x450 {
+            get {
+                object obj = ResourceManager.GetObject("smartphone-redmi_800x450", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap spkt {
             get {
                 object obj = ResourceManager.GetObject("spkt", resourceCulture);
@@ -156,6 +166,16 @@ namespace PhoneManagerment_ADO.net.Properties {
         internal static System.Drawing.Bitmap store {
             get {
                 object obj = ResourceManager.GetObject("store", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap store2 {
+            get {
+                object obj = ResourceManager.GetObject("store2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

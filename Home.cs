@@ -11,9 +11,9 @@ using PhoneManagerment_ADO.net.DBLayer;
 
 namespace PhoneManagerment_ADO.net {
     public partial class Home : Form {
-        public Image image1 = Image.FromFile("Resources\\store2.png");
-        public Image image2 = Image.FromFile("Resources\\store.png");
-        public Image image3 = Image.FromFile("Resources\\smartphone-redmi_800x450.jpg");
+        public Image image1 = Properties.Resources.store2;
+        public Image image2 = Properties.Resources.store;
+        public Image image3 = Properties.Resources.smartphone_redmi_800x450;
         private List<Image> images = new List<Image>();
         int b = 0;
         public Home() {

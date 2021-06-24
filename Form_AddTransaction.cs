@@ -150,6 +150,8 @@ namespace PhoneManagerment_ADO.net {
             }
             Deal_Result deal_Result = new Deal_Result(transaction.returnMaxID());
             deal_Result.ShowDialog();
+            Total_cost = 0;
+            Total_Cost_Textbox.Text = "";
             clearall_form();
         }
         void clearall_form() {

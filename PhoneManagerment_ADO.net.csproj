@@ -298,6 +298,8 @@
     <None Include="Resources\store.png" />
     <None Include="Resources\spkt.png" />
     <None Include="Resources\transaction.png" />
+    <None Include="Resources\store2.png" />
+    <None Include="Resources\smartphone-redmi_800x4501.jpg" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
